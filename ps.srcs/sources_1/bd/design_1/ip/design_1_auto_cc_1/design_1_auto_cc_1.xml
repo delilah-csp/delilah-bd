@@ -3919,6 +3919,7 @@
       <xilinx:displayName>AXI Clock Converter</xilinx:displayName>
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
       <xilinx:coreRevision>18</xilinx:coreRevision>
       <xilinx:configElementInfos>

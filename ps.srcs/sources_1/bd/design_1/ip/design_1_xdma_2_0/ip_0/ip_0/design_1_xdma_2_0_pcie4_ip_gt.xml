@@ -14,7 +14,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:346ade3c</spirit:value>
+            <spirit:value>9:f2b13399</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -14096,7 +14096,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_PCIE_CORECLK_FREQ</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PCIE_CORECLK_FREQ">500</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PCIE_CORECLK_FREQ">250</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_COMMON_SCALING_FACTOR</spirit:name>
@@ -15411,7 +15411,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCIE_CORECLK_FREQ</spirit:name>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCIE_CORECLK_FREQ" spirit:choiceRef="choice_list_3d9ff82c" spirit:order="22">500</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCIE_CORECLK_FREQ" spirit:choiceRef="choice_list_3d9ff82c" spirit:order="22">250</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCIE_USERCLK_FREQ</spirit:name>

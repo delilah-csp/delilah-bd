@@ -11735,9 +11735,45 @@ set psu_mio_init_data {
 		# Master Tri-state Enable for pin 51, active high
 		# PSU_IOU_SLCR_MIO_MST_TRI1_PIN_51_TRI                                            0
 
+		# Master Tri-state Enable for pin 52, active high
+		# PSU_IOU_SLCR_MIO_MST_TRI1_PIN_52_TRI                                            0
+
+		# Master Tri-state Enable for pin 53, active high
+		# PSU_IOU_SLCR_MIO_MST_TRI1_PIN_53_TRI                                            0
+
+		# Master Tri-state Enable for pin 54, active high
+		# PSU_IOU_SLCR_MIO_MST_TRI1_PIN_54_TRI                                            0
+
+		# Master Tri-state Enable for pin 55, active high
+		# PSU_IOU_SLCR_MIO_MST_TRI1_PIN_55_TRI                                            0
+
+		# Master Tri-state Enable for pin 56, active high
+		# PSU_IOU_SLCR_MIO_MST_TRI1_PIN_56_TRI                                            0
+
+		# Master Tri-state Enable for pin 57, active high
+		# PSU_IOU_SLCR_MIO_MST_TRI1_PIN_57_TRI                                            0
+
+		# Master Tri-state Enable for pin 58, active high
+		# PSU_IOU_SLCR_MIO_MST_TRI1_PIN_58_TRI                                            0
+
+		# Master Tri-state Enable for pin 59, active high
+		# PSU_IOU_SLCR_MIO_MST_TRI1_PIN_59_TRI                                            0
+
+		# Master Tri-state Enable for pin 60, active high
+		# PSU_IOU_SLCR_MIO_MST_TRI1_PIN_60_TRI                                            0
+
+		# Master Tri-state Enable for pin 61, active high
+		# PSU_IOU_SLCR_MIO_MST_TRI1_PIN_61_TRI                                            0
+
+		# Master Tri-state Enable for pin 62, active high
+		# PSU_IOU_SLCR_MIO_MST_TRI1_PIN_62_TRI                                            0
+
+		# Master Tri-state Enable for pin 63, active high
+		# PSU_IOU_SLCR_MIO_MST_TRI1_PIN_63_TRI                                            0
+
 		# MIO pin Tri-state Enables, 63:32
-		#(OFFSET, MASK, VALUE)      (0XFF180208, 0x000FFFFFU ,0x00002000U)  */
-    mask_write 0XFF180208 0x000FFFFF 0x00002000
+		#(OFFSET, MASK, VALUE)      (0XFF180208, 0xFFFFFFFFU ,0x00002000U)  */
+    mask_write 0XFF180208 0xFFFFFFFF 0x00002000
 		# Register : MIO_MST_TRI2 @ 0XFF18020C</p>
 
 		# Master Tri-state Enable for pin 64, active high
@@ -14689,15 +14725,6 @@ set psu_afi_config {
 		# Read Channel Control Register
 		#(OFFSET, MASK, VALUE)      (0XFD380000, 0x00000003U ,0x00000000U)  */
     mask_write 0XFD380000 0x00000003 0x00000000
-		# Register : AFIFM_RDCTRL @ 0XFD390000</p>
-
-		# Configures the Read Channel Fabric interface width. 2'b11 : Reserved 2'b
-    # 10 : 32-bit Fabric 2'b01 : 64-bit enabled 2'b00 : 128-bit enabled
-		# PSU_AFIFM3_AFIFM_RDCTRL_FABRIC_WIDTH                                            0x0
-
-		# Read Channel Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD390000, 0x00000003U ,0x00000000U)  */
-    mask_write 0XFD390000 0x00000003 0x00000000
 		# Register : AFIFM_WRCTRL @ 0XFD380014</p>
 
 		# Configures the Write Channel Fabric interface width. 2'b11 : Reserved 2'
@@ -14707,15 +14734,6 @@ set psu_afi_config {
 		# Write Channel Control Register
 		#(OFFSET, MASK, VALUE)      (0XFD380014, 0x00000003U ,0x00000000U)  */
     mask_write 0XFD380014 0x00000003 0x00000000
-		# Register : AFIFM_WRCTRL @ 0XFD390014</p>
-
-		# Configures the Write Channel Fabric interface width. 2'b11 : Reserved 2'
-    # b10 : 32-bit Fabric 2'b01 : 64-bit enabled 2'b00 : 128-bit enabled
-		# PSU_AFIFM3_AFIFM_WRCTRL_FABRIC_WIDTH                                            0x0
-
-		# Write Channel Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD390014, 0x00000003U ,0x00000000U)  */
-    mask_write 0XFD390014 0x00000003 0x00000000
 }
 
 set psu_ps_pl_reset_config_data {

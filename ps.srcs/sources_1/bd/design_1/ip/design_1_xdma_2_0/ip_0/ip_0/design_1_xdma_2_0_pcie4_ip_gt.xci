@@ -26,7 +26,7 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_LOCATE_TX_BUFFER_BYPASS_CONTROLLER">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_LOCATE_TX_USER_CLOCKING">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_LOCATE_USER_DATA_WIDTH_SIZING">1</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_PCIE_CORECLK_FREQ">500</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_PCIE_CORECLK_FREQ">250</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_PCIE_ENABLE">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RESET_CONTROLLER_INSTANCE_CTRL">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RESET_SEQUENCE_INTERVAL">0</spirit:configurableElementValue>
@@ -675,7 +675,7 @@ esetovrd_in txoutclksel_in cplllock_out gtrefclk0_in</spirit:configurableElement
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.OOB_ENABLE">false</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ORGANIZE_PORTS_BY">NAME</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCIE_64BIT">false</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCIE_CORECLK_FREQ">500</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCIE_CORECLK_FREQ">250</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCIE_ENABLE">true</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCIE_GEN4_EIOS">false</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCIE_USERCLK_FREQ">250</spirit:configurableElementValue>
