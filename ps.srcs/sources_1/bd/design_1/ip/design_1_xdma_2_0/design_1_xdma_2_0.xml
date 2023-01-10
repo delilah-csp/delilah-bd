@@ -19694,11 +19694,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 07 14:25:12 UTC 2023</spirit:value>
+            <spirit:value>Tue Jan 10 01:48:51 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6c4395ca</spirit:value>
+            <spirit:value>9:3f9d674d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -50093,7 +50093,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_PCIEBAR2AXIBAR_2</spirit:name>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PCIEBAR2AXIBAR_2" spirit:bitStringLength="64">0x0000000012000000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PCIEBAR2AXIBAR_2" spirit:bitStringLength="64">0x0000001000000000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_PCIEBAR2AXIBAR_3</spirit:name>
@@ -51792,7 +51792,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>pciebar2axibar_axist_bypass</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pciebar2axibar_axist_bypass" spirit:order="44" spirit:configGroups="1 UnGrouped">0x0000000012000000</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pciebar2axibar_axist_bypass" spirit:order="44" spirit:configGroups="1 UnGrouped">0x0000001000000000</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -59288,7 +59288,6 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.SYS_CLK.FREQ_HZ" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.SYS_CLK.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.SYS_CLK_GT.CLK_DOMAIN" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.SYS_CLK_GT.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.AWUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>

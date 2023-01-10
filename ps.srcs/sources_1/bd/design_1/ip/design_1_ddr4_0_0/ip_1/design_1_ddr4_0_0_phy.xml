@@ -451,7 +451,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PING_PONG_PHY&apos;))*spirit:decode(id(&apos;MODELPARAM_VALUE.CKE_WIDTH&apos;))*8-1">15</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PING_PONG_PHY&apos;))*spirit:decode(id(&apos;MODELPARAM_VALUE.CKE_WIDTH&apos;))*8-1">7</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -477,7 +477,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PING_PONG_PHY&apos;))*spirit:decode(id(&apos;MODELPARAM_VALUE.CS_WIDTH&apos;))*8-1">15</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PING_PONG_PHY&apos;))*spirit:decode(id(&apos;MODELPARAM_VALUE.CS_WIDTH&apos;))*8-1">7</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -503,7 +503,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PING_PONG_PHY&apos;))*spirit:decode(id(&apos;MODELPARAM_VALUE.ODT_WIDTH&apos;))*8-1">15</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PING_PONG_PHY&apos;))*spirit:decode(id(&apos;MODELPARAM_VALUE.ODT_WIDTH&apos;))*8-1">7</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -2134,7 +2134,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PING_PONG_PHY&apos;))*spirit:decode(id(&apos;MODELPARAM_VALUE.CKE_WIDTH&apos;))-1">1</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PING_PONG_PHY&apos;))*spirit:decode(id(&apos;MODELPARAM_VALUE.CKE_WIDTH&apos;))-1">0</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -2157,7 +2157,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PING_PONG_PHY&apos;))*spirit:decode(id(&apos;MODELPARAM_VALUE.ODT_WIDTH&apos;))-1">1</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PING_PONG_PHY&apos;))*spirit:decode(id(&apos;MODELPARAM_VALUE.ODT_WIDTH&apos;))-1">0</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -2199,7 +2199,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PING_PONG_PHY&apos;))*spirit:decode(id(&apos;MODELPARAM_VALUE.CS_WIDTH&apos;))-1">1</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PING_PONG_PHY&apos;))*spirit:decode(id(&apos;MODELPARAM_VALUE.CS_WIDTH&apos;))-1">0</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -2487,7 +2487,7 @@
       <spirit:modelParameter>
         <spirit:name>CKE_WIDTH</spirit:name>
         <spirit:displayName>CKE WIDTH</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CKE_WIDTH">2</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CKE_WIDTH">1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>COLUMN_WIDTH</spirit:name>
@@ -2497,12 +2497,12 @@
       <spirit:modelParameter>
         <spirit:name>CS_WIDTH</spirit:name>
         <spirit:displayName>CS WIDTH</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CS_WIDTH">2</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CS_WIDTH">1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>ODT_WIDTH</spirit:name>
         <spirit:displayName>ODT WIDTH</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.ODT_WIDTH">2</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.ODT_WIDTH">1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>DQ_WIDTH</spirit:name>
@@ -2574,7 +2574,7 @@
         <spirit:displayName>IOBTYPE</spirit:displayName>
         <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.IOBTYPE">                                                                                  39&apos;b000_011_011_011_011_111_111_011_011_011_011_111_111,                                                                                  39&apos;b000_011_011_011_011_111_111_011_011_011_011_111_111,                                                                                  39&apos;b000_011_011_011_011_111_111_011_011_011_011_111_111,                                                                                  39&apos;b
 000_011_011_011_011_111_111_011_011_011_011_111_111,                                                                                  39&apos;b000_011_011_011_011_111_111_011_011_011_011_111_111,                                                                                  39&apos;b000_011_011_011_011_111_111_011_011_011_011_111_111,                                                                                  39&apos;b000_011_011_011_011_111_111_011_011_011_011_111_111,                                  
-                                                39&apos;b000_011_011_011_011_111_111_011_011_011_011_111_111,                                                                                  39&apos;b000_011_011_011_011_111_111_011_011_011_011_111_111,                                                                                  39&apos;b000_000_000_000_001_000_001_001_001_001_001_001_001,                                                                                  39&apos;b001_001_001_000_000_001_001_001_00
+                                                39&apos;b000_011_011_011_011_111_111_011_011_011_011_111_111,                                                                                  39&apos;b000_011_011_011_011_111_111_011_011_011_011_111_111,                                                                                  39&apos;b000_000_000_000_000_000_000_001_000_001_001_001_001,                                                                                  39&apos;b001_001_001_000_000_001_001_001_00
 1_001_001_001_001,                                                                                  39&apos;b000_001_001_001_001_101_101_001_001_001_001_001_001  </spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
@@ -2601,14 +2601,14 @@
         <spirit:name>RX_DATA_TYPE</spirit:name>
         <spirit:displayName>RX DATA TYPE</spirit:displayName>
         <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.RX_DATA_TYPE">{ 15&apos;b011110_11_11110_11,                                                                                15&apos;b011110_11_11110_11,                                                                                15&apos;b011110_11_11110_11,                                                                                15&apos;b011110_11_11110_11,                                                                                15&apos;b011110_11_11110_11,                                                               
-                 15&apos;b011110_11_11110_11,                                                                                15&apos;b011110_11_11110_11,                                                                                15&apos;b011110_11_11110_11,                                                                                15&apos;b011110_11_11110_11,                                                                                15&apos;b000010_11_11111_11,                                                
+                 15&apos;b011110_11_11110_11,                                                                                15&apos;b011110_11_11110_11,                                                                                15&apos;b011110_11_11110_11,                                                                                15&apos;b011110_11_11110_11,                                                                                15&apos;b000000_00_10111_11,                                                
                                 15&apos;b111001_11_11111_11,                                                                                15&apos;b011111_11_11111_11                                                                                }</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>INIT</spirit:name>
         <spirit:displayName>INIT</spirit:displayName>
         <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.INIT">{                            15&apos;b111111111111111,                                                                                15&apos;b111111111111111,                                                                                15&apos;b111111111111111,                                                                                15&apos;b111111111111111,                                                                                15&apos;b111111111111111,                                                   
-                             15&apos;b111111111111111,                                                                                15&apos;b111111111111111,                                                                                15&apos;b111111111111111,                                                                                15&apos;b111111111111111,                                                                                15&apos;b111111111110011,                                                   
+                             15&apos;b111111111111111,                                                                                15&apos;b111111111111111,                                                                                15&apos;b111111111111111,                                                                                15&apos;b111111111111111,                                                                                15&apos;b111111111111101,                                                   
                              15&apos;b111111111111111,                                                                                15&apos;b111111111111111                                                                                }</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
@@ -2620,14 +2620,14 @@
         <spirit:name>TX_OUTPUT_PHASE_90</spirit:name>
         <spirit:displayName>TX OUTPUT PHASE 90</spirit:displayName>
         <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TX_OUTPUT_PHASE_90">{ 13&apos;b0000011000011,                                                                                13&apos;b0000011000011,                                                                                13&apos;b0000011000011,                                                                                13&apos;b0000011000011,                                                                                13&apos;b0000011000011,                                                                                13&apos;b0000
-011000011,                                                                                13&apos;b0000011000011,                                                                                13&apos;b0000011000011,                                                                                13&apos;b0000011000011,                                                                                13&apos;b0000101111111,                                                                                13&apos;b1110011111111,
+011000011,                                                                                13&apos;b0000011000011,                                                                                13&apos;b0000011000011,                                                                                13&apos;b0000011000011,                                                                                13&apos;b0000000101111,                                                                                13&apos;b1110011111111,
                                                                                 13&apos;b0111111111111                                                                                }</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>RXTX_BITSLICE_EN</spirit:name>
         <spirit:displayName>RXTX BITSLICE EN</spirit:displayName>
         <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.RXTX_BITSLICE_EN">{13&apos;b0111101111101,                                                                                13&apos;b0111101111101,                                                                                13&apos;b0111101111101,                                                                                13&apos;b0111101111101,                                                                                13&apos;b0111101111101,                                                                                13&apos;b01111
-01111101,                                                                                13&apos;b0111101111101,                                                                                13&apos;b0111101111101,                                                                                13&apos;b0111101111101,                                                                                13&apos;b0000101111111,                                                                                13&apos;b1110011111111, 
+01111101,                                                                                13&apos;b0111101111101,                                                                                13&apos;b0111101111101,                                                                                13&apos;b0111101111101,                                                                                13&apos;b0000000101111,                                                                                13&apos;b1110011111111, 
                                                                                13&apos;b0111101111111                                                                                }</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
@@ -2758,7 +2758,7 @@
       <spirit:modelParameter>
         <spirit:name>RANK_WIDTH</spirit:name>
         <spirit:displayName>RANK WIDTH</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.RANK_WIDTH">2</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.RANK_WIDTH">1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>CK_WIDTH</spirit:name>
@@ -2778,7 +2778,7 @@
       <spirit:modelParameter>
         <spirit:name>CA_MIRROR</spirit:name>
         <spirit:displayName>CA MIRROR</spirit:displayName>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CA_MIRROR">1</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CA_MIRROR">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>IS_CUSTOM</spirit:name>
@@ -2792,12 +2792,6 @@
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
-  <spirit:cpus>
-    <spirit:cpu>
-      <spirit:name>design_1_ddr4_0_0_phy</spirit:name>
-      <spirit:addressSpaceRef spirit:addressSpaceRef="dummy"/>
-    </spirit:cpu>
-  </spirit:cpus>
   <spirit:description>PHY for DDR4 interfaces for Ultrascale Architecture</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
@@ -2891,7 +2885,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C0.DDR4_MemoryPart</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C0.DDR4_MemoryPart" spirit:order="24">MTA36ASF4G72PZ-2G3</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C0.DDR4_MemoryPart" spirit:order="24">M393A2K40BB1-CRC</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C0.DDR4_Slot</spirit:name>
