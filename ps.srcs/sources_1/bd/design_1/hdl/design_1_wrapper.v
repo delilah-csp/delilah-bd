@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Sun Jan  8 06:17:20 2023
+//Date        : Tue Jan 10 11:16:53 2023
 //Host        : LAPTOP-HS-5597 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -83,12 +83,12 @@ module design_1_wrapper
   output [1:0]ddr4_rtl_0_bg;
   output [0:0]ddr4_rtl_0_ck_c;
   output [0:0]ddr4_rtl_0_ck_t;
-  output [1:0]ddr4_rtl_0_cke;
-  output [1:0]ddr4_rtl_0_cs_n;
+  output [0:0]ddr4_rtl_0_cke;
+  output [0:0]ddr4_rtl_0_cs_n;
   inout [71:0]ddr4_rtl_0_dq;
   inout [17:0]ddr4_rtl_0_dqs_c;
   inout [17:0]ddr4_rtl_0_dqs_t;
-  output [1:0]ddr4_rtl_0_odt;
+  output [0:0]ddr4_rtl_0_odt;
   output ddr4_rtl_0_par;
   output ddr4_rtl_0_reset_n;
   output ddr4_rtl_1_act_n;
@@ -97,12 +97,12 @@ module design_1_wrapper
   output [1:0]ddr4_rtl_1_bg;
   output [0:0]ddr4_rtl_1_ck_c;
   output [0:0]ddr4_rtl_1_ck_t;
-  output [1:0]ddr4_rtl_1_cke;
-  output [1:0]ddr4_rtl_1_cs_n;
+  output [0:0]ddr4_rtl_1_cke;
+  output [0:0]ddr4_rtl_1_cs_n;
   inout [71:0]ddr4_rtl_1_dq;
   inout [17:0]ddr4_rtl_1_dqs_c;
   inout [17:0]ddr4_rtl_1_dqs_t;
-  output [1:0]ddr4_rtl_1_odt;
+  output [0:0]ddr4_rtl_1_odt;
   output ddr4_rtl_1_par;
   output ddr4_rtl_1_reset_n;
   input [0:0]diff_clock_rtl_0_clk_n;
@@ -145,12 +145,12 @@ module design_1_wrapper
   wire [1:0]ddr4_rtl_0_bg;
   wire [0:0]ddr4_rtl_0_ck_c;
   wire [0:0]ddr4_rtl_0_ck_t;
-  wire [1:0]ddr4_rtl_0_cke;
-  wire [1:0]ddr4_rtl_0_cs_n;
+  wire [0:0]ddr4_rtl_0_cke;
+  wire [0:0]ddr4_rtl_0_cs_n;
   wire [71:0]ddr4_rtl_0_dq;
   wire [17:0]ddr4_rtl_0_dqs_c;
   wire [17:0]ddr4_rtl_0_dqs_t;
-  wire [1:0]ddr4_rtl_0_odt;
+  wire [0:0]ddr4_rtl_0_odt;
   wire ddr4_rtl_0_par;
   wire ddr4_rtl_0_reset_n;
   wire ddr4_rtl_1_act_n;
@@ -159,12 +159,12 @@ module design_1_wrapper
   wire [1:0]ddr4_rtl_1_bg;
   wire [0:0]ddr4_rtl_1_ck_c;
   wire [0:0]ddr4_rtl_1_ck_t;
-  wire [1:0]ddr4_rtl_1_cke;
-  wire [1:0]ddr4_rtl_1_cs_n;
+  wire [0:0]ddr4_rtl_1_cke;
+  wire [0:0]ddr4_rtl_1_cs_n;
   wire [71:0]ddr4_rtl_1_dq;
   wire [17:0]ddr4_rtl_1_dqs_c;
   wire [17:0]ddr4_rtl_1_dqs_t;
-  wire [1:0]ddr4_rtl_1_odt;
+  wire [0:0]ddr4_rtl_1_odt;
   wire ddr4_rtl_1_par;
   wire ddr4_rtl_1_reset_n;
   wire [0:0]diff_clock_rtl_0_clk_n;
