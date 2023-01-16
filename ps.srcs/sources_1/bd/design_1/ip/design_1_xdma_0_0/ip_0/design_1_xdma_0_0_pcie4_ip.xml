@@ -7495,11 +7495,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Dec 13 02:09:02 UTC 2019</spirit:value>
+            <spirit:value>Mon Jan 09 10:38:13 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e975bfb6</spirit:value>
+            <spirit:value>9:b2dd5309</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -27364,6 +27364,16 @@
       <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.disable_gt_loc" spirit:choiceRef="choice_list_7a7dde49" spirit:order="460">true</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
+      <spirit:name>disconnect_hot_reset</spirit:name>
+      <spirit:displayName>disconnect hot_reset from user_reset</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.disconnect_hot_reset" spirit:choiceRef="choice_list_7a7dde49" spirit:order="460.1">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>ku15p_gt_long_route</spirit:name>
+      <spirit:displayName>Enables KU15P GT long route</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.ku15p_gt_long_route" spirit:choiceRef="choice_list_7a7dde49" spirit:order="460.2">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
       <spirit:name>enable_mark_debug</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.enable_mark_debug" spirit:choiceRef="choice_list_7a7dde49" spirit:order="461">false</spirit:value>
     </spirit:parameter>
@@ -27721,6 +27731,10 @@
       <spirit:displayName>Truncate ports for 2RP DMA design</spirit:displayName>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.dma_2rp" spirit:choiceRef="choice_list_7a7dde49" spirit:order="534">false</spirit:value>
     </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>double_quad</spirit:name>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.double_quad" spirit:order="535">false</spirit:value>
+    </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
@@ -27916,12 +27930,12 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2019.1.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="b3ff30a4"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2857c5f4"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4145a709"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="1045956f"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="8f2a075d"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="93da7a7a"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="96820e53"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>
