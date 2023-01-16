@@ -9154,7 +9154,7 @@
               },
               "SEG_ddr4_1_C0_REG": {
                 "address_block": "/ddr4_1/C0_DDR4_MEMORY_MAP_CTRL/C0_REG",
-                "offset": "0x50A8003000",
+                "offset": "0x00B8002000",
                 "range": "4K"
               },
               "SEG_xdma_0_BAR0": {
