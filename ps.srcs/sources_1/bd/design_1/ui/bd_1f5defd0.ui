@@ -117,41 +117,41 @@ preplace netloc rst_ddr4_1_333M_interconnect_aresetn 1 5 4 2780 2050 NJ 2050 NJ 
 preplace netloc clk_wiz_0_clk_out1 1 2 5 820 510 1240 430 2190 580 2730 710 3410
 preplace netloc proc_sys_reset_3_interconnect_aresetn 1 2 5 840 40 N 40 2180 320 2580 700 3440
 preplace netloc proc_sys_reset_3_peripheral_aresetn 1 2 5 830 520 1250 440 2170 330 2620 870 3450
-preplace netloc axi_interconnect_0_M02_AXI 1 7 1 3880 600n
-preplace netloc axi_interconnect_1_M04_AXI 1 3 3 1190J 110 NJ 110 2740
 preplace netloc axi_interconnect_4_M00_AXI 1 6 2 NJ 1210 3890
-preplace netloc diff_clock_rtl_1_1 1 0 2 NJ 470 NJ
-preplace netloc ddr4_0_C0_DDR4 1 8 2 4480J 1080 NJ
-preplace netloc xdma_1_pcie_mgt 1 4 6 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ
-preplace netloc xdma_2_pcie_mgt 1 4 6 NJ 1560 2700J 1420 NJ 1420 3870J 1580 NJ 1580 4830J
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 6 1 3410 550n
-preplace netloc axi_interconnect_1_M03_AXI 1 3 1 1260 300n
-preplace netloc axi_interconnect_0_M01_AXI 1 3 5 1360 90 NJ 90 NJ 90 NJ 90 3860
-preplace netloc diff_clock_rtl_2_1 1 0 8 NJ 1190 NJ 1190 NJ 1190 1340J 990 NJ 990 2670J 1000 NJ 1000 3940J
-preplace netloc xdma_2_M_AXI 1 4 1 2180 1300n
+preplace netloc axi_interconnect_0_M02_AXI 1 7 1 3880 600n
 preplace netloc diff_clock_rtl_3_1 1 0 8 -140J 1200 NJ 1200 NJ 1200 1360J 1000 NJ 1000 2660J 1010 NJ 1010 3880J
-preplace netloc ddr4_1_C0_DDR4 1 8 2 4510J 1550 NJ
-preplace netloc axi_interconnect_0_M00_AXI 1 3 5 1350 80 NJ 80 NJ 80 NJ 80 3870
-preplace netloc axi_interconnect_0_M03_AXI 1 7 1 3960 720n
-preplace netloc CLK_IN_D_0_1 1 0 2 NJ 1280 NJ
-preplace netloc axi_interconnect_1_M02_AXI 1 3 1 1280 280n
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 2 5 860 50 NJ 50 NJ 50 NJ 50 3400
-preplace netloc xdma_2_M_AXI_BYPASS 1 4 1 2170 1280n
-preplace netloc axi_interconnect_1_M01_AXI 1 3 1 1220 250n
-preplace netloc diff_clock_rtl_0_1 1 0 2 -150J 820 350J
-preplace netloc CLK_IN_D_0_2 1 0 5 NJ 1640 NJ 1640 NJ 1640 1290J 1990 NJ
-preplace netloc xdma_0_pcie_mgt 1 4 6 2130J 650 2720J 940 NJ 940 3910J 810 4470J 830 4840J
-preplace netloc axi_interconnect_1_M00_AXI 1 3 1 1200 230n
-preplace netloc axi_interconnect_2_M01_AXI 1 5 1 2610 1400n
-preplace netloc axi_interconnect_2_M00_AXI 1 5 1 2670 1090n
+preplace netloc xdma_2_M_AXI 1 4 1 2180 1300n
+preplace netloc diff_clock_rtl_2_1 1 0 8 NJ 1190 NJ 1190 NJ 1190 1340J 990 NJ 990 2670J 1000 NJ 1000 3940J
+preplace netloc axi_interconnect_0_M01_AXI 1 3 5 1360 90 NJ 90 NJ 90 NJ 90 3860
+preplace netloc axi_interconnect_1_M03_AXI 1 3 1 1260 300n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 6 1 3410 550n
+preplace netloc xdma_2_pcie_mgt 1 4 6 NJ 1560 2700J 1420 NJ 1420 3870J 1580 NJ 1580 4830J
+preplace netloc xdma_1_pcie_mgt 1 4 6 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc ddr4_0_C0_DDR4 1 8 2 4480J 1080 NJ
+preplace netloc axi_interconnect_1_M04_AXI 1 3 3 1190J 110 NJ 110 2740
+preplace netloc diff_clock_rtl_1_1 1 0 2 NJ 470 NJ
+preplace netloc axi_interconnect_0_M05_AXI 1 7 1 3950 760n
+preplace netloc axi_interconnect_3_M00_AXI 1 5 1 2750 460n
+preplace netloc xdma_0_M_AXI_B 1 4 2 2120J 640 2680
 preplace netloc axi_interconnect_5_M00_AXI 1 6 2 NJ 1610 3850
-preplace netloc axi_interconnect_1_M05_AXI 1 3 5 1210J 120 NJ 120 NJ 120 NJ 120 3920
 preplace netloc S01_AXI_1 1 5 3 2770 190 NJ 190 3850
 preplace netloc xdma_1_M_AXI_B 1 4 2 NJ 180 2710
 preplace netloc S00_AXI_1 1 4 1 2110 400n
-preplace netloc axi_interconnect_0_M05_AXI 1 7 1 3950 760n
-preplace netloc xdma_0_M_AXI_B 1 4 2 2120J 640 2680
-preplace netloc axi_interconnect_3_M00_AXI 1 5 1 2750 460n
+preplace netloc axi_interconnect_1_M05_AXI 1 3 5 1210J 120 NJ 120 NJ 120 NJ 120 3920
+preplace netloc axi_interconnect_2_M01_AXI 1 5 1 2610 1400n
+preplace netloc axi_interconnect_2_M00_AXI 1 5 1 2670 1090n
+preplace netloc xdma_0_pcie_mgt 1 4 6 2130J 650 2720J 940 NJ 940 3910J 810 4470J 830 4840J
+preplace netloc axi_interconnect_1_M00_AXI 1 3 1 1200 230n
+preplace netloc axi_interconnect_1_M02_AXI 1 3 1 1280 280n
+preplace netloc CLK_IN_D_0_2 1 0 5 NJ 1640 NJ 1640 NJ 1640 1290J 1990 NJ
+preplace netloc diff_clock_rtl_0_1 1 0 2 -150J 820 350J
+preplace netloc xdma_2_M_AXI_BYPASS 1 4 1 2170 1280n
+preplace netloc axi_interconnect_1_M01_AXI 1 3 1 1220 250n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 2 5 860 50 NJ 50 NJ 50 NJ 50 3400
+preplace netloc CLK_IN_D_0_1 1 0 2 NJ 1280 NJ
+preplace netloc axi_interconnect_0_M03_AXI 1 7 1 3960 720n
+preplace netloc axi_interconnect_0_M00_AXI 1 3 5 1350 80 NJ 80 NJ 80 NJ 80 3870
+preplace netloc ddr4_1_C0_DDR4 1 8 2 4510J 1550 NJ
 levelinfo -pg 1 -170 170 630 1040 1830 2400 3090 3700 4250 4680 4860
 pagesize -pg 1 -db -bbox -sgen -330 -290 5090 3120
 "
