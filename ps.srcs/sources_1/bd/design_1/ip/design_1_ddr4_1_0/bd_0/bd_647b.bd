@@ -7,7 +7,8 @@
       "name": "bd_647b",
       "scoped": "true",
       "synth_flow_mode": "None",
-      "tool_version": "2019.1.3"
+      "tool_version": "2019.1.3",
+      "validated": "true"
     },
     "design_tree": {
       "microblaze_I": "",
@@ -40,8 +41,20 @@
           "ASSOCIATED_ASYNC_RESET": {
             "value": "Reset"
           },
+          "CLK_DOMAIN": {
+            "value": "bd_647b_Clk",
+            "value_src": "constant"
+          },
           "FREQ_HZ": {
             "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
           }
         }
       },
@@ -49,6 +62,10 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
           }
@@ -274,10 +291,28 @@
           "second_ilmb_cntlr/SLMB"
         ]
       },
-      "ilmb_sl_0": {
+      "iomodule_0_IO": {
         "interface_ports": [
-          "ilmb/LMB_Sl_0",
-          "ilmb_cntlr/SLMB"
+          "IO",
+          "iomodule_0/IO_BUS"
+        ]
+      },
+      "microblaze_I_Trace": {
+        "interface_ports": [
+          "TRACE",
+          "microblaze_I/TRACE"
+        ]
+      },
+      "dlmb_port_2": {
+        "interface_ports": [
+          "second_dlmb_cntlr/BRAM_PORT",
+          "second_lmb_bram_I/BRAM_PORTA"
+        ]
+      },
+      "dlmb_sl_2": {
+        "interface_ports": [
+          "dlmb/LMB_Sl_2",
+          "second_dlmb_cntlr/SLMB"
         ]
       },
       "ilmb_port_2": {
@@ -286,16 +321,22 @@
           "second_lmb_bram_I/BRAM_PORTB"
         ]
       },
-      "dlmb": {
+      "ilmb_sl_0": {
         "interface_ports": [
-          "microblaze_I/DLMB",
-          "dlmb/LMB_M"
+          "ilmb/LMB_Sl_0",
+          "ilmb_cntlr/SLMB"
         ]
       },
-      "ilmb": {
+      "dlmb_port": {
         "interface_ports": [
-          "microblaze_I/ILMB",
-          "ilmb/LMB_M"
+          "dlmb_cntlr/BRAM_PORT",
+          "lmb_bram_I/BRAM_PORTA"
+        ]
+      },
+      "dlmb_sl_1": {
+        "interface_ports": [
+          "dlmb/LMB_Sl_1",
+          "iomodule_0/SLMB"
         ]
       },
       "ilmb_port": {
@@ -310,40 +351,16 @@
           "dlmb_cntlr/SLMB"
         ]
       },
-      "microblaze_I_Trace": {
+      "dlmb": {
         "interface_ports": [
-          "TRACE",
-          "microblaze_I/TRACE"
+          "microblaze_I/DLMB",
+          "dlmb/LMB_M"
         ]
       },
-      "dlmb_sl_1": {
+      "ilmb": {
         "interface_ports": [
-          "dlmb/LMB_Sl_1",
-          "iomodule_0/SLMB"
-        ]
-      },
-      "dlmb_sl_2": {
-        "interface_ports": [
-          "dlmb/LMB_Sl_2",
-          "second_dlmb_cntlr/SLMB"
-        ]
-      },
-      "dlmb_port": {
-        "interface_ports": [
-          "dlmb_cntlr/BRAM_PORT",
-          "lmb_bram_I/BRAM_PORTA"
-        ]
-      },
-      "dlmb_port_2": {
-        "interface_ports": [
-          "second_dlmb_cntlr/BRAM_PORT",
-          "second_lmb_bram_I/BRAM_PORTA"
-        ]
-      },
-      "iomodule_0_IO": {
-        "interface_ports": [
-          "IO",
-          "iomodule_0/IO_BUS"
+          "microblaze_I/ILMB",
+          "ilmb/LMB_M"
         ]
       }
     },
