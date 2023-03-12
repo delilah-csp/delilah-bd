@@ -1,7 +1,7 @@
 
 # Delilah Block Design
 
-This repository contains the block design for Delilah, a computational storage device built for the Daisy OpenSSD and Petalinux.
+This repository contains the block design for Delilah, a Computational Storage Processor (CSP) built for the Daisy OpenSSD.
 
 The block design relies on Vivado 2019.1. This block design is a continuation of [Daisy M.2 PCIe 
 MIG](https://github.com/CRZ-Technology/OpenSSD-OpenChannelSSD/tree/main/Daisy/M.2_MIG_PCIe/Daisy_M.2_PCIe_MIG_201901_20210413) by CRZ Technology.
@@ -10,7 +10,8 @@ MIG](https://github.com/CRZ-Technology/OpenSSD-OpenChannelSSD/tree/main/Daisy/M.
 
 ## Authors
 
-- [@niclashedam](https://www.github.com/niclashedam)
+- [Niclas Hedam](https://www.github.com/niclashedam)
+- [Sangjin Lee](https://github.com/Sangjin-Lee)
 
 ## License & Funding
 
