@@ -297,12 +297,6 @@
           "iomodule_0/IO_BUS"
         ]
       },
-      "microblaze_I_Trace": {
-        "interface_ports": [
-          "TRACE",
-          "microblaze_I/TRACE"
-        ]
-      },
       "dlmb_port_2": {
         "interface_ports": [
           "second_dlmb_cntlr/BRAM_PORT",
@@ -313,6 +307,12 @@
         "interface_ports": [
           "dlmb/LMB_Sl_2",
           "second_dlmb_cntlr/SLMB"
+        ]
+      },
+      "microblaze_I_Trace": {
+        "interface_ports": [
+          "TRACE",
+          "microblaze_I/TRACE"
         ]
       },
       "ilmb_port_2": {

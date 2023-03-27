@@ -19694,11 +19694,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 17 09:34:56 UTC 2023</spirit:value>
+            <spirit:value>Mon Mar 27 16:06:59 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5ffe2950</spirit:value>
+            <spirit:value>9:75b12321</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -49520,7 +49520,7 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>AXIST_BYPASS_APERTURE_SIZE</spirit:name>
         <spirit:displayName>Pf0 Bar2 Aperture Size</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXIST_BYPASS_APERTURE_SIZE" spirit:bitStringLength="8">0x10</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXIST_BYPASS_APERTURE_SIZE" spirit:bitStringLength="8">0x13</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>AXIST_BYPASS_CONTROL</spirit:name>
@@ -50093,7 +50093,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_PCIEBAR2AXIBAR_2</spirit:name>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PCIEBAR2AXIBAR_2" spirit:bitStringLength="64">0x0000000012000000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PCIEBAR2AXIBAR_2" spirit:bitStringLength="64">0x0000001000000000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_PCIEBAR2AXIBAR_3</spirit:name>
@@ -51748,7 +51748,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>axist_bypass_size</spirit:name>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.axist_bypass_size" spirit:choiceRef="choice_list_c15e8c67" spirit:order="40">8</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.axist_bypass_size" spirit:choiceRef="choice_list_c15e8c67" spirit:order="40">64</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -51792,7 +51792,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>pciebar2axibar_axist_bypass</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pciebar2axibar_axist_bypass" spirit:order="44" spirit:configGroups="1 UnGrouped">0x0000000012000000</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pciebar2axibar_axist_bypass" spirit:order="44" spirit:configGroups="1 UnGrouped">0x0000001000000000</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -59284,10 +59284,10 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.AXI_ACLK.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.SYS_CLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.SYS_CLK.ASSOCIATED_RESET" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.SYS_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.SYS_CLK.CLK_DOMAIN" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.SYS_CLK.FREQ_HZ" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.SYS_CLK.PHASE" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.SYS_CLK_GT.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.SYS_CLK_GT.CLK_DOMAIN" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.SYS_CLK_GT.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>

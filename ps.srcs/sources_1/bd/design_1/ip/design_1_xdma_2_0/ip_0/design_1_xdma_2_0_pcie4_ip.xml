@@ -7495,11 +7495,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 17 09:34:56 UTC 2023</spirit:value>
+            <spirit:value>Mon Mar 27 16:06:59 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6645fb79</spirit:value>
+            <spirit:value>9:b1d40241</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -19906,7 +19906,7 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF0_BAR4_APERTURE_SIZE</spirit:name>
         <spirit:displayName>Pf0 Bar4 Aperture Size</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_BAR4_APERTURE_SIZE" spirit:bitStringLength="9">0x010</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_BAR4_APERTURE_SIZE" spirit:bitStringLength="9">0x013</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF0_BAR4_CONTROL</spirit:name>
@@ -20321,7 +20321,7 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF1_BAR4_APERTURE_SIZE</spirit:name>
         <spirit:displayName>Pf1 Bar4 Aperture Size</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_BAR4_APERTURE_SIZE" spirit:bitStringLength="9">0x010</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_BAR4_APERTURE_SIZE" spirit:bitStringLength="9">0x013</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF1_BAR4_CONTROL</spirit:name>
@@ -20591,7 +20591,7 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF2_BAR4_APERTURE_SIZE</spirit:name>
         <spirit:displayName>Pf2 Bar4 Aperture Size</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF2_BAR4_APERTURE_SIZE" spirit:bitStringLength="9">0x010</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF2_BAR4_APERTURE_SIZE" spirit:bitStringLength="9">0x013</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF2_BAR4_CONTROL</spirit:name>
@@ -20861,7 +20861,7 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF3_BAR4_APERTURE_SIZE</spirit:name>
         <spirit:displayName>Pf3 Bar4 Aperture Size</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF3_BAR4_APERTURE_SIZE" spirit:bitStringLength="9">0x010</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF3_BAR4_APERTURE_SIZE" spirit:bitStringLength="9">0x013</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF3_BAR4_CONTROL</spirit:name>
@@ -22256,10 +22256,6 @@
     <spirit:choice>
       <spirit:name>choice_list_d85ad257</spirit:name>
       <spirit:enumeration>0</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_list_d8920bdd</spirit:name>
-      <spirit:enumeration>8</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_d992adf6</spirit:name>
@@ -24222,7 +24218,7 @@
     <spirit:parameter>
       <spirit:name>pf0_bar4_size</spirit:name>
       <spirit:displayName>Pf0 Bar4 Size</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar4_size" spirit:choiceRef="choice_list_c15e8c67" spirit:order="73">8</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_bar4_size" spirit:choiceRef="choice_list_c15e8c67" spirit:order="73">64</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>pf0_bar5_enabled</spirit:name>
@@ -25264,7 +25260,7 @@
     <spirit:parameter>
       <spirit:name>pf1_bar4_size</spirit:name>
       <spirit:displayName>Pf1 Bar4 Size</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar4_size" spirit:choiceRef="choice_list_d8920bdd" spirit:order="111">8</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.pf1_bar4_size" spirit:choiceRef="choice_list_165ed04b" spirit:order="111">64</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -26022,7 +26018,7 @@
     <spirit:parameter>
       <spirit:name>pf2_bar4_size</spirit:name>
       <spirit:displayName>Pf2 Bar4 Size</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.pf2_bar4_size" spirit:choiceRef="choice_list_d8920bdd" spirit:order="111.2">8</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.pf2_bar4_size" spirit:choiceRef="choice_list_165ed04b" spirit:order="111.2">64</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -26741,7 +26737,7 @@
     <spirit:parameter>
       <spirit:name>pf3_bar4_size</spirit:name>
       <spirit:displayName>Pf3 Bar4 Size</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.pf3_bar4_size" spirit:choiceRef="choice_list_d8920bdd" spirit:order="111.3">8</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.pf3_bar4_size" spirit:choiceRef="choice_list_165ed04b" spirit:order="111.3">64</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
