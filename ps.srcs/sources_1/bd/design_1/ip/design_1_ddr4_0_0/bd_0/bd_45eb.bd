@@ -285,10 +285,10 @@
       }
     },
     "interface_nets": {
-      "iomodule_0_IO": {
+      "ilmb_sl_0": {
         "interface_ports": [
-          "IO",
-          "iomodule_0/IO_BUS"
+          "ilmb/LMB_Sl_0",
+          "ilmb_cntlr/SLMB"
         ]
       },
       "ilmb_sl_1": {
@@ -313,18 +313,6 @@
         "interface_ports": [
           "TRACE",
           "microblaze_I/TRACE"
-        ]
-      },
-      "ilmb_port_2": {
-        "interface_ports": [
-          "second_ilmb_cntlr/BRAM_PORT",
-          "second_lmb_bram_I/BRAM_PORTB"
-        ]
-      },
-      "ilmb_sl_0": {
-        "interface_ports": [
-          "ilmb/LMB_Sl_0",
-          "ilmb_cntlr/SLMB"
         ]
       },
       "dlmb_port": {
@@ -361,6 +349,18 @@
         "interface_ports": [
           "microblaze_I/ILMB",
           "ilmb/LMB_M"
+        ]
+      },
+      "ilmb_port_2": {
+        "interface_ports": [
+          "second_ilmb_cntlr/BRAM_PORT",
+          "second_lmb_bram_I/BRAM_PORTB"
+        ]
+      },
+      "iomodule_0_IO": {
+        "interface_ports": [
+          "IO",
+          "iomodule_0/IO_BUS"
         ]
       }
     },
