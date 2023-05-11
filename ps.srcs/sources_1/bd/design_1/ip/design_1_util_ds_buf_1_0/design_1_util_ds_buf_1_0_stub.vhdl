@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Mon Apr 11 15:23:44 2022
+-- Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
+-- Date        : Wed May  3 10:06:01 2023
 -- Host        : Daisy-Host running 64-bit Ubuntu 16.04.7 LTS
 -- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_util_ds_buf_1_0 -prefix
---               design_1_util_ds_buf_1_0_ design_1_util_ds_buf_0_stub.vhdl
--- Design      : design_1_util_ds_buf_0
+--               design_1_util_ds_buf_1_0_ design_1_util_ds_buf_2_stub.vhdl
+-- Design      : design_1_util_ds_buf_2
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu17eg-ffvc1760-2-e
 -- --------------------------------------------------------------------------------
@@ -28,6 +28,6 @@ attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
 attribute black_box_pad_pin of stub : architecture is "IBUF_DS_P[0:0],IBUF_DS_N[0:0],IBUF_OUT[0:0],IBUF_DS_ODIV2[0:0]";
 attribute x_core_info : string;
-attribute x_core_info of stub : architecture is "util_ds_buf,Vivado 2019.1";
+attribute x_core_info of stub : architecture is "util_ds_buf,Vivado 2019.1.3";
 begin
 end;

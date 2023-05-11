@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Mon Apr 11 15:25:33 2022
+-- Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
+-- Date        : Wed May  3 10:06:12 2023
 -- Host        : Daisy-Host running 64-bit Ubuntu 16.04.7 LTS
 -- Command     : write_vhdl -force -mode funcsim -rename_top design_1_vio_2_0 -prefix
 --               design_1_vio_2_0_ design_1_vio_1_0_sim_netlist.vhdl
@@ -7641,7 +7641,7 @@ entity design_1_vio_2_0 is
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of design_1_vio_2_0 : entity is "design_1_vio_1_0,vio,{}";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of design_1_vio_2_0 : entity is "vio,Vivado 2019.1";
+  attribute X_CORE_INFO of design_1_vio_2_0 : entity is "vio,Vivado 2019.1.3";
 end design_1_vio_2_0;
 
 architecture STRUCTURE of design_1_vio_2_0 is

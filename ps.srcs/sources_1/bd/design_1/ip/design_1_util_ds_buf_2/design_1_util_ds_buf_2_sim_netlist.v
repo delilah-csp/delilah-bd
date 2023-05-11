@@ -1,18 +1,18 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Mon Apr 11 15:23:44 2022
+// Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
+// Date        : Wed May  3 10:06:03 2023
 // Host        : Daisy-Host running 64-bit Ubuntu 16.04.7 LTS
-// Command     : write_verilog -force -mode funcsim -rename_top design_1_util_ds_buf_2 -prefix
-//               design_1_util_ds_buf_2_ design_1_util_ds_buf_0_sim_netlist.v
-// Design      : design_1_util_ds_buf_0
+// Command     : write_verilog -force -mode funcsim
+//               /home/nhed/Delilah/delilah-bd/ps.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_2/design_1_util_ds_buf_2_sim_netlist.v
+// Design      : design_1_util_ds_buf_2
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xczu17eg-ffvc1760-2-e
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_util_ds_buf_0,util_ds_buf,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "util_ds_buf,Vivado 2019.1" *) 
+(* CHECK_LICENSE_TYPE = "design_1_util_ds_buf_2,util_ds_buf,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "util_ds_buf,Vivado 2019.1.3" *) 
 (* NotValidForBitStream *)
 module design_1_util_ds_buf_2
    (IBUF_DS_P,
@@ -21,8 +21,8 @@ module design_1_util_ds_buf_2
     IBUF_DS_ODIV2);
   (* x_interface_info = "xilinx.com:interface:diff_clock:1.0 CLK_IN_D CLK_P" *) (* x_interface_parameter = "XIL_INTERFACENAME CLK_IN_D, BOARD.ASSOCIATED_PARAM DIFF_CLK_IN_BOARD_INTERFACE, CAN_DEBUG false, FREQ_HZ 100000000" *) input [0:0]IBUF_DS_P;
   (* x_interface_info = "xilinx.com:interface:diff_clock:1.0 CLK_IN_D CLK_N" *) input [0:0]IBUF_DS_N;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 IBUF_OUT CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME IBUF_OUT, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_util_ds_buf_0_IBUF_OUT, INSERT_VIP 0" *) output [0:0]IBUF_OUT;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 IBUF_DS_ODIV2 CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME IBUF_DS_ODIV2, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_util_ds_buf_0_IBUF_DS_ODIV2, INSERT_VIP 0" *) output [0:0]IBUF_DS_ODIV2;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 IBUF_OUT CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME IBUF_OUT, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_util_ds_buf_2_IBUF_OUT, INSERT_VIP 0" *) output [0:0]IBUF_OUT;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 IBUF_DS_ODIV2 CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME IBUF_DS_ODIV2, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_util_ds_buf_2_IBUF_DS_ODIV2, INSERT_VIP 0" *) output [0:0]IBUF_DS_ODIV2;
 
   wire [0:0]IBUF_DS_N;
   wire [0:0]IBUF_DS_ODIV2;
@@ -79,6 +79,7 @@ module design_1_util_ds_buf_2
 endmodule
 
 (* C_BUFGCE_DIV = "1" *) (* C_BUF_TYPE = "ibufdsgte4" *) (* C_SIZE = "1" *) 
+(* ORIG_REF_NAME = "util_ds_buf" *) 
 module design_1_util_ds_buf_2_util_ds_buf
    (IBUF_DS_P,
     IBUF_DS_N,

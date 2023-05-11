@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2023 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -107,11 +107,11 @@ ARCHITECTURE design_1_util_ds_buf_0_arch OF design_1_util_ds_buf_0 IS
     );
   END COMPONENT util_ds_buf;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF design_1_util_ds_buf_0_arch: ARCHITECTURE IS "util_ds_buf,Vivado 2019.1";
+  ATTRIBUTE X_CORE_INFO OF design_1_util_ds_buf_0_arch: ARCHITECTURE IS "util_ds_buf,Vivado 2019.1.3";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_util_ds_buf_0_arch : ARCHITECTURE IS "design_1_util_ds_buf_0,util_ds_buf,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_util_ds_buf_0_arch: ARCHITECTURE IS "design_1_util_ds_buf_0,util_ds_buf,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=util_ds_buf,x_ipVersion=2.1,x_ipCoreRevision=19,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_BUF_TYPE=ibufdsgte4,C_SIZE=1,C_BUFGCE_DIV=1}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_util_ds_buf_0_arch: ARCHITECTURE IS "design_1_util_ds_buf_0,util_ds_buf,{x_ipProduct=Vivado 2019.1.3,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=util_ds_buf,x_ipVersion=2.1,x_ipCoreRevision=19,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_BUF_TYPE=ibufdsgte4,C_SIZE=1,C_BUFGCE_DIV=1}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF IBUF_DS_ODIV2: SIGNAL IS "XIL_INTERFACENAME IBUF_DS_ODIV2, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_util_ds_buf_0_IBUF_DS_ODIV2, INSERT_VIP 0";

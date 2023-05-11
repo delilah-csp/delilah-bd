@@ -1,11 +1,11 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Mon Apr 11 15:24:43 2022
+// Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
+// Date        : Wed May  3 10:06:01 2023
 // Host        : Daisy-Host running 64-bit Ubuntu 16.04.7 LTS
 // Command     : write_verilog -force -mode funcsim -rename_top design_1_rst_ddr4_0_333M_0 -prefix
-//               design_1_rst_ddr4_0_333M_0_ design_1_rst_ddr4_0_333M_0_sim_netlist.v
-// Design      : design_1_rst_ddr4_0_333M_0
+//               design_1_rst_ddr4_0_333M_0_ design_1_rst_ddr4_1_333M_0_sim_netlist.v
+// Design      : design_1_rst_ddr4_1_333M_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xczu17eg-ffvc1760-2-e
@@ -193,7 +193,7 @@ module design_1_rst_ddr4_0_333M_0_cdc_sync_0
         .O(lpf_asr_reg));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "design_1_rst_ddr4_0_333M_0,proc_sys_reset,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "proc_sys_reset,Vivado 2019.1" *) 
+(* CHECK_LICENSE_TYPE = "design_1_rst_ddr4_1_333M_0,proc_sys_reset,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "proc_sys_reset,Vivado 2019.1.3" *) 
 (* NotValidForBitStream *)
 module design_1_rst_ddr4_0_333M_0
    (slowest_sync_clk,
@@ -206,7 +206,7 @@ module design_1_rst_ddr4_0_333M_0
     peripheral_reset,
     interconnect_aresetn,
     peripheral_aresetn);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clock CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 200000000, PHASE 0.00, CLK_DOMAIN design_1_ddr4_0_0_c0_ddr4_ui_clk, INSERT_VIP 0" *) input slowest_sync_clk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clock CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 200000000, PHASE 0.00, CLK_DOMAIN design_1_ddr4_1_0_c0_ddr4_ui_clk, INSERT_VIP 0" *) input slowest_sync_clk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 ext_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME ext_reset, BOARD.ASSOCIATED_PARAM RESET_BOARD_INTERFACE, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input ext_reset_in;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 aux_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME aux_reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input aux_reset_in;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 dbg_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input mb_debug_sys_rst;

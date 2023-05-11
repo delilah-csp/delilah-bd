@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Mon Apr 11 15:23:45 2022
+-- Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
+-- Date        : Wed May  3 10:06:02 2023
 -- Host        : Daisy-Host running 64-bit Ubuntu 16.04.7 LTS
 -- Command     : write_vhdl -force -mode funcsim -rename_top design_1_util_ds_buf_0 -prefix
---               design_1_util_ds_buf_0_ design_1_util_ds_buf_0_sim_netlist.vhdl
--- Design      : design_1_util_ds_buf_0
+--               design_1_util_ds_buf_0_ design_1_util_ds_buf_2_sim_netlist.vhdl
+-- Design      : design_1_util_ds_buf_2
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xczu17eg-ffvc1760-2-e
@@ -104,11 +104,11 @@ entity design_1_util_ds_buf_0 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of design_1_util_ds_buf_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of design_1_util_ds_buf_0 : entity is "design_1_util_ds_buf_0,util_ds_buf,{}";
+  attribute CHECK_LICENSE_TYPE of design_1_util_ds_buf_0 : entity is "design_1_util_ds_buf_2,util_ds_buf,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_util_ds_buf_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of design_1_util_ds_buf_0 : entity is "util_ds_buf,Vivado 2019.1";
+  attribute x_core_info of design_1_util_ds_buf_0 : entity is "util_ds_buf,Vivado 2019.1.3";
 end design_1_util_ds_buf_0;
 
 architecture STRUCTURE of design_1_util_ds_buf_0 is
@@ -133,11 +133,11 @@ architecture STRUCTURE of design_1_util_ds_buf_0 is
   attribute x_interface_info of IBUF_DS_N : signal is "xilinx.com:interface:diff_clock:1.0 CLK_IN_D CLK_N";
   attribute x_interface_info of IBUF_DS_ODIV2 : signal is "xilinx.com:signal:clock:1.0 IBUF_DS_ODIV2 CLK";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of IBUF_DS_ODIV2 : signal is "XIL_INTERFACENAME IBUF_DS_ODIV2, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_util_ds_buf_0_IBUF_DS_ODIV2, INSERT_VIP 0";
+  attribute x_interface_parameter of IBUF_DS_ODIV2 : signal is "XIL_INTERFACENAME IBUF_DS_ODIV2, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_util_ds_buf_2_IBUF_DS_ODIV2, INSERT_VIP 0";
   attribute x_interface_info of IBUF_DS_P : signal is "xilinx.com:interface:diff_clock:1.0 CLK_IN_D CLK_P";
   attribute x_interface_parameter of IBUF_DS_P : signal is "XIL_INTERFACENAME CLK_IN_D, BOARD.ASSOCIATED_PARAM DIFF_CLK_IN_BOARD_INTERFACE, CAN_DEBUG false, FREQ_HZ 100000000";
   attribute x_interface_info of IBUF_OUT : signal is "xilinx.com:signal:clock:1.0 IBUF_OUT CLK";
-  attribute x_interface_parameter of IBUF_OUT : signal is "XIL_INTERFACENAME IBUF_OUT, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_util_ds_buf_0_IBUF_OUT, INSERT_VIP 0";
+  attribute x_interface_parameter of IBUF_OUT : signal is "XIL_INTERFACENAME IBUF_OUT, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_util_ds_buf_2_IBUF_OUT, INSERT_VIP 0";
 begin
 U0: entity work.design_1_util_ds_buf_0_util_ds_buf
      port map (

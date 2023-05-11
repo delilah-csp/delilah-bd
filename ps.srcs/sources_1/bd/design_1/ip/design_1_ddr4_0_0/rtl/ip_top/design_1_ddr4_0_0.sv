@@ -68,8 +68,8 @@
 //*****************************************************************************
 
 `timescale 1ns/1ps
-(* CORE_GENERATION_INFO = "DDR4_SDRAM, DDR4_SDRAM,{x_ipProduct=Vivado 2017.2.0,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=DDR4_SDRAM,x_ipVersion=2.2, Controller_Type = DDR4_SDRAM, Time_Period = 1250, Input_Clock_Period = 3334, Memory_Type = RDIMMs, Memory_Part = MTA36ASF4G72PZ-2G3, Ecc = true, Cas_Latency = 12, Cas_Write_Latency = 11, DQ_Width = 72, Chip_Select = true, Data_Mask = NONE, MEM_ADDR_ORDER = ROW_COLUMN_BANK,  Is_AXI_Enabled = true , Slot_cofiguration =  Single , Clamshell_cofiguration =  false ,IS_FASTER_SPEED_RAM = No, Is_custom_part = false, Memory_Voltage = 1.2V, Phy_Only = Complete_Memory_Controller, Debug_Port = Disable, Burst_Length = 8, System_Clock = Differential, AXI_Selection = true, AXI_Data_Width = 512,  AXI_ArbitrationScheme = RD_PRI_REG, AXI_Narrow_Burst = true, Simulation_Mode = BFM, Debug_Mode = Disable, Example_TG = SIMPLE_TG, Self_Refresh = false, Save_Restore = false, Enable_LVAUX = false,MicroBlaze_ECC = false,  Specify_MandD = false, CLKBOUT_MULT = 4, DIVCLK_DIVIDE = 1, CLKOUT0_DIVIDE = 6}" *) 
-(* X_CORE_INFO = "ddr4_v2_2_7,Vivado 2019.1" *)
+(* CORE_GENERATION_INFO = "DDR4_SDRAM, DDR4_SDRAM,{x_ipProduct=Vivado 2017.2.0,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=DDR4_SDRAM,x_ipVersion=2.2, Controller_Type = DDR4_SDRAM, Time_Period = 1250, Input_Clock_Period = 3334, Memory_Type = RDIMMs, Memory_Part = M393A2K40BB1-CRC, Ecc = true, Cas_Latency = 12, Cas_Write_Latency = 11, DQ_Width = 72, Chip_Select = true, Data_Mask = NONE, MEM_ADDR_ORDER = ROW_COLUMN_BANK,  Is_AXI_Enabled = true , Slot_cofiguration =  Single , Clamshell_cofiguration =  false ,IS_FASTER_SPEED_RAM = No, Is_custom_part = false, Memory_Voltage = 1.2V, Phy_Only = Complete_Memory_Controller, Debug_Port = Disable, Burst_Length = 8, System_Clock = Differential, AXI_Selection = true, AXI_Data_Width = 512,  AXI_ArbitrationScheme = RD_PRI_REG, AXI_Narrow_Burst = true, Simulation_Mode = BFM, Debug_Mode = Disable, Example_TG = SIMPLE_TG, Self_Refresh = false, Save_Restore = false, Enable_LVAUX = false,MicroBlaze_ECC = false,  Specify_MandD = false, CLKBOUT_MULT = 4, DIVCLK_DIVIDE = 1, CLKOUT0_DIVIDE = 6}" *) 
+(* X_CORE_INFO = "ddr4_v2_2_7,Vivado 2019.1.3" *)
 module design_1_ddr4_0_0
    (
    input  sys_rst,
@@ -81,9 +81,9 @@ module design_1_ddr4_0_0
    output [16:0]          c0_ddr4_adr,
    output [1:0]          c0_ddr4_ba,
    output [1:0]          c0_ddr4_bg,
-   output [1:0]          c0_ddr4_cke,
-   output [1:0]          c0_ddr4_odt,
-   output [1:0]          c0_ddr4_cs_n,
+   output [0:0]          c0_ddr4_cke,
+   output [0:0]          c0_ddr4_odt,
+   output [0:0]          c0_ddr4_cs_n,
    output [0:0]               c0_ddr4_ck_t,
    output [0:0]               c0_ddr4_ck_c,
    output                c0_ddr4_reset_n,
@@ -123,8 +123,8 @@ module design_1_ddr4_0_0
     output                             c0_ddr4_interrupt,
    // Slave Interface Write Address Ports
    input                 c0_ddr4_aresetn,
-   input  [0:0]      c0_ddr4_s_axi_awid,
-   input  [34:0]    c0_ddr4_s_axi_awaddr,
+   input  [2:0]      c0_ddr4_s_axi_awid,
+   input  [33:0]    c0_ddr4_s_axi_awaddr,
    input  [7:0]                       c0_ddr4_s_axi_awlen,
    input  [2:0]                       c0_ddr4_s_axi_awsize,
    input  [1:0]                       c0_ddr4_s_axi_awburst,
@@ -142,12 +142,12 @@ module design_1_ddr4_0_0
    output                             c0_ddr4_s_axi_wready,
    // Slave Interface Write Response Ports
    input                              c0_ddr4_s_axi_bready,
-   output [0:0]      c0_ddr4_s_axi_bid,
+   output [2:0]      c0_ddr4_s_axi_bid,
    output [1:0]                       c0_ddr4_s_axi_bresp,
    output                             c0_ddr4_s_axi_bvalid,
    // Slave Interface Read Address Ports
-   input  [0:0]      c0_ddr4_s_axi_arid,
-   input  [34:0]    c0_ddr4_s_axi_araddr,
+   input  [2:0]      c0_ddr4_s_axi_arid,
+   input  [33:0]    c0_ddr4_s_axi_araddr,
    input  [7:0]                       c0_ddr4_s_axi_arlen,
    input  [2:0]                       c0_ddr4_s_axi_arsize,
    input  [1:0]                       c0_ddr4_s_axi_arburst,
@@ -159,7 +159,7 @@ module design_1_ddr4_0_0
    output                             c0_ddr4_s_axi_arready,
    // Slave Interface Read Data Ports
    input                              c0_ddr4_s_axi_rready,
-   output [0:0]      c0_ddr4_s_axi_rid,
+   output [2:0]      c0_ddr4_s_axi_rid,
    output [511:0]    c0_ddr4_s_axi_rdata,
    output [1:0]                       c0_ddr4_s_axi_rresp,
    output                             c0_ddr4_s_axi_rlast,

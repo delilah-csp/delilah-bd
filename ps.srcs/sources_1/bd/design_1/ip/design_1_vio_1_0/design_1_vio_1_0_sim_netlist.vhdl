@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Mon Apr 11 15:25:33 2022
+-- Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
+-- Date        : Wed May  3 10:06:14 2023
 -- Host        : Daisy-Host running 64-bit Ubuntu 16.04.7 LTS
--- Command     : write_vhdl -force -mode funcsim -rename_top design_1_vio_1_0 -prefix
---               design_1_vio_1_0_ design_1_vio_1_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/nhed/Delilah/delilah-bd/ps.srcs/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0_sim_netlist.vhdl
 -- Design      : design_1_vio_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -29,6 +29,8 @@ entity design_1_vio_1_0_vio_v3_0_20_decoder is
     s_dwe_o : in STD_LOGIC;
     \Bus_data_out_reg[2]_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_vio_1_0_vio_v3_0_20_decoder : entity is "vio_v3_0_20_decoder";
 end design_1_vio_1_0_vio_v3_0_20_decoder;
 
 architecture STRUCTURE of design_1_vio_1_0_vio_v3_0_20_decoder is
@@ -800,6 +802,8 @@ entity design_1_vio_1_0_vio_v3_0_20_probe_in_one is
     s_dwe_o : in STD_LOGIC;
     s_den_o : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_vio_1_0_vio_v3_0_20_probe_in_one : entity is "vio_v3_0_20_probe_in_one";
 end design_1_vio_1_0_vio_v3_0_20_probe_in_one;
 
 architecture STRUCTURE of design_1_vio_1_0_vio_v3_0_20_probe_in_one is
@@ -1033,6 +1037,8 @@ entity design_1_vio_1_0_xsdbs_v1_0_2_xsdbs is
   attribute C_XDEVICEFAMILY of design_1_vio_1_0_xsdbs_v1_0_2_xsdbs : entity is "zynquplus";
   attribute C_XSDB_SLAVE_TYPE : integer;
   attribute C_XSDB_SLAVE_TYPE of design_1_vio_1_0_xsdbs_v1_0_2_xsdbs : entity is 33;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_vio_1_0_xsdbs_v1_0_2_xsdbs : entity is "xsdbs_v1_0_2_xsdbs";
   attribute dont_touch : string;
   attribute dont_touch of design_1_vio_1_0_xsdbs_v1_0_2_xsdbs : entity is "true";
 end design_1_vio_1_0_xsdbs_v1_0_2_xsdbs;
@@ -7124,6 +7130,8 @@ entity design_1_vio_1_0_vio_v3_0_20_vio is
   attribute LC_TOTAL_PROBE_IN_WIDTH of design_1_vio_1_0_vio_v3_0_20_vio : entity is 1;
   attribute LC_TOTAL_PROBE_OUT_WIDTH : integer;
   attribute LC_TOTAL_PROBE_OUT_WIDTH of design_1_vio_1_0_vio_v3_0_20_vio : entity is 0;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_vio_1_0_vio_v3_0_20_vio : entity is "vio_v3_0_20_vio";
   attribute dont_touch : string;
   attribute dont_touch of design_1_vio_1_0_vio_v3_0_20_vio : entity is "true";
 end design_1_vio_1_0_vio_v3_0_20_vio;
@@ -7641,7 +7649,7 @@ entity design_1_vio_1_0 is
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of design_1_vio_1_0 : entity is "design_1_vio_1_0,vio,{}";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of design_1_vio_1_0 : entity is "vio,Vivado 2019.1";
+  attribute X_CORE_INFO of design_1_vio_1_0 : entity is "vio,Vivado 2019.1.3";
 end design_1_vio_1_0;
 
 architecture STRUCTURE of design_1_vio_1_0 is

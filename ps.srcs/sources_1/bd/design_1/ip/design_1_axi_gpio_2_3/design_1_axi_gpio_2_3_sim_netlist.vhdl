@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Mon May  9 13:02:33 2022
+-- Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
+-- Date        : Wed May  3 10:06:06 2023
 -- Host        : Daisy-Host running 64-bit Ubuntu 16.04.7 LTS
--- Command     : write_vhdl -force -mode funcsim -rename_top design_1_axi_gpio_2_3 -prefix
---               design_1_axi_gpio_2_3_ design_1_axi_gpio_2_3_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/nhed/Delilah/delilah-bd/ps.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_3/design_1_axi_gpio_2_3_sim_netlist.vhdl
 -- Design      : design_1_axi_gpio_2_3
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -38,6 +38,8 @@ entity design_1_axi_gpio_2_3_address_decoder is
     reg1 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     reg2 : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_gpio_2_3_address_decoder : entity is "address_decoder";
 end design_1_axi_gpio_2_3_address_decoder;
 
 architecture STRUCTURE of design_1_axi_gpio_2_3_address_decoder is
@@ -378,6 +380,8 @@ entity design_1_axi_gpio_2_3_cdc_sync is
     gpio_io_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_gpio_2_3_cdc_sync : entity is "cdc_sync";
 end design_1_axi_gpio_2_3_cdc_sync;
 
 architecture STRUCTURE of design_1_axi_gpio_2_3_cdc_sync is
@@ -645,6 +649,8 @@ entity design_1_axi_gpio_2_3_GPIO_Core is
     D : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \Not_Dual.gpio_OE_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_gpio_2_3_GPIO_Core : entity is "GPIO_Core";
 end design_1_axi_gpio_2_3_GPIO_Core;
 
 architecture STRUCTURE of design_1_axi_gpio_2_3_GPIO_Core is
@@ -1053,6 +1059,8 @@ entity design_1_axi_gpio_2_3_slave_attachment is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_gpio_2_3_slave_attachment : entity is "slave_attachment";
 end design_1_axi_gpio_2_3_slave_attachment;
 
 architecture STRUCTURE of design_1_axi_gpio_2_3_slave_attachment is
@@ -1674,6 +1682,8 @@ entity design_1_axi_gpio_2_3_axi_lite_ipif is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_gpio_2_3_axi_lite_ipif : entity is "axi_lite_ipif";
 end design_1_axi_gpio_2_3_axi_lite_ipif;
 
 architecture STRUCTURE of design_1_axi_gpio_2_3_axi_lite_ipif is
@@ -1774,6 +1784,8 @@ entity design_1_axi_gpio_2_3_axi_gpio is
   attribute C_TRI_DEFAULT of design_1_axi_gpio_2_3_axi_gpio : entity is -1;
   attribute C_TRI_DEFAULT_2 : integer;
   attribute C_TRI_DEFAULT_2 of design_1_axi_gpio_2_3_axi_gpio : entity is -1;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_gpio_2_3_axi_gpio : entity is "axi_gpio";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_axi_gpio_2_3_axi_gpio : entity is "yes";
   attribute ip_group : string;
@@ -2088,7 +2100,7 @@ entity design_1_axi_gpio_2_3 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_axi_gpio_2_3 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of design_1_axi_gpio_2_3 : entity is "axi_gpio,Vivado 2019.1";
+  attribute x_core_info of design_1_axi_gpio_2_3 : entity is "axi_gpio,Vivado 2019.1.3";
 end design_1_axi_gpio_2_3;
 
 architecture STRUCTURE of design_1_axi_gpio_2_3 is

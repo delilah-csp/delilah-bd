@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-//Date        : Wed Oct 12 11:33:33 2022
+//Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
+//Date        : Tue May  9 15:46:03 2023
 //Host        : Daisy-Host running 64-bit Ubuntu 16.04.7 LTS
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -83,12 +83,12 @@ module design_1_wrapper
   output [1:0]ddr4_rtl_0_bg;
   output [0:0]ddr4_rtl_0_ck_c;
   output [0:0]ddr4_rtl_0_ck_t;
-  output [1:0]ddr4_rtl_0_cke;
-  output [1:0]ddr4_rtl_0_cs_n;
+  output [0:0]ddr4_rtl_0_cke;
+  output [0:0]ddr4_rtl_0_cs_n;
   inout [71:0]ddr4_rtl_0_dq;
   inout [17:0]ddr4_rtl_0_dqs_c;
   inout [17:0]ddr4_rtl_0_dqs_t;
-  output [1:0]ddr4_rtl_0_odt;
+  output [0:0]ddr4_rtl_0_odt;
   output ddr4_rtl_0_par;
   output ddr4_rtl_0_reset_n;
   output ddr4_rtl_1_act_n;
@@ -97,12 +97,12 @@ module design_1_wrapper
   output [1:0]ddr4_rtl_1_bg;
   output [0:0]ddr4_rtl_1_ck_c;
   output [0:0]ddr4_rtl_1_ck_t;
-  output [1:0]ddr4_rtl_1_cke;
-  output [1:0]ddr4_rtl_1_cs_n;
+  output [0:0]ddr4_rtl_1_cke;
+  output [0:0]ddr4_rtl_1_cs_n;
   inout [71:0]ddr4_rtl_1_dq;
   inout [17:0]ddr4_rtl_1_dqs_c;
   inout [17:0]ddr4_rtl_1_dqs_t;
-  output [1:0]ddr4_rtl_1_odt;
+  output [0:0]ddr4_rtl_1_odt;
   output ddr4_rtl_1_par;
   output ddr4_rtl_1_reset_n;
   input [0:0]diff_clock_rtl_0_clk_n;
@@ -125,10 +125,10 @@ module design_1_wrapper
   input [3:0]pcie_7x_mgt_rtl_1_rxp;
   output [3:0]pcie_7x_mgt_rtl_1_txn;
   output [3:0]pcie_7x_mgt_rtl_1_txp;
-  input [15:0]pcie_7x_mgt_rtl_2_rxn;
-  input [15:0]pcie_7x_mgt_rtl_2_rxp;
-  output [15:0]pcie_7x_mgt_rtl_2_txn;
-  output [15:0]pcie_7x_mgt_rtl_2_txp;
+  input [7:0]pcie_7x_mgt_rtl_2_rxn;
+  input [7:0]pcie_7x_mgt_rtl_2_rxp;
+  output [7:0]pcie_7x_mgt_rtl_2_txn;
+  output [7:0]pcie_7x_mgt_rtl_2_txp;
   input sys_rst_n_0;
   output user_lnk_up_0;
   output [0:0]user_lnk_up_1;
@@ -145,12 +145,12 @@ module design_1_wrapper
   wire [1:0]ddr4_rtl_0_bg;
   wire [0:0]ddr4_rtl_0_ck_c;
   wire [0:0]ddr4_rtl_0_ck_t;
-  wire [1:0]ddr4_rtl_0_cke;
-  wire [1:0]ddr4_rtl_0_cs_n;
+  wire [0:0]ddr4_rtl_0_cke;
+  wire [0:0]ddr4_rtl_0_cs_n;
   wire [71:0]ddr4_rtl_0_dq;
   wire [17:0]ddr4_rtl_0_dqs_c;
   wire [17:0]ddr4_rtl_0_dqs_t;
-  wire [1:0]ddr4_rtl_0_odt;
+  wire [0:0]ddr4_rtl_0_odt;
   wire ddr4_rtl_0_par;
   wire ddr4_rtl_0_reset_n;
   wire ddr4_rtl_1_act_n;
@@ -159,12 +159,12 @@ module design_1_wrapper
   wire [1:0]ddr4_rtl_1_bg;
   wire [0:0]ddr4_rtl_1_ck_c;
   wire [0:0]ddr4_rtl_1_ck_t;
-  wire [1:0]ddr4_rtl_1_cke;
-  wire [1:0]ddr4_rtl_1_cs_n;
+  wire [0:0]ddr4_rtl_1_cke;
+  wire [0:0]ddr4_rtl_1_cs_n;
   wire [71:0]ddr4_rtl_1_dq;
   wire [17:0]ddr4_rtl_1_dqs_c;
   wire [17:0]ddr4_rtl_1_dqs_t;
-  wire [1:0]ddr4_rtl_1_odt;
+  wire [0:0]ddr4_rtl_1_odt;
   wire ddr4_rtl_1_par;
   wire ddr4_rtl_1_reset_n;
   wire [0:0]diff_clock_rtl_0_clk_n;
@@ -187,10 +187,10 @@ module design_1_wrapper
   wire [3:0]pcie_7x_mgt_rtl_1_rxp;
   wire [3:0]pcie_7x_mgt_rtl_1_txn;
   wire [3:0]pcie_7x_mgt_rtl_1_txp;
-  wire [15:0]pcie_7x_mgt_rtl_2_rxn;
-  wire [15:0]pcie_7x_mgt_rtl_2_rxp;
-  wire [15:0]pcie_7x_mgt_rtl_2_txn;
-  wire [15:0]pcie_7x_mgt_rtl_2_txp;
+  wire [7:0]pcie_7x_mgt_rtl_2_rxn;
+  wire [7:0]pcie_7x_mgt_rtl_2_rxp;
+  wire [7:0]pcie_7x_mgt_rtl_2_txn;
+  wire [7:0]pcie_7x_mgt_rtl_2_txp;
   wire sys_rst_n_0;
   wire user_lnk_up_0;
   wire [0:0]user_lnk_up_1;

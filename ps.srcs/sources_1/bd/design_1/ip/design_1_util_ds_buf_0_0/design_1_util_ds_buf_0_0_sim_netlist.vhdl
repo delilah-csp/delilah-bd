@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Mon Apr 11 15:26:25 2022
+-- Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
+-- Date        : Wed May  3 10:06:05 2023
 -- Host        : Daisy-Host running 64-bit Ubuntu 16.04.7 LTS
--- Command     : write_vhdl -force -mode funcsim -rename_top design_1_util_ds_buf_0_0 -prefix
---               design_1_util_ds_buf_0_0_ design_1_util_ds_buf_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/nhed/Delilah/delilah-bd/ps.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_sim_netlist.vhdl
 -- Design      : design_1_util_ds_buf_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -55,6 +55,8 @@ entity design_1_util_ds_buf_0_0_util_ds_buf is
   attribute C_BUF_TYPE of design_1_util_ds_buf_0_0_util_ds_buf : entity is "IBUFDS";
   attribute C_SIZE : integer;
   attribute C_SIZE of design_1_util_ds_buf_0_0_util_ds_buf : entity is 1;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_util_ds_buf_0_0_util_ds_buf : entity is "util_ds_buf";
 end design_1_util_ds_buf_0_0_util_ds_buf;
 
 architecture STRUCTURE of design_1_util_ds_buf_0_0_util_ds_buf is
@@ -111,7 +113,7 @@ entity design_1_util_ds_buf_0_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_util_ds_buf_0_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of design_1_util_ds_buf_0_0 : entity is "util_ds_buf,Vivado 2019.1";
+  attribute x_core_info of design_1_util_ds_buf_0_0 : entity is "util_ds_buf,Vivado 2019.1.3";
 end design_1_util_ds_buf_0_0;
 
 architecture STRUCTURE of design_1_util_ds_buf_0_0 is

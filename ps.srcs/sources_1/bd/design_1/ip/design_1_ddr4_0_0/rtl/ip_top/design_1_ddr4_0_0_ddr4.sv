@@ -102,7 +102,7 @@
   PhyIP_TimePeriod = 1250,
   PhyIP_InputClockPeriod = 3334,
   PhyIP_MemoryType = "RDIMMs",
-  PhyIP_MemoryPart = "MTA36ASF4G72PZ-2G3",
+  PhyIP_MemoryPart = "M393A2K40BB1-CRC",
   PhyIP_PhyClockRatio = "4:1",
   PhyIP_ECC = "true",
   PhyIP_CasLatency = 12,
@@ -128,7 +128,7 @@
   PhyIP_VrefVoltage = "0.84",
   PhyIP_StackHeight = "1",
   PhyIP_IS_FROM_PHY = "1",
-  PhyIP_CA_MIRROR = "1",
+  PhyIP_CA_MIRROR = "0",
 
   PhyIP_System_Clock = "Differential",
   PhyIP_Simulation_Mode = "BFM",
@@ -143,17 +143,17 @@
   PhyIP_ADDR_WIDTH = 17,
   PhyIP_BANK_WIDTH = 2,
   PhyIP_BANK_GROUP_WIDTH = 2,
-  PhyIP_CKE_WIDTH = 2,
+  PhyIP_CKE_WIDTH = 1,
   PhyIP_CK_WIDTH = 1,
-  PhyIP_CS_WIDTH = 2,
+  PhyIP_CS_WIDTH = 1,
   PhyIP_CLAMSHELL = "false",
-  PhyIP_RANK_WIDTH = 2,
+  PhyIP_RANK_WIDTH = 1,
   PhyIP_tCK = 1250,
   PhyIP_HR_MIN_FREQ = 0,
   PhyIP_DCI_CASCADE_CUTOFF = 938,
   PhyIP_IS_FASTER_SPEED_RAM = "No",
-  PhyIP_ODT_WIDTH = 2,
-  PhyIP_nCS_PER_RANK = 2,
+  PhyIP_ODT_WIDTH = 1,
+  PhyIP_nCS_PER_RANK = 1,
   PhyIP_DATABITS_PER_STROBE = 4,
   PhyIP_DQS_WIDTH = 18,
   PhyIP_DM_WIDTH = 18
@@ -167,11 +167,11 @@ module design_1_ddr4_0_0_ddr4 #
     parameter integer BANK_GROUP_WIDTH        = 2,
     parameter integer S_HEIGHT                = 1,
     parameter integer LR_WIDTH                = 1,
-    parameter integer CKE_WIDTH               = 2,
+    parameter integer CKE_WIDTH               = 1,
     parameter integer CK_WIDTH                = 1,
     parameter integer COL_WIDTH               = 10,
-    parameter integer CS_WIDTH                = 2,
-    parameter integer ODT_WIDTH               = 2,
+    parameter integer CS_WIDTH                = 1,
+    parameter integer ODT_WIDTH               = 1,
     parameter integer DQ_WIDTH                = 72,
     parameter integer DQS_WIDTH               = 18,
     parameter integer DM_WIDTH                = 9,
@@ -190,7 +190,7 @@ module design_1_ddr4_0_0_ddr4 #
     parameter         tCK                     = 1250,  // Memory clock period (DDR4 clock cycle)
 
     parameter         tFAW                    = 16,//In DDR4 clock cycles
-    parameter         tRTW                    = 9, // CL + (BL/2) - CWL + 4tCK In DDR4 clock cycles
+    parameter         tRTW                    = 7, // CL + (BL/2) - CWL + 2tCK In DDR4 clock cycles
     parameter         tWTR_L                  = 6, //In DDR4 clock cycles
     parameter         tWTR_S                  = 2, //In DDR4 clock cycles
     parameter         tRFC                    = 280, //In DDR4 clock cycles
@@ -218,7 +218,7 @@ module design_1_ddr4_0_0_ddr4 #
 
     parameter real    TCQ                     = 100,
     parameter         DRAM_WIDTH              = 4,
-    parameter         RANKS                   = 2,
+    parameter         RANKS                   = 1,
     parameter         ORDERING                = "NORM",
     parameter         RTL_VERSION             = 0,
     parameter         TXN_FIFO_BYPASS         = "ON",
@@ -232,7 +232,7 @@ module design_1_ddr4_0_0_ddr4 #
     parameter         STARVE_COUNT_WIDTH      = 9,
     parameter         EXTRA_CMD_DELAY         = 1,
     parameter         nCK_PER_CLK             = 4,
-    parameter         APP_ADDR_WIDTH          = 32,
+    parameter         APP_ADDR_WIDTH          = 31,
     parameter         APP_DATA_WIDTH          = 512,
     parameter         APP_MASK_WIDTH          = 64,
 
@@ -248,10 +248,10 @@ module design_1_ddr4_0_0_ddr4 #
     parameter         CLKOUTPHY_MODE           = "VCO_2X",
     parameter         C_FAMILY                 = "zynquplus",
 
-    parameter C_S_AXI_ID_WIDTH                = 1,
+    parameter C_S_AXI_ID_WIDTH                = 3,
                                               // Width of all master and slave ID signals.
                                               // # = >= 1.
-    parameter C_S_AXI_ADDR_WIDTH              = 35,
+    parameter C_S_AXI_ADDR_WIDTH              = 34,
                                               // Width of S_AXI_AWADDR, S_AXI_ARADDR, M_AXI_AWADDR and
                                               // M_AXI_ARADDR for all SI/MI slots.
                                               // # = 32.
@@ -319,19 +319,19 @@ module design_1_ddr4_0_0_ddr4 #
     parameter SAVE_RESTORE                      = "false",
     parameter RESTORE_CRC                       = "false",
     parameter IS_CKE_SHARED                     = "false",
-    parameter MEMORY_PART                       = "MTA36ASF4G72PZ-2G3",
+    parameter MEMORY_PART                       = "M393A2K40BB1-CRC",
     parameter integer COMPONENT_WIDTH           = 72,
     parameter NUM_SLOT                          = 1,
-    parameter RANK_SLOT                         = 2,
+    parameter RANK_SLOT                         = 1,
     parameter         PING_PONG_PHY             = 1, 
     parameter MEMORY_DENSITY                    = "8Gb",
-    parameter MEMORY_SPEED_GRADE                = "083",
+    parameter MEMORY_SPEED_GRADE                = "RC",
     parameter MEMORY_WIDTH                      = "4",
     parameter MEMORY_CONFIGURATION              = "RDIMM",
     parameter         SYSCLK_TYPE             = "DIFFERENTIAL",
                                 // input clock type
     parameter CALIB_HIGH_SPEED                  = "FALSE",
-    parameter         CA_MIRROR                 = "ON",
+    parameter         CA_MIRROR                 = "OFF",
 
     // Clamshell architecture of DRAM parts on PCB
     parameter         DDR4_CLAMSHELL       = "OFF",
@@ -348,31 +348,30 @@ module design_1_ddr4_0_0_ddr4 #
     parameter         DDR4_DB_HIF_VREF        = 8'b0001_1011,
     parameter         DDR4_DB_DIF_VREF        = 8'b0001_1011,
 
-    parameter         ODTWR                     = 16'h0021,
-    parameter         ODTRD                     = 16'h0012,
-    parameter         MR1                       = 13'b0001000000001,
-    parameter         MR5                       = 13'b0000001000000,
+    parameter         ODTWR                     = 16'h0001,
+    parameter         ODTRD                     = 16'h0000,
+    parameter         MR1                       = 13'b0001100000001,
+    parameter         MR5                       = 13'b0000000000000,
     parameter         MR6                       = 13'b0010000011011,
-
 
 
     parameter         MR2                       = 13'b0000000010000,
     parameter         MR3                       = 13'b0000000000000,
     parameter         MR4                       = 13'b0000000000000,
 
-    parameter         RD_VREF_VAL               = 7'h26,
+    parameter         RD_VREF_VAL               = 7'h1D,
     parameter         SLOT0_CONFIG              = {{(8-CS_WIDTH){1'b0}},{CS_WIDTH{1'b1}}},
     parameter         SLOT1_CONFIG              = 8'b0000_0000,
     parameter         SLOT0_FUNC_CS             = {{(8-CS_WIDTH){1'b0}},{CS_WIDTH{1'b1}}},
     parameter         SLOT1_FUNC_CS             = 8'b0000_0000,
-    parameter         SLOT0_ODD_CS              = 8'b0000_0010,
+    parameter         SLOT0_ODD_CS              = 8'b0000_0000,
     parameter         SLOT1_ODD_CS              = 8'b0000_0000,
 
-    parameter         DDR4_REG_RC03             = {9'b0_0000_0011, 4'b1010},
+    parameter         DDR4_REG_RC03             = {9'b0_0000_0011, 4'b0101},
 
-    parameter         DDR4_REG_RC04             = {9'b0_0000_0100, 4'b1010},
+    parameter         DDR4_REG_RC04             = {9'b0_0000_0100, 4'b0101},
 
-    parameter         DDR4_REG_RC05             = {9'b0_0000_0101, 4'b1010},
+    parameter         DDR4_REG_RC05             = {9'b0_0000_0101, 4'b0101},
     parameter         tXPR                      = 72, // In fabric clock cycles
     parameter         tMOD                      = 6, // In fabric clock cycles
     parameter         tMRD                      = 2, // In fabric clock cycles
@@ -391,9 +390,9 @@ module design_1_ddr4_0_0_ddr4 #
     parameter [8*BANK_GROUP_WIDTH-1:0] BG_SKEW   = {8'd0,8'd0},
     parameter [8*1-1:0]          ACT_SKEW  = 8'd0,
     parameter [8*1-1:0]          PAR_SKEW  = 8'd0,
-    parameter [8*CS_WIDTH-1:0]   CS_SKEW   = {8'd0,8'd0},
-    parameter [8*CKE_WIDTH-1:0]  CKE_SKEW  = {8'd0,8'd0},
-    parameter [8*ODT_WIDTH-1:0]  ODT_SKEW  = {8'd0,8'd0},
+    parameter [8*CS_WIDTH-1:0]   CS_SKEW   = 8'd0,
+    parameter [8*CKE_WIDTH-1:0]  CKE_SKEW  = 8'd0,
+    parameter [8*ODT_WIDTH-1:0]  ODT_SKEW  = 8'd0,
     parameter [8*LR_WIDTH-1:0]   C_SKEW    = 8'd0,
 
   `ifdef SIMULATION
