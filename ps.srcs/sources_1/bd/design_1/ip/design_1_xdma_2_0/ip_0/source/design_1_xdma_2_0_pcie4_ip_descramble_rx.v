@@ -58,7 +58,7 @@
 //(* STRUCTURAL_NETLIST = "yes" *)
 module design_1_xdma_2_0_pcie4_ip_descramble_rx #
 (
-parameter PL_LINK_CAP_MAX_LINK_WIDTH = 5'b01000  
+parameter PL_LINK_CAP_MAX_LINK_WIDTH = 5'b00001  
 )
 (
   input pipe_clk,

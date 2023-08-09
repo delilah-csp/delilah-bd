@@ -58,10 +58,10 @@
 ###############################################################################
 #
 # Link Speed   - Gen3 - 8.0 Gb/s
-# Link Width   - X8
-# AXIST Width  - 256-bit
-# AXIST Frequ  - 250 MHz = User Clock
-# Core Clock   - 500 MHz
+# Link Width   - X1
+# AXIST Width  - 64-bit
+# AXIST Frequ  - 125 MHz = User Clock 
+# Core Clock   - 250 MHz
 # Pipe Clock   - 125 MHz (Gen1) : 250 MHz (Gen2/Gen3/Gen4)
 #
 # Family       - zynquplus
@@ -116,8 +116,8 @@
 #
 set_property LOC PCIE40E4_X1Y0 [get_cells pcie_4_0_pipe_inst/pcie_4_0_e4_inst]
 #
-# Constraining GT TXOUTCLK to 500 MHz 
-create_clock -period 2.0 [get_pins -filter {REF_PIN_NAME=~TXOUTCLK} -of_objects [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ ADVANCED.GT.* }]]
+# Constraining GT TXOUTCLK to 250 MHz 
+create_clock -period 4.0 [get_pins -filter {REF_PIN_NAME=~TXOUTCLK} -of_objects [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ ADVANCED.GT.* }]]
 #
 create_clock -period 1000 [get_pins gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O]
 #
@@ -139,12 +139,13 @@ set_case_analysis 0 [get_pins -filter {REF_PIN_NAME=~RXRATE[2]} -of_objects [get
 set_false_path -from [get_pins -filter {REF_PIN_NAME=~TXUSRCLK2} -of_objects [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ ADVANCED.GT.* }]] -to [get_pins gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_txresetdone/sync_vec[*].sync_cell_i/sync_reg[0]/D]
 set_false_path -from [get_pins -filter {REF_PIN_NAME=~RXUSRCLK2} -of_objects [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ ADVANCED.GT.* }]] -to [get_pins gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_phystatus/sync_vec[*].sync_cell_i/sync_reg[0]/D]
 set_false_path -from [get_pins -filter {REF_PIN_NAME=~RXUSRCLK2} -of_objects [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ ADVANCED.GT.* }]] -to [get_pins gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_rxresetdone/sync_vec[*].sync_cell_i/sync_reg[0]/D]
+#create_clock -period 4 [get_pins -hierarchical -filter {NAME =~ *gen_channel_container[*].*gen_gthe4_channel_inst[*].GTHE4_CHANNEL_PRIM_INST/TXOUTCLK}]
 #
 #
 #
 # Make sure that tool gets the correct DIV value for pipe_clock during synthesis as these DIV pins are dynamic.
-# Set Divide By 2
-set_case_analysis 1 [get_pins gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_pclk/DIV[0]]
+# Set Divide By 1
+set_case_analysis 0 [get_pins gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_pclk/DIV[0]]
 set_case_analysis 0 [get_pins gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_pclk/DIV[1]]
 set_case_analysis 0 [get_pins gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_pclk/DIV[2]]
 #
@@ -168,7 +169,7 @@ set_multicycle_path -hold  1 -start -through $PCIE4MACROOUTPINS
 #
 # Multi Cycle Paths
 set PCIE4INST pcie_4_0_pipe_inst/pcie_4_0_e4_inst
-set USERPINS  [get_pins "$PCIE4INST/PCIECQPIPELINEEMPTY $PCIE4INST/PCIECQNPUSERCREDITRCVD $PCIE4INST/PCIEPOSTEDREQDELIVERED $PCIE4INST/PCIECOMPLDELIVERED* $PCIE4INST/AXIUSER* $PCIE4INST/CFG* $PCIE4INST/CONF* $PCIE4INST/PCIECQNPREQ* $PCIE4INST/PCIERQTAG* $PCIE4INST/PCIETFC* $PCIE4INST/USERSPARE*"]
+set USERPINS  [get_pins "$PCIE4INST/CFG* $PCIE4INST/CONF* $PCIE4INST/PCIECQNPREQ* $PCIE4INST/PCIERQTAG* $PCIE4INST/PCIETFC* $PCIE4INST/USERSPARE*"]
 #
 set USERINPINS [get_pins $USERPINS -filter DIRECTION==IN]
 set_multicycle_path -setup 2 -end   -through $USERINPINS
@@ -179,17 +180,6 @@ set_multicycle_path -setup 2 -start -through $USEROUTPINS
 set_multicycle_path -hold  1 -start -through $USEROUTPINS
 #
 #
-# Multi Cycle Paths
-#set PCIE4INSTPS pcie_4_0_pipe_inst/pcie_4_0_e4_inst
-#set USERPINSPS  [get_pins "$PCIE4INSTPS/PCIERQSEQ*"]
-#
-#set USERINPINSPS [get_pins $USERPINSPS -filter DIRECTION==IN]
-#set_multicycle_path -setup 2 -end   -through $USERINPINSPS
-#set_multicycle_path -hold  1 -end   -through $USERINPINSPS
-#
-#set USEROUTPINSPS [get_pins $USERPINSPS -filter DIRECTION==OUT]
-#set_multicycle_path -setup 2 -start -through $USEROUTPINSPS
-#set_multicycle_path -hold  1 -start -through $USEROUTPINSPS
 ###############################################################################
 # TIMING Exceptions - False Paths
 ###############################################################################
@@ -226,8 +216,6 @@ set_false_path -to [get_pins user_reset_reg/PRE]
 #set_property USER_CLOCK_ROOT X3Y1 [get_nets -of_objects [get_pins -hierarchical -filter NAME=~*/phy_clk_i/bufg_gt_intclk/O]]
 #set_property USER_CLOCK_ROOT X3Y1 [get_nets -of_objects [get_pins -hierarchical -filter NAME=~*/phy_clk_i/bufg_gt_coreclk/O]]
 #set_property USER_CLOCK_ROOT X3Y1 [get_nets -of_objects [get_pins -hierarchical -filter NAME=~*/phy_clk_i/bufg_gt_userclk/O]]
-#set_property USER_CLOCK_ROOT X3Y1 [get_nets -of_objects [get_pins -hierarchical -filter NAME=~*/phy_clk_i/bufg_gt_pclk/O]]
-#set_property USER_CLOCK_ROOT X3Y1 [get_nets -of_objects [get_pins -hierarchical -filter NAME=~*/phy_clk_i/bufg_gt_mcapclk/O]]
 #
 #
 #

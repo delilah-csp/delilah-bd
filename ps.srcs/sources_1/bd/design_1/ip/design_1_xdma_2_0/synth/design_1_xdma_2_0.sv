@@ -52,20 +52,20 @@
 
 (* X_CORE_INFO = "design_1_xdma_2_0_core_top,Vivado 2019.1.3" *)
 (* CHECK_LICENSE_TYPE = "design_1_xdma_2_0,design_1_xdma_2_0_core_top,{}" *)
-(* CORE_GENERATION_INFO = "design_1_xdma_2_0,design_1_xdma_2_0_core_top,{x_ipProduct=Vivado 2019.1.3,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xdma,x_ipVersion=4.1,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,COMPONENT_NAME=xdma_0,PL_UPSTREAM_FACING=true,TL_LEGACY_MODE_ENABLE=false,PCIE_BLK_LOCN=6,PL_LINK_CAP_MAX_LINK_WIDTH=8,PL_LINK_CAP_MAX_LINK_SPEED=4,REF_CLK_FREQ=0,DRP_CLK_SEL=0,FREE_RUN_FREQ=0,AXI_ADDR_WIDTH=64,AXI_DATA_WIDTH=256,CORE_CLK_FREQ=2,PLL_TYPE=2,USER_CLK_FREQ=2,SILICON_REV=Pre-Producti\
-on,PIPE_SIM=false,EXT_CH_GT_DRP=false,PCIE3_DRP=false,DEDICATE_PERST=false,SYS_RESET_POLARITY=0,MCAP_ENABLEMENT=NONE,EXT_STARTUP_PRIMITIVE=false,PF0_VENDOR_ID=0x1de5,PF0_DEVICE_ID=0x9038,PF0_REVISION_ID=0x00,PF0_SUBSYSTEM_VENDOR_ID=0x10EE,PF0_SUBSYSTEM_ID=0x0007,PF0_CLASS_CODE=0x070001,PF1_VENDOR_ID=0x10EE,PF1_DEVICE_ID=0x9111,PF1_REVISION_ID=0x00,PF1_SUBSYSTEM_VENDOR_ID=0x10EE,PF1_SUBSYSTEM_ID=0x0007,PF1_CLASS_CODE=0x070001,PF2_DEVICE_ID=0x9211,PF2_REVISION_ID=0x00,PF2_SUBSYSTEM_ID=0x0007,PF3_D\
-EVICE_ID=0x9311,PF3_REVISION_ID=0x00,PF3_SUBSYSTEM_ID=0x0007,AXILITE_MASTER_APERTURE_SIZE=0x12,AXILITE_MASTER_CONTROL=0x4,XDMA_APERTURE_SIZE=0x09,XDMA_CONTROL=0x5,AXIST_BYPASS_APERTURE_SIZE=0x13,AXIST_BYPASS_CONTROL=0x5,PF0_INTERRUPT_PIN=000,PF0_MSI_CAP_MULTIMSGCAP=0,C_COMP_TIMEOUT=1,C_TIMEOUT0_SEL=0xE,C_TIMEOUT1_SEL=0xF,C_TIMEOUT_MULT=0x3,C_OLD_BRIDGE_TIMEOUT=0,SHARED_LOGIC=1,SHARED_LOGIC_CLK=false,SHARED_LOGIC_BOTH=false,SHARED_LOGIC_GTC=false,SHARED_LOGIC_GTC_7XG2=false,SHARED_LOGIC_CLK_7XG2=\
-false,SHARED_LOGIC_BOTH_7XG2=false,EN_TRANSCEIVER_STATUS_PORTS=false,IS_BOARD_PROJECT=0,EN_GT_SELECTION=FALSE,SELECT_QUAD=GTH_Quad_227,ULTRASCALE=FALSE,ULTRASCALE_PLUS=TRUE,V7_GEN3=FALSE,MSI_ENABLED=FALSE,DEV_PORT_TYPE=0,XDMA_AXI_INTF_MM=1,XDMA_PCIE_64BIT_EN=xdma_pcie_64bit_en,XDMA_AXILITE_MASTER=TRUE,XDMA_AXIST_BYPASS=TRUE,XDMA_RNUM_CHNL=4,XDMA_WNUM_CHNL=4,XDMA_AXILITE_SLAVE=FALSE,XDMA_NUM_USR_IRQ=4,XDMA_RNUM_RIDS=32,XDMA_WNUM_RIDS=16,C_M_AXI_ID_WIDTH=4,C_AXIBAR_NUM=1,C_FAMILY=zynquplus,XDMA_NU\
-M_PCIE_TAG=256,EN_AXI_MASTER_IF=TRUE,EN_WCHNL_0=TRUE,EN_WCHNL_1=TRUE,EN_WCHNL_2=TRUE,EN_WCHNL_3=TRUE,EN_WCHNL_4=FALSE,EN_WCHNL_5=FALSE,EN_WCHNL_6=FALSE,EN_WCHNL_7=FALSE,EN_RCHNL_0=TRUE,EN_RCHNL_1=TRUE,EN_RCHNL_2=TRUE,EN_RCHNL_3=TRUE,EN_RCHNL_4=FALSE,EN_RCHNL_5=FALSE,EN_RCHNL_6=FALSE,EN_RCHNL_7=FALSE,XDMA_DSC_BYPASS=FALSE,C_METERING_ON=1,RX_DETECT=0,C_ATS_ENABLE=FALSE,C_ATS_CAP_NEXTPTR=0x000,C_PR_CAP_NEXTPTR=0x000,C_PRI_ENABLE=FALSE,DSC_BYPASS_RD=0,DSC_BYPASS_WR=0,XDMA_STS_PORTS=FALSE,MSIX_ENABLE\
-D=TRUE,WR_CH0_ENABLED=FALSE,WR_CH1_ENABLED=FALSE,WR_CH2_ENABLED=FALSE,WR_CH3_ENABLED=FALSE,RD_CH0_ENABLED=FALSE,RD_CH1_ENABLED=FALSE,RD_CH2_ENABLED=FALSE,RD_CH3_ENABLED=FALSE,CFG_MGMT_IF=TRUE,RQ_SEQ_NUM_IGNORE=0,CFG_EXT_IF=FALSE,LEGACY_CFG_EXT_IF=FALSE,C_PARITY_CHECK=0,C_PARITY_GEN=0,C_PARITY_PROP=0,C_ECC_ENABLE=0,EN_DEBUG_PORTS=FALSE,VU9P_BOARD=FALSE,ENABLE_JTAG_DBG=TRUE,ENABLE_IBERT=TRUE,MM_SLAVE_EN=0,DMA_EN=1,C_AXIBAR_0=0x0000000000000000,C_AXIBAR_1=0x0000000000000000,C_AXIBAR_2=0x00000000000\
-00000,C_AXIBAR_3=0x0000000000000000,C_AXIBAR_4=0x0000000000000000,C_AXIBAR_5=0x0000000000000000,C_AXIBAR_HIGHADDR_0=0x0000000000000000,C_AXIBAR_HIGHADDR_1=0x0000000000000000,C_AXIBAR_HIGHADDR_2=0x0000000000000000,C_AXIBAR_HIGHADDR_3=0x0000000000000000,C_AXIBAR_HIGHADDR_4=0x0000000000000000,C_AXIBAR_HIGHADDR_5=0x0000000000000000,C_AXIBAR2PCIEBAR_0=0x0000000000000000,C_AXIBAR2PCIEBAR_1=0x0000000000000000,C_AXIBAR2PCIEBAR_2=0x0000000000000000,C_AXIBAR2PCIEBAR_3=0x0000000000000000,C_AXIBAR2PCIEBAR_4\
-=0x0000000000000000,C_AXIBAR2PCIEBAR_5=0x0000000000000000,EN_AXI_SLAVE_IF=TRUE,C_INCLUDE_BAROFFSET_REG=1,C_BASEADDR=0x00001000,C_HIGHADDR=0x00001FFF,C_S_AXI_ID_WIDTH=4,C_S_AXI_NUM_READ=8,C_M_AXI_NUM_READ=8,C_M_AXI_NUM_READQ=2,C_S_AXI_NUM_WRITE=8,C_M_AXI_NUM_WRITE=16,MSIX_IMPL_EXT=FALSE,AXI_ACLK_LOOPBACK=FALSE,PF0_BAR0_APERTURE_SIZE=0x0A,PF0_BAR0_CONTROL=0x4,PF0_BAR1_APERTURE_SIZE=0x05,PF0_BAR1_CONTROL=0x0,PF0_BAR2_APERTURE_SIZE=0x05,PF0_BAR2_CONTROL=0x0,PF0_BAR3_APERTURE_SIZE=0x05,PF0_BAR3_CONTR\
-OL=0x0,PF0_BAR4_APERTURE_SIZE=0x05,PF0_BAR4_CONTROL=0x0,PF0_BAR5_APERTURE_SIZE=0x05,PF0_BAR5_CONTROL=0x0,PF0_EXPANSION_ROM_APERTURE_SIZE=0x000,PF0_EXPANSION_ROM_ENABLE=FALSE,PCIEBAR_NUM=6,C_PCIEBAR2AXIBAR_0=0x0000000010000000,C_PCIEBAR2AXIBAR_1=0x0000000000000000,C_PCIEBAR2AXIBAR_2=0x0000001000000000,C_PCIEBAR2AXIBAR_3=0x0000000000000000,C_PCIEBAR2AXIBAR_4=0x0000000000000000,C_PCIEBAR2AXIBAR_5=0x0000000000000000,C_PCIEBAR2AXIBAR_6=0x0000000000000000,BARLITE1=2,BARLITE2=7,VCU118_BOARD=FALSE,SPLIT\
-_DMA=FALSE,USE_STANDARD_INTERFACES=FALSE,PIPE_LINE_STAGE=2,AXIS_PIPE_LINE_STAGE=0,MULT_PF_DES=FALSE,PF_SWAP=FALSE,RUNBIT_FIX=FALSE,xlnx_ref_board=None,GTWIZ_IN_CORE=1,GTCOM_IN_CORE=2,INS_LOSS_PROFILE=Add-in_Card,FUNC_MODE=1,PF1_ENABLED=0,DMA_RESET_SOURCE_SEL=0,PF1_BAR0_APERTURE_SIZE=0x12,PF1_BAR0_CONTROL=0x4,PF1_BAR1_APERTURE_SIZE=0x0A,PF1_BAR1_CONTROL=0x0,PF1_BAR2_APERTURE_SIZE=0x0A,PF1_BAR2_CONTROL=0x6,PF1_BAR3_APERTURE_SIZE=0x0A,PF1_BAR3_CONTROL=0x0,PF1_BAR4_APERTURE_SIZE=0x0A,PF1_BAR4_CONTRO\
-L=0x6,PF1_BAR5_APERTURE_SIZE=0x0A,PF1_BAR5_CONTROL=0x0,PF1_EXPANSION_ROM_APERTURE_SIZE=0x000,PF1_EXPANSION_ROM_ENABLE=FALSE,PF1_PCIEBAR2AXIBAR_0=0x0000000000000000,PF1_PCIEBAR2AXIBAR_1=0x0000000000000000,PF1_PCIEBAR2AXIBAR_2=0x0000000000000000,PF1_PCIEBAR2AXIBAR_3=0x0000000000000000,PF1_PCIEBAR2AXIBAR_4=0x0000000000000000,PF1_PCIEBAR2AXIBAR_5=0x0000000000000000,PF1_PCIEBAR2AXIBAR_6=0x0000000000000000,C_MSIX_INT_TABLE_EN=1,VU9P_TUL_EX=FALSE,PCIE_BLK_TYPE=0,CCIX_ENABLE=FALSE,CCIX_DVSEC=FALSE,EXT_S\
-YS_CLK_BUFG=FALSE,C_NUM_OF_SC=1,USR_IRQ_EXDES=FALSE,AXI_VIP_IN_EXDES=FALSE,PIPE_DEBUG_EN=FALSE,XDMA_NON_INCREMENTAL_EXDES=FALSE,XDMA_ST_INFINITE_DESC_EXDES=FALSE,EXT_XVC_VSEC_ENABLE=FALSE,ACS_EXT_CAP_ENABLE=FALSE,EN_PCIE_DEBUG_PORTS=FALSE,MULTQ_EN=0,DMA_MM=1,DMA_ST=0,C_PCIE_PFS_SUPPORTED=0,C_SRIOV_EN=0,BARLITE_EXT_PF0=0x01,BARLITE_EXT_PF1=0x00,BARLITE_EXT_PF2=0x00,BARLITE_EXT_PF3=0x00,BARLITE_INT_PF0=0x04,BARLITE_INT_PF1=0x00,BARLITE_INT_PF2=0x00,BARLITE_INT_PF3=0x00,NUM_VFS_PF0=0,NUM_VFS_PF1=0,\
-NUM_VFS_PF2=0,NUM_VFS_PF3=0,FIRSTVF_OFFSET_PF0=0,FIRSTVF_OFFSET_PF1=0,FIRSTVF_OFFSET_PF2=0,FIRSTVF_OFFSET_PF3=0,VF_BARLITE_EXT_PF0=0x00,VF_BARLITE_EXT_PF1=0x00,VF_BARLITE_EXT_PF2=0x00,VF_BARLITE_EXT_PF3=0x00,VF_BARLITE_INT_PF0=0x01,VF_BARLITE_INT_PF1=0x01,VF_BARLITE_INT_PF2=0x01,VF_BARLITE_INT_PF3=0x01,C_C2H_NUM_CHNL=4,C_H2C_NUM_CHNL=4,H2C_XDMA_CHNL=0x0F,C2H_XDMA_CHNL=0x0F,AXISTEN_IF_ENABLE_MSG_ROUTE=0x00000,ENABLE_MORE=FALSE,DISABLE_BRAM_PIPELINE=FALSE,DISABLE_EQ_SYNCHRONIZER=FALSE,C_ENABLE_RES\
-OURCE_REDUCTION=FALSE,GEN4_EIEOS_0S7=TRUE,C_S_AXI_SUPPORTS_NARROW_BURST=0,ENABLE_ATS_SWITCH=FALSE,C_ATS_SWITCH_UNIQUE_BDF=1,C_LAST_CORE_CAP_ADDR=0x100,C_VSEC_CAP_ADDR=0x128,SOFT_RESET_EN=FALSE,INTERRUPT_OUT_WIDTH=3,C_MSI_RX_PIN_EN=1,C_MSIX_RX_PIN_EN=1,C_INTX_RX_PIN_EN=1,MSIX_RX_DECODE_EN=FALSE,PCIE_ID_IF=FALSE,TL_PF_ENABLE_REG=0,AXSIZE_BYTE_ACCESS_EN=FALSE,SPLIT_DMA_SINGLE_PF=FALSE,RBAR_ENABLE=FALSE,C_SMMU_EN=0,C_M_AXI_AWUSER_WIDTH=8,C_M_AXI_ARUSER_WIDTH=8,C_SLAVE_READ_64OS_EN=0}" *)
+(* CORE_GENERATION_INFO = "design_1_xdma_2_0,design_1_xdma_2_0_core_top,{x_ipProduct=Vivado 2019.1.3,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xdma,x_ipVersion=4.1,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,COMPONENT_NAME=xdma_0,PL_UPSTREAM_FACING=true,TL_LEGACY_MODE_ENABLE=false,PCIE_BLK_LOCN=6,PL_LINK_CAP_MAX_LINK_WIDTH=1,PL_LINK_CAP_MAX_LINK_SPEED=4,REF_CLK_FREQ=0,DRP_CLK_SEL=0,FREE_RUN_FREQ=0,AXI_ADDR_WIDTH=64,AXI_DATA_WIDTH=64,CORE_CLK_FREQ=1,PLL_TYPE=2,USER_CLK_FREQ=1,SILICON_REV=Pre-Productio\
+n,PIPE_SIM=false,EXT_CH_GT_DRP=false,PCIE3_DRP=false,DEDICATE_PERST=false,SYS_RESET_POLARITY=0,MCAP_ENABLEMENT=NONE,EXT_STARTUP_PRIMITIVE=false,PF0_VENDOR_ID=0x1de5,PF0_DEVICE_ID=0x9038,PF0_REVISION_ID=0x00,PF0_SUBSYSTEM_VENDOR_ID=0x10EE,PF0_SUBSYSTEM_ID=0x0007,PF0_CLASS_CODE=0x070001,PF1_VENDOR_ID=0x10EE,PF1_DEVICE_ID=0x9111,PF1_REVISION_ID=0x00,PF1_SUBSYSTEM_VENDOR_ID=0x10EE,PF1_SUBSYSTEM_ID=0x0007,PF1_CLASS_CODE=0x070001,PF2_DEVICE_ID=0x9211,PF2_REVISION_ID=0x00,PF2_SUBSYSTEM_ID=0x0007,PF3_DE\
+VICE_ID=0x9311,PF3_REVISION_ID=0x00,PF3_SUBSYSTEM_ID=0x0007,AXILITE_MASTER_APERTURE_SIZE=0x12,AXILITE_MASTER_CONTROL=0x4,XDMA_APERTURE_SIZE=0x09,XDMA_CONTROL=0x5,AXIST_BYPASS_APERTURE_SIZE=0x13,AXIST_BYPASS_CONTROL=0x5,PF0_INTERRUPT_PIN=000,PF0_MSI_CAP_MULTIMSGCAP=0,C_COMP_TIMEOUT=1,C_TIMEOUT0_SEL=0xE,C_TIMEOUT1_SEL=0xF,C_TIMEOUT_MULT=0x3,C_OLD_BRIDGE_TIMEOUT=0,SHARED_LOGIC=1,SHARED_LOGIC_CLK=false,SHARED_LOGIC_BOTH=false,SHARED_LOGIC_GTC=false,SHARED_LOGIC_GTC_7XG2=false,SHARED_LOGIC_CLK_7XG2=f\
+alse,SHARED_LOGIC_BOTH_7XG2=false,EN_TRANSCEIVER_STATUS_PORTS=false,IS_BOARD_PROJECT=0,EN_GT_SELECTION=FALSE,SELECT_QUAD=GTH_Quad_227,ULTRASCALE=FALSE,ULTRASCALE_PLUS=TRUE,V7_GEN3=FALSE,MSI_ENABLED=FALSE,DEV_PORT_TYPE=0,XDMA_AXI_INTF_MM=1,XDMA_PCIE_64BIT_EN=xdma_pcie_64bit_en,XDMA_AXILITE_MASTER=TRUE,XDMA_AXIST_BYPASS=TRUE,XDMA_RNUM_CHNL=4,XDMA_WNUM_CHNL=4,XDMA_AXILITE_SLAVE=FALSE,XDMA_NUM_USR_IRQ=4,XDMA_RNUM_RIDS=32,XDMA_WNUM_RIDS=16,C_M_AXI_ID_WIDTH=4,C_AXIBAR_NUM=1,C_FAMILY=zynquplus,XDMA_NUM\
+_PCIE_TAG=256,EN_AXI_MASTER_IF=TRUE,EN_WCHNL_0=TRUE,EN_WCHNL_1=TRUE,EN_WCHNL_2=TRUE,EN_WCHNL_3=TRUE,EN_WCHNL_4=FALSE,EN_WCHNL_5=FALSE,EN_WCHNL_6=FALSE,EN_WCHNL_7=FALSE,EN_RCHNL_0=TRUE,EN_RCHNL_1=TRUE,EN_RCHNL_2=TRUE,EN_RCHNL_3=TRUE,EN_RCHNL_4=FALSE,EN_RCHNL_5=FALSE,EN_RCHNL_6=FALSE,EN_RCHNL_7=FALSE,XDMA_DSC_BYPASS=FALSE,C_METERING_ON=1,RX_DETECT=0,C_ATS_ENABLE=FALSE,C_ATS_CAP_NEXTPTR=0x000,C_PR_CAP_NEXTPTR=0x000,C_PRI_ENABLE=FALSE,DSC_BYPASS_RD=0,DSC_BYPASS_WR=0,XDMA_STS_PORTS=FALSE,MSIX_ENABLED\
+=TRUE,WR_CH0_ENABLED=FALSE,WR_CH1_ENABLED=FALSE,WR_CH2_ENABLED=FALSE,WR_CH3_ENABLED=FALSE,RD_CH0_ENABLED=FALSE,RD_CH1_ENABLED=FALSE,RD_CH2_ENABLED=FALSE,RD_CH3_ENABLED=FALSE,CFG_MGMT_IF=TRUE,RQ_SEQ_NUM_IGNORE=0,CFG_EXT_IF=FALSE,LEGACY_CFG_EXT_IF=FALSE,C_PARITY_CHECK=0,C_PARITY_GEN=0,C_PARITY_PROP=0,C_ECC_ENABLE=0,EN_DEBUG_PORTS=FALSE,VU9P_BOARD=FALSE,ENABLE_JTAG_DBG=TRUE,ENABLE_IBERT=TRUE,MM_SLAVE_EN=0,DMA_EN=1,C_AXIBAR_0=0x0000000000000000,C_AXIBAR_1=0x0000000000000000,C_AXIBAR_2=0x000000000000\
+0000,C_AXIBAR_3=0x0000000000000000,C_AXIBAR_4=0x0000000000000000,C_AXIBAR_5=0x0000000000000000,C_AXIBAR_HIGHADDR_0=0x0000000000000000,C_AXIBAR_HIGHADDR_1=0x0000000000000000,C_AXIBAR_HIGHADDR_2=0x0000000000000000,C_AXIBAR_HIGHADDR_3=0x0000000000000000,C_AXIBAR_HIGHADDR_4=0x0000000000000000,C_AXIBAR_HIGHADDR_5=0x0000000000000000,C_AXIBAR2PCIEBAR_0=0x0000000000000000,C_AXIBAR2PCIEBAR_1=0x0000000000000000,C_AXIBAR2PCIEBAR_2=0x0000000000000000,C_AXIBAR2PCIEBAR_3=0x0000000000000000,C_AXIBAR2PCIEBAR_4=\
+0x0000000000000000,C_AXIBAR2PCIEBAR_5=0x0000000000000000,EN_AXI_SLAVE_IF=TRUE,C_INCLUDE_BAROFFSET_REG=1,C_BASEADDR=0x00001000,C_HIGHADDR=0x00001FFF,C_S_AXI_ID_WIDTH=4,C_S_AXI_NUM_READ=8,C_M_AXI_NUM_READ=8,C_M_AXI_NUM_READQ=2,C_S_AXI_NUM_WRITE=8,C_M_AXI_NUM_WRITE=4,MSIX_IMPL_EXT=FALSE,AXI_ACLK_LOOPBACK=FALSE,PF0_BAR0_APERTURE_SIZE=0x0A,PF0_BAR0_CONTROL=0x4,PF0_BAR1_APERTURE_SIZE=0x05,PF0_BAR1_CONTROL=0x0,PF0_BAR2_APERTURE_SIZE=0x05,PF0_BAR2_CONTROL=0x0,PF0_BAR3_APERTURE_SIZE=0x05,PF0_BAR3_CONTROL\
+=0x0,PF0_BAR4_APERTURE_SIZE=0x05,PF0_BAR4_CONTROL=0x0,PF0_BAR5_APERTURE_SIZE=0x05,PF0_BAR5_CONTROL=0x0,PF0_EXPANSION_ROM_APERTURE_SIZE=0x000,PF0_EXPANSION_ROM_ENABLE=FALSE,PCIEBAR_NUM=6,C_PCIEBAR2AXIBAR_0=0x0000000010000000,C_PCIEBAR2AXIBAR_1=0x0000000000000000,C_PCIEBAR2AXIBAR_2=0x0000001000000000,C_PCIEBAR2AXIBAR_3=0x0000000000000000,C_PCIEBAR2AXIBAR_4=0x0000000000000000,C_PCIEBAR2AXIBAR_5=0x0000000000000000,C_PCIEBAR2AXIBAR_6=0x0000000000000000,BARLITE1=2,BARLITE2=7,VCU118_BOARD=FALSE,SPLIT_D\
+MA=FALSE,USE_STANDARD_INTERFACES=FALSE,PIPE_LINE_STAGE=2,AXIS_PIPE_LINE_STAGE=0,MULT_PF_DES=FALSE,PF_SWAP=FALSE,RUNBIT_FIX=FALSE,xlnx_ref_board=None,GTWIZ_IN_CORE=1,GTCOM_IN_CORE=2,INS_LOSS_PROFILE=Add-in_Card,FUNC_MODE=1,PF1_ENABLED=0,DMA_RESET_SOURCE_SEL=0,PF1_BAR0_APERTURE_SIZE=0x12,PF1_BAR0_CONTROL=0x4,PF1_BAR1_APERTURE_SIZE=0x0A,PF1_BAR1_CONTROL=0x0,PF1_BAR2_APERTURE_SIZE=0x0A,PF1_BAR2_CONTROL=0x6,PF1_BAR3_APERTURE_SIZE=0x0A,PF1_BAR3_CONTROL=0x0,PF1_BAR4_APERTURE_SIZE=0x0A,PF1_BAR4_CONTROL=\
+0x6,PF1_BAR5_APERTURE_SIZE=0x0A,PF1_BAR5_CONTROL=0x0,PF1_EXPANSION_ROM_APERTURE_SIZE=0x000,PF1_EXPANSION_ROM_ENABLE=FALSE,PF1_PCIEBAR2AXIBAR_0=0x0000000000000000,PF1_PCIEBAR2AXIBAR_1=0x0000000000000000,PF1_PCIEBAR2AXIBAR_2=0x0000000000000000,PF1_PCIEBAR2AXIBAR_3=0x0000000000000000,PF1_PCIEBAR2AXIBAR_4=0x0000000000000000,PF1_PCIEBAR2AXIBAR_5=0x0000000000000000,PF1_PCIEBAR2AXIBAR_6=0x0000000000000000,C_MSIX_INT_TABLE_EN=1,VU9P_TUL_EX=FALSE,PCIE_BLK_TYPE=0,CCIX_ENABLE=FALSE,CCIX_DVSEC=FALSE,EXT_SYS\
+_CLK_BUFG=FALSE,C_NUM_OF_SC=1,USR_IRQ_EXDES=FALSE,AXI_VIP_IN_EXDES=FALSE,PIPE_DEBUG_EN=FALSE,XDMA_NON_INCREMENTAL_EXDES=FALSE,XDMA_ST_INFINITE_DESC_EXDES=FALSE,EXT_XVC_VSEC_ENABLE=FALSE,ACS_EXT_CAP_ENABLE=FALSE,EN_PCIE_DEBUG_PORTS=FALSE,MULTQ_EN=0,DMA_MM=1,DMA_ST=0,C_PCIE_PFS_SUPPORTED=0,C_SRIOV_EN=0,BARLITE_EXT_PF0=0x01,BARLITE_EXT_PF1=0x00,BARLITE_EXT_PF2=0x00,BARLITE_EXT_PF3=0x00,BARLITE_INT_PF0=0x04,BARLITE_INT_PF1=0x00,BARLITE_INT_PF2=0x00,BARLITE_INT_PF3=0x00,NUM_VFS_PF0=0,NUM_VFS_PF1=0,NU\
+M_VFS_PF2=0,NUM_VFS_PF3=0,FIRSTVF_OFFSET_PF0=0,FIRSTVF_OFFSET_PF1=0,FIRSTVF_OFFSET_PF2=0,FIRSTVF_OFFSET_PF3=0,VF_BARLITE_EXT_PF0=0x00,VF_BARLITE_EXT_PF1=0x00,VF_BARLITE_EXT_PF2=0x00,VF_BARLITE_EXT_PF3=0x00,VF_BARLITE_INT_PF0=0x01,VF_BARLITE_INT_PF1=0x01,VF_BARLITE_INT_PF2=0x01,VF_BARLITE_INT_PF3=0x01,C_C2H_NUM_CHNL=4,C_H2C_NUM_CHNL=4,H2C_XDMA_CHNL=0x0F,C2H_XDMA_CHNL=0x0F,AXISTEN_IF_ENABLE_MSG_ROUTE=0x00000,ENABLE_MORE=FALSE,DISABLE_BRAM_PIPELINE=FALSE,DISABLE_EQ_SYNCHRONIZER=FALSE,C_ENABLE_RESOU\
+RCE_REDUCTION=FALSE,GEN4_EIEOS_0S7=TRUE,C_S_AXI_SUPPORTS_NARROW_BURST=0,ENABLE_ATS_SWITCH=FALSE,C_ATS_SWITCH_UNIQUE_BDF=1,C_LAST_CORE_CAP_ADDR=0x100,C_VSEC_CAP_ADDR=0x128,SOFT_RESET_EN=FALSE,INTERRUPT_OUT_WIDTH=3,C_MSI_RX_PIN_EN=1,C_MSIX_RX_PIN_EN=1,C_INTX_RX_PIN_EN=1,MSIX_RX_DECODE_EN=FALSE,PCIE_ID_IF=FALSE,TL_PF_ENABLE_REG=0,AXSIZE_BYTE_ACCESS_EN=FALSE,SPLIT_DMA_SINGLE_PF=FALSE,RBAR_ENABLE=FALSE,C_SMMU_EN=0,C_M_AXI_AWUSER_WIDTH=8,C_M_AXI_ARUSER_WIDTH=8,C_SLAVE_READ_64OS_EN=0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_xdma_2_0 (
   sys_clk,
@@ -190,15 +190,15 @@ input wire sys_clk_gt;
 input wire sys_rst_n;
 output wire user_lnk_up;
 (* X_INTERFACE_INFO = "xilinx.com:interface:pcie_7x_mgt:1.0 pcie_mgt txp" *)
-output wire [7 : 0] pci_exp_txp;
+output wire [0 : 0] pci_exp_txp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:pcie_7x_mgt:1.0 pcie_mgt txn" *)
-output wire [7 : 0] pci_exp_txn;
+output wire [0 : 0] pci_exp_txn;
 (* X_INTERFACE_INFO = "xilinx.com:interface:pcie_7x_mgt:1.0 pcie_mgt rxp" *)
-input wire [7 : 0] pci_exp_rxp;
+input wire [0 : 0] pci_exp_rxp;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME pcie_mgt, BOARD.ASSOCIATED_PARAM PCIE_BOARD_INTERFACE" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:pcie_7x_mgt:1.0 pcie_mgt rxn" *)
-input wire [7 : 0] pci_exp_rxn;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.axi_aclk, ASSOCIATED_BUSIF M_AXI:S_AXI_B:M_AXI_LITE:S_AXI_LITE:M_AXI_BYPASS:M_AXI_B:S_AXIS_C2H_0:S_AXIS_C2H_1:S_AXIS_C2H_2:S_AXIS_C2H_3:M_AXIS_H2C_0:M_AXIS_H2C_1:M_AXIS_H2C_2:M_AXIS_H2C_3:sc0_ats_m_axis_cq:sc0_ats_m_axis_rc:sc0_ats_s_axis_cc:sc0_ats_s_axis_rq:sc1_ats_m_axis_cq:sc1_ats_m_axis_rc:sc1_ats_s_axis_cc:sc1_ats_s_axis_rq:cxs_tx:cxs_rx, ASSOCIATED_RESET axi_aresetn, FREQ_HZ 250000000, PHASE 0.000, CLK_DOMAIN design_1_xdma_2_0_axi_aclk, INSERT_VIP 0" *)
+input wire [0 : 0] pci_exp_rxn;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.axi_aclk, ASSOCIATED_BUSIF M_AXI:S_AXI_B:M_AXI_LITE:S_AXI_LITE:M_AXI_BYPASS:M_AXI_B:S_AXIS_C2H_0:S_AXIS_C2H_1:S_AXIS_C2H_2:S_AXIS_C2H_3:M_AXIS_H2C_0:M_AXIS_H2C_1:M_AXIS_H2C_2:M_AXIS_H2C_3:sc0_ats_m_axis_cq:sc0_ats_m_axis_rc:sc0_ats_s_axis_cc:sc0_ats_s_axis_rq:sc1_ats_m_axis_cq:sc1_ats_m_axis_rc:sc1_ats_s_axis_cc:sc1_ats_s_axis_rq:cxs_tx:cxs_rx, ASSOCIATED_RESET axi_aresetn, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN design_1_xdma_2_0_axi_aclk, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.axi_aclk CLK" *)
 output wire axi_aclk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.axi_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
@@ -222,7 +222,7 @@ input wire m_axi_arready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RID" *)
 input wire [3 : 0] m_axi_rid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RDATA" *)
-input wire [255 : 0] m_axi_rdata;
+input wire [63 : 0] m_axi_rdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RRESP" *)
 input wire [1 : 0] m_axi_rresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RLAST" *)
@@ -248,9 +248,9 @@ output wire m_axi_awlock;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWCACHE" *)
 output wire [3 : 0] m_axi_awcache;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WDATA" *)
-output wire [255 : 0] m_axi_wdata;
+output wire [63 : 0] m_axi_wdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WSTRB" *)
-output wire [31 : 0] m_axi_wstrb;
+output wire [7 : 0] m_axi_wstrb;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WLAST" *)
 output wire m_axi_wlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI WVALID" *)
@@ -275,8 +275,8 @@ output wire m_axi_arvalid;
 output wire m_axi_arlock;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARCACHE" *)
 output wire [3 : 0] m_axi_arcache;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI, SUPPORTS_NARROW_BURST 0, HAS_BURST 0, HAS_BURST.VALUE_SRC CONSTANT, DATA_WIDTH 256, PROTOCOL AXI4, FREQ_HZ 250000000, ID_WIDTH 4, ADDR_WIDTH 64, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 32, NUM_WRITE_OUTSTANDING 16, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN design_1_xdma_2_0_axi_aclk,\
- NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI, SUPPORTS_NARROW_BURST 0, HAS_BURST 0, HAS_BURST.VALUE_SRC CONSTANT, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 125000000, ID_WIDTH 4, ADDR_WIDTH 64, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 32, NUM_WRITE_OUTSTANDING 16, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN design_1_xdma_2_0_axi_aclk, \
+NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RREADY" *)
 output wire m_axi_rready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_LITE AWADDR" *)
@@ -315,7 +315,7 @@ input wire [31 : 0] m_axil_rdata;
 input wire [1 : 0] m_axil_rresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_LITE RVALID" *)
 input wire m_axil_rvalid;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI_LITE, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 250000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_xdma_2_0_axi_aclk, NUM_READ_THREADS 1, NUM_W\
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI_LITE, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 125000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_xdma_2_0_axi_aclk, NUM_READ_THREADS 1, NUM_W\
 RITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_LITE RREADY" *)
 output wire m_axil_rready;
@@ -354,9 +354,9 @@ output wire m_axib_awlock;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_BYPASS AWCACHE" *)
 output wire [3 : 0] m_axib_awcache;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_BYPASS WDATA" *)
-output wire [255 : 0] m_axib_wdata;
+output wire [63 : 0] m_axib_wdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_BYPASS WSTRB" *)
-output wire [31 : 0] m_axib_wstrb;
+output wire [7 : 0] m_axib_wstrb;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_BYPASS WLAST" *)
 output wire m_axib_wlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_BYPASS WVALID" *)
@@ -394,15 +394,15 @@ output wire [3 : 0] m_axib_arcache;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_BYPASS RID" *)
 input wire [3 : 0] m_axib_rid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_BYPASS RDATA" *)
-input wire [255 : 0] m_axib_rdata;
+input wire [63 : 0] m_axib_rdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_BYPASS RRESP" *)
 input wire [1 : 0] m_axib_rresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_BYPASS RLAST" *)
 input wire m_axib_rlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_BYPASS RVALID" *)
 input wire m_axib_rvalid;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI_BYPASS, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, SUPPORTS_NARROW_BURST 0, NUM_READ_THREADS 2, NUM_WRITE_THREADS 2, DATA_WIDTH 256, PROTOCOL AXI4, FREQ_HZ 250000000, ID_WIDTH 4, ADDR_WIDTH 64, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN design_1_xd\
-ma_2_0_axi_aclk, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI_BYPASS, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, SUPPORTS_NARROW_BURST 0, NUM_READ_THREADS 2, NUM_WRITE_THREADS 2, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 125000000, ID_WIDTH 4, ADDR_WIDTH 64, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN design_1_xdm\
+a_2_0_axi_aclk, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_BYPASS RREADY" *)
 output wire m_axib_rready;
 
@@ -411,16 +411,16 @@ output wire m_axib_rready;
     .PL_UPSTREAM_FACING("true"),
     .TL_LEGACY_MODE_ENABLE("false"),
     .PCIE_BLK_LOCN(6),
-    .PL_LINK_CAP_MAX_LINK_WIDTH(8),
+    .PL_LINK_CAP_MAX_LINK_WIDTH(1),
     .PL_LINK_CAP_MAX_LINK_SPEED(4),
     .REF_CLK_FREQ(0),
     .DRP_CLK_SEL(0),
     .FREE_RUN_FREQ(0),
     .AXI_ADDR_WIDTH(64),
-    .AXI_DATA_WIDTH(256),
-    .CORE_CLK_FREQ(2),
+    .AXI_DATA_WIDTH(64),
+    .CORE_CLK_FREQ(1),
     .PLL_TYPE(2),
-    .USER_CLK_FREQ(2),
+    .USER_CLK_FREQ(1),
     .SILICON_REV("Pre-Production"),
     .PIPE_SIM("false"),
     .EXT_CH_GT_DRP("false"),
@@ -567,7 +567,7 @@ output wire m_axib_rready;
     .C_M_AXI_NUM_READ(8),
     .C_M_AXI_NUM_READQ(2),
     .C_S_AXI_NUM_WRITE(8),
-    .C_M_AXI_NUM_WRITE(16),
+    .C_M_AXI_NUM_WRITE(4),
     .MSIX_IMPL_EXT("FALSE"),
     .AXI_ACLK_LOOPBACK("FALSE"),
     .PF0_BAR0_APERTURE_SIZE('H0A),
@@ -748,7 +748,7 @@ output wire m_axib_rready;
     .m_axi_arready(m_axi_arready),
     .m_axi_rid(m_axi_rid),
     .m_axi_rdata(m_axi_rdata),
-    .m_axi_ruser(32'B0),
+    .m_axi_ruser(8'B0),
     .m_axi_rresp(m_axi_rresp),
     .m_axi_rlast(m_axi_rlast),
     .m_axi_rvalid(m_axi_rvalid),
@@ -890,53 +890,53 @@ output wire m_axib_rready;
     .m_axib_arcache(m_axib_arcache),
     .m_axib_rid(m_axib_rid),
     .m_axib_rdata(m_axib_rdata),
-    .m_axib_ruser(32'B0),
+    .m_axib_ruser(8'B0),
     .m_axib_rresp(m_axib_rresp),
     .m_axib_rlast(m_axib_rlast),
     .m_axib_rvalid(m_axib_rvalid),
     .m_axib_rready(m_axib_rready),
-    .s_axis_c2h_tdata_0(256'B0),
+    .s_axis_c2h_tdata_0(64'B0),
     .s_axis_c2h_tlast_0(1'B0),
     .s_axis_c2h_tvalid_0(1'B0),
     .s_axis_c2h_tready_0(),
-    .s_axis_c2h_tuser_0(32'B0),
-    .s_axis_c2h_tkeep_0(32'B0),
+    .s_axis_c2h_tuser_0(8'B0),
+    .s_axis_c2h_tkeep_0(8'B0),
     .m_axis_h2c_tdata_0(),
     .m_axis_h2c_tlast_0(),
     .m_axis_h2c_tvalid_0(),
     .m_axis_h2c_tready_0(1'B0),
     .m_axis_h2c_tuser_0(),
     .m_axis_h2c_tkeep_0(),
-    .s_axis_c2h_tdata_1(256'B0),
+    .s_axis_c2h_tdata_1(64'B0),
     .s_axis_c2h_tlast_1(1'B0),
     .s_axis_c2h_tvalid_1(1'B0),
     .s_axis_c2h_tready_1(),
-    .s_axis_c2h_tuser_1(32'B0),
-    .s_axis_c2h_tkeep_1(32'B0),
+    .s_axis_c2h_tuser_1(8'B0),
+    .s_axis_c2h_tkeep_1(8'B0),
     .m_axis_h2c_tdata_1(),
     .m_axis_h2c_tlast_1(),
     .m_axis_h2c_tvalid_1(),
     .m_axis_h2c_tready_1(1'B0),
     .m_axis_h2c_tuser_1(),
     .m_axis_h2c_tkeep_1(),
-    .s_axis_c2h_tdata_2(256'B0),
+    .s_axis_c2h_tdata_2(64'B0),
     .s_axis_c2h_tlast_2(1'B0),
     .s_axis_c2h_tvalid_2(1'B0),
     .s_axis_c2h_tready_2(),
-    .s_axis_c2h_tuser_2(32'B0),
-    .s_axis_c2h_tkeep_2(32'B0),
+    .s_axis_c2h_tuser_2(8'B0),
+    .s_axis_c2h_tkeep_2(8'B0),
     .m_axis_h2c_tdata_2(),
     .m_axis_h2c_tlast_2(),
     .m_axis_h2c_tvalid_2(),
     .m_axis_h2c_tready_2(1'B0),
     .m_axis_h2c_tuser_2(),
     .m_axis_h2c_tkeep_2(),
-    .s_axis_c2h_tdata_3(256'B0),
+    .s_axis_c2h_tdata_3(64'B0),
     .s_axis_c2h_tlast_3(1'B0),
     .s_axis_c2h_tvalid_3(1'B0),
     .s_axis_c2h_tready_3(),
-    .s_axis_c2h_tuser_3(32'B0),
-    .s_axis_c2h_tkeep_3(32'B0),
+    .s_axis_c2h_tuser_3(8'B0),
+    .s_axis_c2h_tkeep_3(8'B0),
     .m_axis_h2c_tdata_3(),
     .m_axis_h2c_tlast_3(),
     .m_axis_h2c_tvalid_3(),
@@ -1027,7 +1027,7 @@ output wire m_axib_rready;
     .pipe_rxprbscntreset(1'B0),
     .pipe_loopback(3'B0),
     .pipe_rxprbserr(),
-    .pipe_txinhibit(8'B0),
+    .pipe_txinhibit(1'B0),
     .pipe_rst_fsm(),
     .pipe_qrst_fsm(),
     .pipe_rate_fsm(),
@@ -1065,13 +1065,13 @@ output wire m_axib_rready;
     .pipe_debug_8(),
     .pipe_debug_9(),
     .pipe_debug(),
-    .gt_pcieuserratedone(8'B0),
-    .gt_loopback(24'B0),
-    .gt_txprbsforceerr(8'B0),
-    .gt_txinhibit(8'B0),
-    .gt_txprbssel(32'B0),
-    .gt_rxprbssel(32'B0),
-    .gt_rxprbscntreset(8'B0),
+    .gt_pcieuserratedone(1'B0),
+    .gt_loopback(3'B0),
+    .gt_txprbsforceerr(1'B0),
+    .gt_txinhibit(1'B0),
+    .gt_txprbssel(4'B0),
+    .gt_rxprbssel(4'B0),
+    .gt_rxprbscntreset(1'B0),
     .gt_txelecidle(),
     .gt_txresetdone(),
     .gt_rxresetdone(),
@@ -1084,8 +1084,8 @@ output wire m_axib_rready;
     .gt_rxsyncdone(),
     .gt_eyescandataerror(),
     .gt_rxprbserr(),
-    .gt_dmonfiforeset(8'B0),
-    .gt_dmonitorclk(8'B0),
+    .gt_dmonfiforeset(1'B0),
+    .gt_dmonitorclk(1'B0),
     .gt_dmonitorout(),
     .gt_rxcommadet(),
     .gt_phystatus(),
@@ -1109,10 +1109,10 @@ output wire m_axib_rready;
     .phy_rst_idle(),
     .phy_rrst_n(),
     .phy_prst_n(),
-    .ext_ch_gt_drpen(8'B0),
-    .ext_ch_gt_drpwe(8'B0),
-    .ext_ch_gt_drpaddr(80'B0),
-    .ext_ch_gt_drpdi(128'B0),
+    .ext_ch_gt_drpen(1'B0),
+    .ext_ch_gt_drpwe(1'B0),
+    .ext_ch_gt_drpaddr(10'B0),
+    .ext_ch_gt_drpdi(16'B0),
     .ext_ch_gt_drpclk(),
     .ext_ch_gt_drprdy(),
     .ext_ch_gt_drpdo(),
@@ -1138,8 +1138,8 @@ output wire m_axib_rready;
     .cap_req(),
     .cap_gnt(1'B1),
     .cap_rel(1'B0),
-    .atspri_s_axis_rq_tdata(256'B0),
-    .atspri_s_axis_rq_tkeep(8'B0),
+    .atspri_s_axis_rq_tdata(64'B0),
+    .atspri_s_axis_rq_tkeep(2'B0),
     .atspri_s_axis_rq_tuser(62'B0),
     .atspri_s_axis_rq_tlast(1'B0),
     .atspri_s_axis_rq_tvalid(1'B0),
@@ -1195,7 +1195,7 @@ output wire m_axib_rready;
     .m_axis_cc_tready_out(),
     .pipe_pclk_in(1'B0),
     .pipe_rxusrclk_in(1'B0),
-    .pipe_rxoutclk_in(8'B0),
+    .pipe_rxoutclk_in(1'B0),
     .pipe_dclk_in(1'B0),
     .pipe_userclk1_in(1'B0),
     .pipe_userclk2_in(1'B0),
@@ -1210,9 +1210,9 @@ output wire m_axib_rready;
     .ext_qpll1rate(),
     .ext_qpll1pd(),
     .ext_qpll1reset(),
-    .ext_qpll1lock_out(2'B0),
-    .ext_qpll1outclk_out(2'B0),
-    .ext_qpll1outrefclk_out(2'B0),
+    .ext_qpll1lock_out(1'B0),
+    .ext_qpll1outclk_out(1'B0),
+    .ext_qpll1outrefclk_out(1'B0),
     .int_qpll1lock_out(),
     .int_qpll1outrefclk_out(),
     .int_qpll1outclk_out(),
@@ -1226,7 +1226,7 @@ output wire m_axib_rready;
     .int_qplllock_out(),
     .int_qplloutclk_out(),
     .int_qplloutrefclk_out(),
-    .int_pclk_sel_slave(8'B0),
+    .int_pclk_sel_slave(1'B0),
     .qpll_drp_crscode(12'B0),
     .qpll_drp_fsm(18'B0),
     .qpll_drp_done(2'B0),
@@ -1248,13 +1248,13 @@ output wire m_axib_rready;
     .gt_rxoutclkfabric(),
     .gt_txoutclkpcs(),
     .gt_rxoutclkpcs(),
-    .gt_txpmareset(8'B0),
-    .gt_rxpmareset(8'B0),
-    .gt_txpcsreset(8'B0),
-    .gt_rxpcsreset(8'B0),
-    .gt_rxbufreset(8'B0),
-    .gt_rxcdrreset(8'B0),
-    .gt_rxdfelpmreset(8'B0),
+    .gt_txpmareset(1'B0),
+    .gt_rxpmareset(1'B0),
+    .gt_txpcsreset(1'B0),
+    .gt_rxpcsreset(1'B0),
+    .gt_rxbufreset(1'B0),
+    .gt_rxcdrreset(1'B0),
+    .gt_rxdfelpmreset(1'B0),
     .gt_txprogdivresetdone(),
     .gt_txpmaresetdone(),
     .gt_txsyncdone(),
@@ -1264,17 +1264,17 @@ output wire m_axib_rready;
     .ext_usp_qpllxrcalenb(),
     .ext_usp_qpll0pd(),
     .ext_usp_qpll0reset(),
-    .ext_usp_qpll0lock_out(2'B0),
-    .ext_usp_qpll0outclk_out(2'B0),
-    .ext_usp_qpll0outrefclk_out(2'B0),
+    .ext_usp_qpll0lock_out(1'B0),
+    .ext_usp_qpll0outclk_out(1'B0),
+    .ext_usp_qpll0outrefclk_out(1'B0),
     .int_usp_qpll0lock_out(),
     .int_usp_qpll0outrefclk_out(),
     .int_usp_qpll0outclk_out(),
     .ext_usp_qpll1pd(),
     .ext_usp_qpll1reset(),
-    .ext_usp_qpll1lock_out(2'B0),
-    .ext_usp_qpll1outclk_out(2'B0),
-    .ext_usp_qpll1outrefclk_out(2'B0),
+    .ext_usp_qpll1lock_out(1'B0),
+    .ext_usp_qpll1outclk_out(1'B0),
+    .ext_usp_qpll1outrefclk_out(1'B0),
     .int_usp_qpll1lock_out(),
     .int_usp_qpll1outrefclk_out(),
     .int_usp_qpll1outclk_out(),
@@ -1293,11 +1293,11 @@ output wire m_axib_rready;
     .s_axib_awsize(3'B0),
     .s_axib_awburst(2'B0),
     .s_axib_awvalid(1'B0),
-    .s_axib_wdata(256'B0),
-    .s_axib_wstrb(32'B0),
+    .s_axib_wdata(64'B0),
+    .s_axib_wstrb(8'B0),
     .s_axib_wlast(1'B0),
     .s_axib_wvalid(1'B0),
-    .s_axib_wuser(32'B0),
+    .s_axib_wuser(8'B0),
     .s_axib_ruser(),
     .s_axib_bready(1'B0),
     .s_axib_arid(4'B0),
@@ -1336,16 +1336,16 @@ output wire m_axib_rready;
     .qpll0reset_usp_in(),
     .qpll1pd_usp_in(),
     .qpll1reset_usp_in(),
-    .qpll0lock_usp_out(2'B0),
-    .qpll0outclk_usp_out(2'B0),
-    .qpll0outrefclk_usp_out(2'B0),
-    .qpll1lock_usp_out(2'B0),
-    .qpll1outclk_usp_out(2'B0),
-    .qpll1outrefclk_usp_out(2'B0),
+    .qpll0lock_usp_out(1'B0),
+    .qpll0outclk_usp_out(1'B0),
+    .qpll0outrefclk_usp_out(1'B0),
+    .qpll1lock_usp_out(1'B0),
+    .qpll1outclk_usp_out(1'B0),
+    .qpll1outrefclk_usp_out(1'B0),
     .qpll0freqlock_usp_in(),
     .qpll1freqlock_usp_in(),
-    .pcierateqpllpd_usp_out(16'B0),
-    .pcierateqpllreset_usp_out(16'B0),
+    .pcierateqpllpd_usp_out(2'B0),
+    .pcierateqpllreset_usp_out(2'B0),
     .gtwiz_reset_rx_done_usp_in(),
     .gtwiz_reset_tx_done_usp_in(),
     .gtwiz_userclk_rx_active_usp_in(),
@@ -1457,58 +1457,58 @@ output wire m_axib_rready;
     .txuserrdy_usp_in(),
     .txusrclk2_usp_in(),
     .txusrclk_usp_in(),
-    .rxclkcorcnt_usp_out(16'B0),
-    .bufgtcemask_usp_out(24'B0),
-    .bufgtrstmask_usp_out(24'B0),
-    .rxbufstatus_usp_out(24'B0),
-    .rxstatus_usp_out(24'B0),
-    .rxctrl2_usp_out(64'B0),
-    .rxctrl3_usp_out(64'B0),
-    .bufgtdiv_usp_out(72'B0),
-    .dmonitorout_usp_out(128'B0),
-    .rxctrl0_usp_out(128'B0),
-    .rxctrl1_usp_out(128'B0),
-    .rxdata_usp_out(1024'B0),
-    .bufgtreset_usp_out(8'B0),
-    .bufgtce_usp_out(8'B0),
-    .cplllock_usp_out(8'B0),
-    .gtpowergood_usp_out(8'B0),
-    .pcierategen3_usp_out(8'B0),
-    .pcierateidle_usp_out(8'B0),
-    .pciesynctxsyncdone_usp_out(8'B0),
-    .pcieusergen3rdy_usp_out(8'B0),
-    .pcieuserphystatusrst_usp_out(8'B0),
-    .pcieuserratestart_usp_out(8'B0),
-    .phystatus_usp_out(8'B0),
-    .rxbyteisaligned_usp_out(8'B0),
-    .rxbyterealign_usp_out(8'B0),
-    .rxcdrlock_usp_out(8'B0),
-    .rxcommadet_usp_out(8'B0),
-    .rxphaligndone_usp_out(8'B0),
-    .rxpmaresetdone_usp_out(8'B0),
-    .rxdlysresetdone_usp_out(8'B0),
-    .rxelecidle_usp_out(8'B0),
-    .rxoutclk_usp_out(8'B0),
-    .rxoutclkfabric_usp_out(8'B0),
-    .rxoutclkpcs_usp_out(8'B0),
-    .rxprbserr_usp_out(8'B0),
-    .rxprbslocked_usp_out(8'B0),
-    .rxratedone_usp_out(8'B0),
-    .rxrecclkout_usp_out(8'B0),
-    .rxresetdone_usp_out(8'B0),
-    .rxsyncdone_usp_out(8'B0),
-    .txdlysresetdone_usp_out(8'B0),
-    .rxvalid_usp_out(8'B0),
-    .txoutclk_usp_out(8'B0),
-    .txoutclkfabric_usp_out(8'B0),
-    .txoutclkpcs_usp_out(8'B0),
-    .txphaligndone_usp_out(8'B0),
-    .txphinitdone_usp_out(8'B0),
-    .txpmaresetdone_usp_out(8'B0),
-    .txprgdivresetdone_usp_out(8'B0),
-    .txresetdone_usp_out(8'B0),
-    .txsyncdone_usp_out(8'B0),
-    .txsyncout_usp_out(8'B0),
+    .rxclkcorcnt_usp_out(2'B0),
+    .bufgtcemask_usp_out(3'B0),
+    .bufgtrstmask_usp_out(3'B0),
+    .rxbufstatus_usp_out(3'B0),
+    .rxstatus_usp_out(3'B0),
+    .rxctrl2_usp_out(8'B0),
+    .rxctrl3_usp_out(8'B0),
+    .bufgtdiv_usp_out(9'B0),
+    .dmonitorout_usp_out(16'B0),
+    .rxctrl0_usp_out(16'B0),
+    .rxctrl1_usp_out(16'B0),
+    .rxdata_usp_out(128'B0),
+    .bufgtreset_usp_out(1'B0),
+    .bufgtce_usp_out(1'B0),
+    .cplllock_usp_out(1'B0),
+    .gtpowergood_usp_out(1'B0),
+    .pcierategen3_usp_out(1'B0),
+    .pcierateidle_usp_out(1'B0),
+    .pciesynctxsyncdone_usp_out(1'B0),
+    .pcieusergen3rdy_usp_out(1'B0),
+    .pcieuserphystatusrst_usp_out(1'B0),
+    .pcieuserratestart_usp_out(1'B0),
+    .phystatus_usp_out(1'B0),
+    .rxbyteisaligned_usp_out(1'B0),
+    .rxbyterealign_usp_out(1'B0),
+    .rxcdrlock_usp_out(1'B0),
+    .rxcommadet_usp_out(1'B0),
+    .rxphaligndone_usp_out(1'B0),
+    .rxpmaresetdone_usp_out(1'B0),
+    .rxdlysresetdone_usp_out(1'B0),
+    .rxelecidle_usp_out(1'B0),
+    .rxoutclk_usp_out(1'B0),
+    .rxoutclkfabric_usp_out(1'B0),
+    .rxoutclkpcs_usp_out(1'B0),
+    .rxprbserr_usp_out(1'B0),
+    .rxprbslocked_usp_out(1'B0),
+    .rxratedone_usp_out(1'B0),
+    .rxrecclkout_usp_out(1'B0),
+    .rxresetdone_usp_out(1'B0),
+    .rxsyncdone_usp_out(1'B0),
+    .txdlysresetdone_usp_out(1'B0),
+    .rxvalid_usp_out(1'B0),
+    .txoutclk_usp_out(1'B0),
+    .txoutclkfabric_usp_out(1'B0),
+    .txoutclkpcs_usp_out(1'B0),
+    .txphaligndone_usp_out(1'B0),
+    .txphinitdone_usp_out(1'B0),
+    .txpmaresetdone_usp_out(1'B0),
+    .txprgdivresetdone_usp_out(1'B0),
+    .txresetdone_usp_out(1'B0),
+    .txsyncdone_usp_out(1'B0),
+    .txsyncout_usp_out(1'B0),
     .drpaddr_usp_in(),
     .drpen_usp_in(),
     .drpdi_usp_in(),
@@ -1528,65 +1528,65 @@ output wire m_axib_rready;
     .ext_phy_clk_phy_coreclk(1'B0),
     .ext_phy_clk_phy_userclk(1'B0),
     .ext_phy_clk_phy_mcapclk(1'B0),
-    .drpdo_usp_out(128'B0),
-    .drprdy_usp_out(8'B0),
+    .drpdo_usp_out(16'B0),
+    .drprdy_usp_out(1'B0),
     .drpclk_usp_in(),
-    .rxdlysresetdone_us_out(8'B0),
-    .rxelecidle_us_out(8'B0),
-    .rxoutclk_us_out(8'B0),
-    .rxphaligndone_us_out(8'B0),
-    .rxpmaresetdone_us_out(8'B0),
-    .rxprbserr_us_out(8'B0),
-    .rxprbslocked_us_out(8'B0),
-    .rxprgdivresetdone_us_out(8'B0),
-    .rxratedone_us_out(8'B0),
-    .rxresetdone_us_out(8'B0),
-    .rxsyncdone_us_out(8'B0),
-    .rxvalid_us_out(8'B0),
-    .txdlysresetdone_us_out(8'B0),
-    .txoutclk_us_out(8'B0),
-    .txphaligndone_us_out(8'B0),
-    .txphinitdone_us_out(8'B0),
-    .txpmaresetdone_us_out(8'B0),
-    .txprgdivresetdone_us_out(8'B0),
-    .txresetdone_us_out(8'B0),
-    .txsyncout_us_out(8'B0),
-    .txsyncdone_us_out(8'B0),
-    .cplllock_us_out(8'B0),
-    .eyescandataerror_us_out(8'B0),
-    .gtpowergood_us_out(8'B0),
-    .pcierategen3_us_out(8'B0),
-    .pcierateidle_us_out(8'B0),
-    .pciesynctxsyncdone_us_out(8'B0),
-    .pcieusergen3rdy_us_out(8'B0),
-    .pcieuserphystatusrst_us_out(8'B0),
-    .pcieuserratestart_us_out(8'B0),
-    .phystatus_us_out(8'B0),
-    .rxbyteisaligned_us_out(8'B0),
-    .rxbyterealign_us_out(8'B0),
-    .rxcdrlock_us_out(8'B0),
-    .rxcommadet_us_out(8'B0),
-    .gthtxn_us_out(8'B0),
-    .gthtxp_us_out(8'B0),
-    .drprdy_us_out(8'B0),
-    .pcierateqpllpd_us_out(16'B0),
-    .pcierateqpllreset_us_out(16'B0),
-    .rxclkcorcnt_us_out(16'B0),
-    .bufgtce_us_out(24'B0),
-    .bufgtcemask_us_out(24'B0),
-    .bufgtreset_us_out(24'B0),
-    .bufgtrstmask_us_out(24'B0),
-    .rxbufstatus_us_out(24'B0),
-    .rxstatus_us_out(24'B0),
-    .rxctrl2_us_out(64'B0),
-    .rxctrl3_us_out(64'B0),
-    .bufgtdiv_us_out(72'B0),
-    .pcsrsvdout_us_out(96'B0),
-    .drpdo_us_out(128'B0),
-    .rxctrl0_us_out(128'B0),
-    .rxctrl1_us_out(128'B0),
-    .dmonitorout_us_out(136'B0),
-    .rxdata_us_out(1024'B0),
+    .rxdlysresetdone_us_out(1'B0),
+    .rxelecidle_us_out(1'B0),
+    .rxoutclk_us_out(1'B0),
+    .rxphaligndone_us_out(1'B0),
+    .rxpmaresetdone_us_out(1'B0),
+    .rxprbserr_us_out(1'B0),
+    .rxprbslocked_us_out(1'B0),
+    .rxprgdivresetdone_us_out(1'B0),
+    .rxratedone_us_out(1'B0),
+    .rxresetdone_us_out(1'B0),
+    .rxsyncdone_us_out(1'B0),
+    .rxvalid_us_out(1'B0),
+    .txdlysresetdone_us_out(1'B0),
+    .txoutclk_us_out(1'B0),
+    .txphaligndone_us_out(1'B0),
+    .txphinitdone_us_out(1'B0),
+    .txpmaresetdone_us_out(1'B0),
+    .txprgdivresetdone_us_out(1'B0),
+    .txresetdone_us_out(1'B0),
+    .txsyncout_us_out(1'B0),
+    .txsyncdone_us_out(1'B0),
+    .cplllock_us_out(1'B0),
+    .eyescandataerror_us_out(1'B0),
+    .gtpowergood_us_out(1'B0),
+    .pcierategen3_us_out(1'B0),
+    .pcierateidle_us_out(1'B0),
+    .pciesynctxsyncdone_us_out(1'B0),
+    .pcieusergen3rdy_us_out(1'B0),
+    .pcieuserphystatusrst_us_out(1'B0),
+    .pcieuserratestart_us_out(1'B0),
+    .phystatus_us_out(1'B0),
+    .rxbyteisaligned_us_out(1'B0),
+    .rxbyterealign_us_out(1'B0),
+    .rxcdrlock_us_out(1'B0),
+    .rxcommadet_us_out(1'B0),
+    .gthtxn_us_out(1'B0),
+    .gthtxp_us_out(1'B0),
+    .drprdy_us_out(1'B0),
+    .pcierateqpllpd_us_out(2'B0),
+    .pcierateqpllreset_us_out(2'B0),
+    .rxclkcorcnt_us_out(2'B0),
+    .bufgtce_us_out(3'B0),
+    .bufgtcemask_us_out(3'B0),
+    .bufgtreset_us_out(3'B0),
+    .bufgtrstmask_us_out(3'B0),
+    .rxbufstatus_us_out(3'B0),
+    .rxstatus_us_out(3'B0),
+    .rxctrl2_us_out(8'B0),
+    .rxctrl3_us_out(8'B0),
+    .bufgtdiv_us_out(9'B0),
+    .pcsrsvdout_us_out(12'B0),
+    .drpdo_us_out(16'B0),
+    .rxctrl0_us_out(16'B0),
+    .rxctrl1_us_out(16'B0),
+    .dmonitorout_us_out(17'B0),
+    .rxdata_us_out(128'B0),
     .gtwiz_reset_rx_done_us_in(),
     .gtwiz_reset_tx_done_us_in(),
     .gtwiz_userclk_rx_active_us_in(),
@@ -1703,9 +1703,9 @@ output wire m_axib_rready;
     .gtrefclk01_us_in(),
     .qpll1pd_us_in(),
     .qpll1reset_us_in(),
-    .qpll1lock_us_out(2'B0),
-    .qpll1outclk_us_out(2'B0),
-    .qpll1outrefclk_us_out(2'B0),
+    .qpll1lock_us_out(1'B0),
+    .qpll1outclk_us_out(1'B0),
+    .qpll1outrefclk_us_out(1'B0),
     .qpllrsvd2_us_in(),
     .qpllrsvd3_us_in(),
     .cfg_interrupt_msix_enable(),
@@ -1739,16 +1739,16 @@ output wire m_axib_rready;
     .s_axis_rq_tkeep_sd(),
     .s_axis_rq_tready_sd(4'B0),
     .s_axis_rq_tvalid_sd(),
-    .m_axis_rc_tdata_sd(256'B0),
+    .m_axis_rc_tdata_sd(64'B0),
     .m_axis_rc_tuser_sd(75'B0),
     .m_axis_rc_tlast_sd(1'B0),
-    .m_axis_rc_tkeep_sd(8'B0),
+    .m_axis_rc_tkeep_sd(2'B0),
     .m_axis_rc_tvalid_sd(1'B0),
     .m_axis_rc_tready_sd(),
-    .m_axis_cq_tdata_sd(256'B0),
+    .m_axis_cq_tdata_sd(64'B0),
     .m_axis_cq_tuser_sd(88'B0),
     .m_axis_cq_tlast_sd(1'B0),
-    .m_axis_cq_tkeep_sd(8'B0),
+    .m_axis_cq_tkeep_sd(2'B0),
     .m_axis_cq_tvalid_sd(1'B0),
     .m_axis_cq_tready_sd(),
     .s_axis_cc_tdata_sd(),
@@ -1920,8 +1920,8 @@ output wire m_axib_rready;
     .s_axi_wvalid(1'B0),
     .sc0_ats_s_axis_rq_tvalid(1'B0),
     .sc0_ats_s_axis_rq_tready(),
-    .sc0_ats_s_axis_rq_tdata(256'B0),
-    .sc0_ats_s_axis_rq_tkeep(32'B0),
+    .sc0_ats_s_axis_rq_tdata(64'B0),
+    .sc0_ats_s_axis_rq_tkeep(8'B0),
     .sc0_ats_s_axis_rq_tlast(1'B0),
     .sc0_ats_s_axis_rq_tuser(62'B0),
     .sc0_ats_m_axis_rc_tvalid(),
@@ -1932,8 +1932,8 @@ output wire m_axib_rready;
     .sc0_ats_m_axis_rc_tuser(),
     .sc0_ats_s_axis_cc_tvalid(1'B0),
     .sc0_ats_s_axis_cc_tready(),
-    .sc0_ats_s_axis_cc_tdata(256'B0),
-    .sc0_ats_s_axis_cc_tkeep(32'B0),
+    .sc0_ats_s_axis_cc_tdata(64'B0),
+    .sc0_ats_s_axis_cc_tkeep(8'B0),
     .sc0_ats_s_axis_cc_tlast(1'B0),
     .sc0_ats_s_axis_cc_tuser(33'B0),
     .sc0_ats_m_axis_cq_tvalid(),
@@ -1944,8 +1944,8 @@ output wire m_axib_rready;
     .sc0_ats_m_axis_cq_tuser(),
     .sc1_ats_s_axis_rq_tvalid(1'B0),
     .sc1_ats_s_axis_rq_tready(),
-    .sc1_ats_s_axis_rq_tdata(256'B0),
-    .sc1_ats_s_axis_rq_tkeep(32'B0),
+    .sc1_ats_s_axis_rq_tdata(64'B0),
+    .sc1_ats_s_axis_rq_tkeep(8'B0),
     .sc1_ats_s_axis_rq_tlast(1'B0),
     .sc1_ats_s_axis_rq_tuser(62'B0),
     .sc1_ats_m_axis_rc_tvalid(),
@@ -1956,8 +1956,8 @@ output wire m_axib_rready;
     .sc1_ats_m_axis_rc_tuser(),
     .sc1_ats_s_axis_cc_tvalid(1'B0),
     .sc1_ats_s_axis_cc_tready(),
-    .sc1_ats_s_axis_cc_tdata(256'B0),
-    .sc1_ats_s_axis_cc_tkeep(32'B0),
+    .sc1_ats_s_axis_cc_tdata(64'B0),
+    .sc1_ats_s_axis_cc_tkeep(8'B0),
     .sc1_ats_s_axis_cc_tlast(1'B0),
     .sc1_ats_s_axis_cc_tuser(33'B0),
     .sc1_ats_m_axis_cq_tvalid(),

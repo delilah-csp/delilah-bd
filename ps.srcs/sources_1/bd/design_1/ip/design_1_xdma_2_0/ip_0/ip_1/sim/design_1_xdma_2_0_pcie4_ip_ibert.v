@@ -61,48 +61,6 @@ module design_1_xdma_2_0_pcie4_ip_ibert (
   gt0_drpdi_o,
   gt0_drprdy_i,
   gt0_drpdo_i,
-  gt1_drpen_o,
-  gt1_drpwe_o,
-  gt1_drpaddr_o,
-  gt1_drpdi_o,
-  gt1_drprdy_i,
-  gt1_drpdo_i,
-  gt2_drpen_o,
-  gt2_drpwe_o,
-  gt2_drpaddr_o,
-  gt2_drpdi_o,
-  gt2_drprdy_i,
-  gt2_drpdo_i,
-  gt3_drpen_o,
-  gt3_drpwe_o,
-  gt3_drpaddr_o,
-  gt3_drpdi_o,
-  gt3_drprdy_i,
-  gt3_drpdo_i,
-  gt4_drpen_o,
-  gt4_drpwe_o,
-  gt4_drpaddr_o,
-  gt4_drpdi_o,
-  gt4_drprdy_i,
-  gt4_drpdo_i,
-  gt5_drpen_o,
-  gt5_drpwe_o,
-  gt5_drpaddr_o,
-  gt5_drpdi_o,
-  gt5_drprdy_i,
-  gt5_drpdo_i,
-  gt6_drpen_o,
-  gt6_drpwe_o,
-  gt6_drpaddr_o,
-  gt6_drpdi_o,
-  gt6_drprdy_i,
-  gt6_drpdo_i,
-  gt7_drpen_o,
-  gt7_drpwe_o,
-  gt7_drpaddr_o,
-  gt7_drpdi_o,
-  gt7_drprdy_i,
-  gt7_drpdo_i,
   eyescanreset_o,
   rxrate_o,
   txdiffctrl_o,
@@ -121,7 +79,7 @@ module design_1_xdma_2_0_pcie4_ip_ibert (
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME drpclk, ASSOCIATED_BUSIF GT0_DRP:GT1_DRP, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 drpclk CLK" *)
-output wire [7 : 0] drpclk_o;
+output wire [0 : 0] drpclk_o;
 (* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT0_DRP DEN" *)
 output wire gt0_drpen_o;
 (* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT0_DRP DWE" *)
@@ -134,103 +92,19 @@ output wire [15 : 0] gt0_drpdi_o;
 input wire gt0_drprdy_i;
 (* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT0_DRP DO" *)
 input wire [15 : 0] gt0_drpdo_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT1_DRP DEN" *)
-output wire gt1_drpen_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT1_DRP DWE" *)
-output wire gt1_drpwe_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT1_DRP DADDR" *)
-output wire [9 : 0] gt1_drpaddr_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT1_DRP DI" *)
-output wire [15 : 0] gt1_drpdi_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT1_DRP DRDY" *)
-input wire gt1_drprdy_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT1_DRP DO" *)
-input wire [15 : 0] gt1_drpdo_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT2_DRP DEN" *)
-output wire gt2_drpen_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT2_DRP DWE" *)
-output wire gt2_drpwe_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT2_DRP DADDR" *)
-output wire [9 : 0] gt2_drpaddr_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT2_DRP DI" *)
-output wire [15 : 0] gt2_drpdi_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT2_DRP DRDY" *)
-input wire gt2_drprdy_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT2_DRP DO" *)
-input wire [15 : 0] gt2_drpdo_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT3_DRP DEN" *)
-output wire gt3_drpen_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT3_DRP DWE" *)
-output wire gt3_drpwe_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT3_DRP DADDR" *)
-output wire [9 : 0] gt3_drpaddr_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT3_DRP DI" *)
-output wire [15 : 0] gt3_drpdi_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT3_DRP DRDY" *)
-input wire gt3_drprdy_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT3_DRP DO" *)
-input wire [15 : 0] gt3_drpdo_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT4_DRP DEN" *)
-output wire gt4_drpen_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT4_DRP DWE" *)
-output wire gt4_drpwe_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT4_DRP DADDR" *)
-output wire [9 : 0] gt4_drpaddr_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT4_DRP DI" *)
-output wire [15 : 0] gt4_drpdi_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT4_DRP DRDY" *)
-input wire gt4_drprdy_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT4_DRP DO" *)
-input wire [15 : 0] gt4_drpdo_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT5_DRP DEN" *)
-output wire gt5_drpen_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT5_DRP DWE" *)
-output wire gt5_drpwe_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT5_DRP DADDR" *)
-output wire [9 : 0] gt5_drpaddr_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT5_DRP DI" *)
-output wire [15 : 0] gt5_drpdi_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT5_DRP DRDY" *)
-input wire gt5_drprdy_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT5_DRP DO" *)
-input wire [15 : 0] gt5_drpdo_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT6_DRP DEN" *)
-output wire gt6_drpen_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT6_DRP DWE" *)
-output wire gt6_drpwe_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT6_DRP DADDR" *)
-output wire [9 : 0] gt6_drpaddr_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT6_DRP DI" *)
-output wire [15 : 0] gt6_drpdi_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT6_DRP DRDY" *)
-input wire gt6_drprdy_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT6_DRP DO" *)
-input wire [15 : 0] gt6_drpdo_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT7_DRP DEN" *)
-output wire gt7_drpen_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT7_DRP DWE" *)
-output wire gt7_drpwe_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT7_DRP DADDR" *)
-output wire [9 : 0] gt7_drpaddr_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT7_DRP DI" *)
-output wire [15 : 0] gt7_drpdi_o;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT7_DRP DRDY" *)
-input wire gt7_drprdy_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:drp:1.0 GT7_DRP DO" *)
-input wire [15 : 0] gt7_drpdo_i;
-output wire [7 : 0] eyescanreset_o;
-output wire [23 : 0] rxrate_o;
-output wire [39 : 0] txdiffctrl_o;
-output wire [39 : 0] txprecursor_o;
-output wire [39 : 0] txpostcursor_o;
-output wire [7 : 0] rxlpmen_o;
-input wire [23 : 0] rxrate_i;
-input wire [39 : 0] txdiffctrl_i;
-input wire [39 : 0] txprecursor_i;
-input wire [39 : 0] txpostcursor_i;
-input wire [7 : 0] rxlpmen_i;
-input wire [7 : 0] drpclk_i;
-input wire [7 : 0] rxoutclk_i;
+output wire [0 : 0] eyescanreset_o;
+output wire [2 : 0] rxrate_o;
+output wire [4 : 0] txdiffctrl_o;
+output wire [4 : 0] txprecursor_o;
+output wire [4 : 0] txpostcursor_o;
+output wire [0 : 0] rxlpmen_o;
+input wire [2 : 0] rxrate_i;
+input wire [4 : 0] txdiffctrl_i;
+input wire [4 : 0] txprecursor_i;
+input wire [4 : 0] txpostcursor_i;
+input wire [0 : 0] rxlpmen_i;
+input wire [0 : 0] drpclk_i;
+input wire [0 : 0] rxoutclk_i;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME system_clock, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 system_clock CLK" *)
 input wire clk;
@@ -238,7 +112,7 @@ input wire clk;
   in_system_ibert_v1_0_9_in_system_ibert #(
     .C_COMPONENT_NAME("design_1_xdma_2_0_pcie4_ip_ibert"),
     .C_GT_TYPE("GTHE4"),
-    .C_NUM_GT(8),
+    .C_NUM_GT(1),
     .C_ENABLE_INPUT_PORTS("1"),
     .C_USE_MDM(0),
     .C_GT_COORDINATE_79('D0000000000000000),
@@ -313,14 +187,14 @@ input wire clk;
     .C_GT_COORDINATE_10('D0000000000000000),
     .C_GT_COORDINATE_9('D0000000000000000),
     .C_GT_COORDINATE_8('D0000000000000000),
-    .C_GT_COORDINATE_7('B0000000000001111),
-    .C_GT_COORDINATE_6('B0000000000001110),
-    .C_GT_COORDINATE_5('B0000000000001101),
-    .C_GT_COORDINATE_4('B0000000000001100),
-    .C_GT_COORDINATE_3('B0000000000001011),
-    .C_GT_COORDINATE_2('B0000000000001010),
-    .C_GT_COORDINATE_1('B0000000000001001),
-    .C_GT_COORDINATE_0('B0000000000001000),
+    .C_GT_COORDINATE_7('D0000000000000000),
+    .C_GT_COORDINATE_6('D0000000000000000),
+    .C_GT_COORDINATE_5('D0000000000000000),
+    .C_GT_COORDINATE_4('D0000000000000000),
+    .C_GT_COORDINATE_3('D0000000000000000),
+    .C_GT_COORDINATE_2('D0000000000000000),
+    .C_GT_COORDINATE_1('D0000000000000000),
+    .C_GT_COORDINATE_0('B0000000000001111),
     .C_GT_COORDINATE_80('D0000000000000000),
     .C_GT_COORDINATE_81('D0000000000000000),
     .C_GT_COORDINATE_82('D0000000000000000),
@@ -497,14 +371,14 @@ input wire clk;
     .C_QUAD_NUMBER_10('D0000000000000000),
     .C_QUAD_NUMBER_9('D0000000000000000),
     .C_QUAD_NUMBER_8('D0000000000000000),
-    .C_QUAD_NUMBER_7('B0000000011100011),
-    .C_QUAD_NUMBER_6('B0000000011100011),
-    .C_QUAD_NUMBER_5('B0000000011100011),
-    .C_QUAD_NUMBER_4('B0000000011100011),
-    .C_QUAD_NUMBER_3('B0000000011100010),
-    .C_QUAD_NUMBER_2('B0000000011100010),
-    .C_QUAD_NUMBER_1('B0000000011100010),
-    .C_QUAD_NUMBER_0('B0000000011100010),
+    .C_QUAD_NUMBER_7('D0000000000000000),
+    .C_QUAD_NUMBER_6('D0000000000000000),
+    .C_QUAD_NUMBER_5('D0000000000000000),
+    .C_QUAD_NUMBER_4('D0000000000000000),
+    .C_QUAD_NUMBER_3('D0000000000000000),
+    .C_QUAD_NUMBER_2('D0000000000000000),
+    .C_QUAD_NUMBER_1('D0000000000000000),
+    .C_QUAD_NUMBER_0('B0000000011100011),
     .C_BUILD_REVISION(0),
     .C_CORE_MAJOR_VER(3),
     .C_CORE_MINOR_VER(0),
@@ -519,48 +393,48 @@ input wire clk;
     .gt0_drpdi_o(gt0_drpdi_o),
     .gt0_drprdy_i(gt0_drprdy_i),
     .gt0_drpdo_i(gt0_drpdo_i),
-    .gt1_drpen_o(gt1_drpen_o),
-    .gt1_drpwe_o(gt1_drpwe_o),
-    .gt1_drpaddr_o(gt1_drpaddr_o),
-    .gt1_drpdi_o(gt1_drpdi_o),
-    .gt1_drprdy_i(gt1_drprdy_i),
-    .gt1_drpdo_i(gt1_drpdo_i),
-    .gt2_drpen_o(gt2_drpen_o),
-    .gt2_drpwe_o(gt2_drpwe_o),
-    .gt2_drpaddr_o(gt2_drpaddr_o),
-    .gt2_drpdi_o(gt2_drpdi_o),
-    .gt2_drprdy_i(gt2_drprdy_i),
-    .gt2_drpdo_i(gt2_drpdo_i),
-    .gt3_drpen_o(gt3_drpen_o),
-    .gt3_drpwe_o(gt3_drpwe_o),
-    .gt3_drpaddr_o(gt3_drpaddr_o),
-    .gt3_drpdi_o(gt3_drpdi_o),
-    .gt3_drprdy_i(gt3_drprdy_i),
-    .gt3_drpdo_i(gt3_drpdo_i),
-    .gt4_drpen_o(gt4_drpen_o),
-    .gt4_drpwe_o(gt4_drpwe_o),
-    .gt4_drpaddr_o(gt4_drpaddr_o),
-    .gt4_drpdi_o(gt4_drpdi_o),
-    .gt4_drprdy_i(gt4_drprdy_i),
-    .gt4_drpdo_i(gt4_drpdo_i),
-    .gt5_drpen_o(gt5_drpen_o),
-    .gt5_drpwe_o(gt5_drpwe_o),
-    .gt5_drpaddr_o(gt5_drpaddr_o),
-    .gt5_drpdi_o(gt5_drpdi_o),
-    .gt5_drprdy_i(gt5_drprdy_i),
-    .gt5_drpdo_i(gt5_drpdo_i),
-    .gt6_drpen_o(gt6_drpen_o),
-    .gt6_drpwe_o(gt6_drpwe_o),
-    .gt6_drpaddr_o(gt6_drpaddr_o),
-    .gt6_drpdi_o(gt6_drpdi_o),
-    .gt6_drprdy_i(gt6_drprdy_i),
-    .gt6_drpdo_i(gt6_drpdo_i),
-    .gt7_drpen_o(gt7_drpen_o),
-    .gt7_drpwe_o(gt7_drpwe_o),
-    .gt7_drpaddr_o(gt7_drpaddr_o),
-    .gt7_drpdi_o(gt7_drpdi_o),
-    .gt7_drprdy_i(gt7_drprdy_i),
-    .gt7_drpdo_i(gt7_drpdo_i),
+    .gt1_drpen_o(),
+    .gt1_drpwe_o(),
+    .gt1_drpaddr_o(),
+    .gt1_drpdi_o(),
+    .gt1_drprdy_i(1'B0),
+    .gt1_drpdo_i(16'B0),
+    .gt2_drpen_o(),
+    .gt2_drpwe_o(),
+    .gt2_drpaddr_o(),
+    .gt2_drpdi_o(),
+    .gt2_drprdy_i(1'B0),
+    .gt2_drpdo_i(16'B0),
+    .gt3_drpen_o(),
+    .gt3_drpwe_o(),
+    .gt3_drpaddr_o(),
+    .gt3_drpdi_o(),
+    .gt3_drprdy_i(1'B0),
+    .gt3_drpdo_i(16'B0),
+    .gt4_drpen_o(),
+    .gt4_drpwe_o(),
+    .gt4_drpaddr_o(),
+    .gt4_drpdi_o(),
+    .gt4_drprdy_i(1'B0),
+    .gt4_drpdo_i(16'B0),
+    .gt5_drpen_o(),
+    .gt5_drpwe_o(),
+    .gt5_drpaddr_o(),
+    .gt5_drpdi_o(),
+    .gt5_drprdy_i(1'B0),
+    .gt5_drpdo_i(16'B0),
+    .gt6_drpen_o(),
+    .gt6_drpwe_o(),
+    .gt6_drpaddr_o(),
+    .gt6_drpdi_o(),
+    .gt6_drprdy_i(1'B0),
+    .gt6_drpdo_i(16'B0),
+    .gt7_drpen_o(),
+    .gt7_drpwe_o(),
+    .gt7_drpaddr_o(),
+    .gt7_drpdi_o(),
+    .gt7_drprdy_i(1'B0),
+    .gt7_drpdo_i(16'B0),
     .gt8_drpen_o(),
     .gt8_drpwe_o(),
     .gt8_drpaddr_o(),

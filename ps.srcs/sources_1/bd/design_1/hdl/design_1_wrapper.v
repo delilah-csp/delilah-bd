@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
-//Date        : Tue May  9 15:46:03 2023
+//Date        : Tue Aug  8 15:28:50 2023
 //Host        : Daisy-Host running 64-bit Ubuntu 16.04.7 LTS
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -125,10 +125,10 @@ module design_1_wrapper
   input [3:0]pcie_7x_mgt_rtl_1_rxp;
   output [3:0]pcie_7x_mgt_rtl_1_txn;
   output [3:0]pcie_7x_mgt_rtl_1_txp;
-  input [7:0]pcie_7x_mgt_rtl_2_rxn;
-  input [7:0]pcie_7x_mgt_rtl_2_rxp;
-  output [7:0]pcie_7x_mgt_rtl_2_txn;
-  output [7:0]pcie_7x_mgt_rtl_2_txp;
+  input [0:0]pcie_7x_mgt_rtl_2_rxn;
+  input [0:0]pcie_7x_mgt_rtl_2_rxp;
+  output [0:0]pcie_7x_mgt_rtl_2_txn;
+  output [0:0]pcie_7x_mgt_rtl_2_txp;
   input sys_rst_n_0;
   output user_lnk_up_0;
   output [0:0]user_lnk_up_1;
@@ -187,10 +187,10 @@ module design_1_wrapper
   wire [3:0]pcie_7x_mgt_rtl_1_rxp;
   wire [3:0]pcie_7x_mgt_rtl_1_txn;
   wire [3:0]pcie_7x_mgt_rtl_1_txp;
-  wire [7:0]pcie_7x_mgt_rtl_2_rxn;
-  wire [7:0]pcie_7x_mgt_rtl_2_rxp;
-  wire [7:0]pcie_7x_mgt_rtl_2_txn;
-  wire [7:0]pcie_7x_mgt_rtl_2_txp;
+  wire [0:0]pcie_7x_mgt_rtl_2_rxn;
+  wire [0:0]pcie_7x_mgt_rtl_2_rxp;
+  wire [0:0]pcie_7x_mgt_rtl_2_txn;
+  wire [0:0]pcie_7x_mgt_rtl_2_txp;
   wire sys_rst_n_0;
   wire user_lnk_up_0;
   wire [0:0]user_lnk_up_1;

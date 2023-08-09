@@ -624,18 +624,19 @@ proc create_root_design { parentCell } {
   # Create instance: xdma_2, and set properties
   set xdma_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xdma:4.1 xdma_2 ]
   set_property -dict [ list \
-   CONFIG.PF0_DEVICE_ID_mqdma {9038} \
-   CONFIG.PF2_DEVICE_ID_mqdma {9038} \
-   CONFIG.PF3_DEVICE_ID_mqdma {9038} \
+   CONFIG.PF0_DEVICE_ID_mqdma {9031} \
+   CONFIG.PF2_DEVICE_ID_mqdma {9031} \
+   CONFIG.PF3_DEVICE_ID_mqdma {9031} \
    CONFIG.axi_bypass_64bit_en {true} \
    CONFIG.axi_bypass_prefetchable {true} \
-   CONFIG.axi_data_width {256_bit} \
+   CONFIG.axi_data_width {64_bit} \
    CONFIG.axilite_master_en {true} \
    CONFIG.axilite_master_size {32} \
    CONFIG.axist_bypass_en {true} \
    CONFIG.axist_bypass_size {64} \
+   CONFIG.axisten_freq {125} \
    CONFIG.cfg_ext_if {false} \
-   CONFIG.coreclk_freq {500} \
+   CONFIG.coreclk_freq {250} \
    CONFIG.en_dbg_descramble {true} \
    CONFIG.enable_gen4 {false} \
    CONFIG.enable_ibert {true} \
@@ -658,7 +659,7 @@ proc create_root_design { parentCell } {
    CONFIG.pf0_msix_enabled {true} \
    CONFIG.pf0_revision_id {00} \
    CONFIG.pl_link_cap_max_link_speed {8.0_GT/s} \
-   CONFIG.pl_link_cap_max_link_width {X8} \
+   CONFIG.pl_link_cap_max_link_width {X1} \
    CONFIG.plltype {QPLL1} \
    CONFIG.select_quad {GTH_Quad_227} \
    CONFIG.vendor_id {1de5} \
