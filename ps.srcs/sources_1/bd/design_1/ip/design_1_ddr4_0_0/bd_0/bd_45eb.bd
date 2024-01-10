@@ -285,28 +285,10 @@
       }
     },
     "interface_nets": {
-      "ilmb_sl_0": {
+      "dlmb_sl_0": {
         "interface_ports": [
-          "ilmb/LMB_Sl_0",
-          "ilmb_cntlr/SLMB"
-        ]
-      },
-      "microblaze_I_Trace": {
-        "interface_ports": [
-          "TRACE",
-          "microblaze_I/TRACE"
-        ]
-      },
-      "dlmb_sl_2": {
-        "interface_ports": [
-          "dlmb/LMB_Sl_2",
-          "second_dlmb_cntlr/SLMB"
-        ]
-      },
-      "ilmb_sl_1": {
-        "interface_ports": [
-          "ilmb/LMB_Sl_1",
-          "second_ilmb_cntlr/SLMB"
+          "dlmb/LMB_Sl_0",
+          "dlmb_cntlr/SLMB"
         ]
       },
       "dlmb_port_2": {
@@ -315,10 +297,16 @@
           "second_lmb_bram_I/BRAM_PORTA"
         ]
       },
-      "dlmb_sl_0": {
+      "ilmb_sl_1": {
         "interface_ports": [
-          "dlmb/LMB_Sl_0",
-          "dlmb_cntlr/SLMB"
+          "ilmb/LMB_Sl_1",
+          "second_ilmb_cntlr/SLMB"
+        ]
+      },
+      "dlmb_sl_2": {
+        "interface_ports": [
+          "dlmb/LMB_Sl_2",
+          "second_dlmb_cntlr/SLMB"
         ]
       },
       "ilmb_port": {
@@ -361,6 +349,18 @@
         "interface_ports": [
           "IO",
           "iomodule_0/IO_BUS"
+        ]
+      },
+      "microblaze_I_Trace": {
+        "interface_ports": [
+          "TRACE",
+          "microblaze_I/TRACE"
+        ]
+      },
+      "ilmb_sl_0": {
+        "interface_ports": [
+          "ilmb/LMB_Sl_0",
+          "ilmb_cntlr/SLMB"
         ]
       }
     },
