@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
-//Date        : Thu Jan 25 15:57:49 2024
+//Date        : Thu Jan 25 21:08:45 2024
 //Host        : Daisy-Host running 64-bit Ubuntu 16.04.7 LTS
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -43,10 +43,6 @@ module design_1_wrapper
     pcie_7x_mgt_rtl_0_rxp,
     pcie_7x_mgt_rtl_0_txn,
     pcie_7x_mgt_rtl_0_txp,
-    pcie_7x_mgt_rtl_1_rxn,
-    pcie_7x_mgt_rtl_1_rxp,
-    pcie_7x_mgt_rtl_1_txn,
-    pcie_7x_mgt_rtl_1_txp,
     pcie_7x_mgt_rtl_2_rxn,
     pcie_7x_mgt_rtl_2_rxp,
     pcie_7x_mgt_rtl_2_txn,
@@ -87,10 +83,6 @@ module design_1_wrapper
   input [3:0]pcie_7x_mgt_rtl_0_rxp;
   output [3:0]pcie_7x_mgt_rtl_0_txn;
   output [3:0]pcie_7x_mgt_rtl_0_txp;
-  input [3:0]pcie_7x_mgt_rtl_1_rxn;
-  input [3:0]pcie_7x_mgt_rtl_1_rxp;
-  output [3:0]pcie_7x_mgt_rtl_1_txn;
-  output [3:0]pcie_7x_mgt_rtl_1_txp;
   input [3:0]pcie_7x_mgt_rtl_2_rxn;
   input [3:0]pcie_7x_mgt_rtl_2_rxp;
   output [3:0]pcie_7x_mgt_rtl_2_txn;
@@ -132,10 +124,6 @@ module design_1_wrapper
   wire [3:0]pcie_7x_mgt_rtl_0_rxp;
   wire [3:0]pcie_7x_mgt_rtl_0_txn;
   wire [3:0]pcie_7x_mgt_rtl_0_txp;
-  wire [3:0]pcie_7x_mgt_rtl_1_rxn;
-  wire [3:0]pcie_7x_mgt_rtl_1_rxp;
-  wire [3:0]pcie_7x_mgt_rtl_1_txn;
-  wire [3:0]pcie_7x_mgt_rtl_1_txp;
   wire [3:0]pcie_7x_mgt_rtl_2_rxn;
   wire [3:0]pcie_7x_mgt_rtl_2_rxp;
   wire [3:0]pcie_7x_mgt_rtl_2_txn;
@@ -178,10 +166,6 @@ module design_1_wrapper
         .pcie_7x_mgt_rtl_0_rxp(pcie_7x_mgt_rtl_0_rxp),
         .pcie_7x_mgt_rtl_0_txn(pcie_7x_mgt_rtl_0_txn),
         .pcie_7x_mgt_rtl_0_txp(pcie_7x_mgt_rtl_0_txp),
-        .pcie_7x_mgt_rtl_1_rxn(pcie_7x_mgt_rtl_1_rxn),
-        .pcie_7x_mgt_rtl_1_rxp(pcie_7x_mgt_rtl_1_rxp),
-        .pcie_7x_mgt_rtl_1_txn(pcie_7x_mgt_rtl_1_txn),
-        .pcie_7x_mgt_rtl_1_txp(pcie_7x_mgt_rtl_1_txp),
         .pcie_7x_mgt_rtl_2_rxn(pcie_7x_mgt_rtl_2_rxn),
         .pcie_7x_mgt_rtl_2_rxp(pcie_7x_mgt_rtl_2_rxp),
         .pcie_7x_mgt_rtl_2_txn(pcie_7x_mgt_rtl_2_txn),
