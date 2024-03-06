@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
-//Date        : Thu Jan 25 21:08:45 2024
+//Date        : Wed Mar  6 11:07:03 2024
 //Host        : Daisy-Host running 64-bit Ubuntu 16.04.7 LTS
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -31,8 +31,6 @@ module design_1_wrapper
     ddr4_rtl_0_reset_n,
     diff_clock_rtl_0_clk_n,
     diff_clock_rtl_0_clk_p,
-    diff_clock_rtl_1_clk_n,
-    diff_clock_rtl_1_clk_p,
     diff_clock_rtl_2_clk_n,
     diff_clock_rtl_2_clk_p,
     diff_clock_rtl_4_clk_n,
@@ -71,8 +69,6 @@ module design_1_wrapper
   output ddr4_rtl_0_reset_n;
   input [0:0]diff_clock_rtl_0_clk_n;
   input [0:0]diff_clock_rtl_0_clk_p;
-  input [0:0]diff_clock_rtl_1_clk_n;
-  input [0:0]diff_clock_rtl_1_clk_p;
   input diff_clock_rtl_2_clk_n;
   input diff_clock_rtl_2_clk_p;
   input [0:0]diff_clock_rtl_4_clk_n;
@@ -112,8 +108,6 @@ module design_1_wrapper
   wire ddr4_rtl_0_reset_n;
   wire [0:0]diff_clock_rtl_0_clk_n;
   wire [0:0]diff_clock_rtl_0_clk_p;
-  wire [0:0]diff_clock_rtl_1_clk_n;
-  wire [0:0]diff_clock_rtl_1_clk_p;
   wire diff_clock_rtl_2_clk_n;
   wire diff_clock_rtl_2_clk_p;
   wire [0:0]diff_clock_rtl_4_clk_n;
@@ -154,8 +148,6 @@ module design_1_wrapper
         .ddr4_rtl_0_reset_n(ddr4_rtl_0_reset_n),
         .diff_clock_rtl_0_clk_n(diff_clock_rtl_0_clk_n),
         .diff_clock_rtl_0_clk_p(diff_clock_rtl_0_clk_p),
-        .diff_clock_rtl_1_clk_n(diff_clock_rtl_1_clk_n),
-        .diff_clock_rtl_1_clk_p(diff_clock_rtl_1_clk_p),
         .diff_clock_rtl_2_clk_n(diff_clock_rtl_2_clk_n),
         .diff_clock_rtl_2_clk_p(diff_clock_rtl_2_clk_p),
         .diff_clock_rtl_4_clk_n(diff_clock_rtl_4_clk_n),
