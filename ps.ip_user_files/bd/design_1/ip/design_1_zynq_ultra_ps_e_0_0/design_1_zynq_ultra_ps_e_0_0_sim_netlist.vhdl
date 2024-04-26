@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
--- Date        : Fri Jan 26 11:31:08 2024
+-- Date        : Tue Mar 12 13:57:33 2024
 -- Host        : Daisy-Host running 64-bit Ubuntu 16.04.7 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/nhed/Delilah/delilah-bd/ps.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_sim_netlist.vhdl
@@ -7607,7 +7607,7 @@ architecture STRUCTURE of design_1_zynq_ultra_ps_e_0_0 is
   attribute X_INTERFACE_INFO of maxigp1_wdata : signal is "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD WDATA";
   attribute X_INTERFACE_INFO of maxigp1_wstrb : signal is "xilinx.com:interface:aximm:1.0 M_AXI_HPM1_FPD WSTRB";
   attribute X_INTERFACE_INFO of pl_ps_irq0 : signal is "xilinx.com:signal:interrupt:1.0 PL_PS_IRQ0 INTERRUPT";
-  attribute X_INTERFACE_PARAMETER of pl_ps_irq0 : signal is "XIL_INTERFACENAME PL_PS_IRQ0, SENSITIVITY LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH, PortWidth 6";
+  attribute X_INTERFACE_PARAMETER of pl_ps_irq0 : signal is "XIL_INTERFACENAME PL_PS_IRQ0, SENSITIVITY NULL:NULL:LEVEL_HIGH:LEVEL_HIGH:NULL:LEVEL_HIGH, PortWidth 6";
   attribute X_INTERFACE_INFO of saxigp0_araddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI_HPC0_FPD ARADDR";
   attribute X_INTERFACE_INFO of saxigp0_arburst : signal is "xilinx.com:interface:aximm:1.0 S_AXI_HPC0_FPD ARBURST";
   attribute X_INTERFACE_INFO of saxigp0_arcache : signal is "xilinx.com:interface:aximm:1.0 S_AXI_HPC0_FPD ARCACHE";

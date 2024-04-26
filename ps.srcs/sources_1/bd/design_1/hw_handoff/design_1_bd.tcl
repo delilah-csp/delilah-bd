@@ -326,7 +326,7 @@ proc create_root_design { parentCell } {
   # Create instance: filter_0, and set properties
   set filter_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:filter:1.0 filter_0 ]
   set_property -dict [ list \
-   CONFIG.C_M_AXI_GMEM_DATA_WIDTH {64} \
+   CONFIG.C_M_AXI_GMEM_DATA_WIDTH {32} \
  ] $filter_0
 
   # Create instance: filter_1, and set properties

@@ -1,8 +1,4 @@
 #
-#
-#
-#
-#
 package require Tcl	8.5
 package require Tk
 #package require Ttk
@@ -67,8 +63,7 @@ while {[gets $fp line]!=-1} {
 	       }
         if {$count==2} {
           set temp1 [expr $line & 0xff]
-          # set width [format "%2x" $temp1]
-          set width [expr int($temp1)]
+          set width [format "%2x" $temp1]
           puts "width : $width"   
         }
         if {$count==3} {
@@ -80,58 +75,32 @@ while {[gets $fp line]!=-1} {
 close $fp
 
 #Create transition diagram
-$c create text 2c 0.1c -text "Max link width  : $phy_lane" -anchor n
-$c create text 6c 0.1c -text "Negotiated Link width   : $width" -anchor n
+$c create text 2c 0.1c -text "Max link width      : $phy_lane" -anchor n
+$c create text 2.5c 0.6c -text "Negotiated Link width   : $width" -anchor n
 
-set ln_0 [$c create oval 5c 1.4c 5.2c 1.6c  -tags item]
-$c create text 4c 1.3c -text "Lane 0" -anchor n
+set ln_0 [$c create oval 3c 2.4c 3.2c 2.6c  -tags item]
+$c create text 2c 2.3c -text "Lane 0" -anchor n
 
-set ln_1 [$c create oval 5c 3.4c 5.2c 3.6c  -tags item]
-$c create text 4c 3.3c -text "Lane 1" -anchor n
+set ln_1 [$c create oval 3c 4.4c 3.2c 4.6c  -tags item]
+$c create text 2c 4.3c -text "Lane 1" -anchor n
 
-set ln_2 [$c create oval 5c 5.4c 5.2c 5.6c  -tags item]
-$c create text 4c 5.3c -text "Lane 2" -anchor n
+set ln_2 [$c create oval 3c 6.4c 3.2c 6.6c  -tags item]
+$c create text 2c 6.3c -text "Lane 2" -anchor n
 
-set ln_3 [$c create oval 5c 7.4c 5.2c 7.6c  -tags item]
-$c create text 4c 7.3c -text "Lane 3" -anchor n
+set ln_3 [$c create oval 3c 8.4c 3.2c 8.6c  -tags item]
+$c create text 2c 8.3c -text "Lane 3" -anchor n
 
-set ln_4 [$c create oval 5c 9.4c 5.2c 9.6c  -tags item]
-$c create text 4c 9.3c -text "Lane 4" -anchor n
+set ln_4 [$c create oval 3c 10.4c 3.2c 10.6c  -tags item]
+$c create text 2c 10.3c -text "Lane 4" -anchor n
 
-set ln_5 [$c create oval 5c 11.4c 5.2c 11.6c  -tags item]
-$c create text 4c 11.3c -text "Lane 5" -anchor n
+set ln_5 [$c create oval 3c 12.4c 3.2c 12.6c  -tags item]
+$c create text 2c 12.3c -text "Lane 5" -anchor n
 
-set ln_6 [$c create oval 5c 13.4c 5.2c 13.6c  -tags item]
-$c create text 4c 13.3c -text "Lane 6" -anchor n
+set ln_6 [$c create oval 3c 14.4c 3.2c 14.6c  -tags item]
+$c create text 2c 14.3c -text "Lane 6" -anchor n
 
-set ln_7 [$c create oval 5c 15.4c 5.2c 15.6c  -tags item]
-$c create text 4c 15.3c -text "Lane 7" -anchor n
-
-set ln_8 [$c create oval 8c 1.4c 8.2c 1.6c  -tags item]
-$c create text 7c 1.3c -text "Lane 8" -anchor n
-
-set ln_9 [$c create oval 8c 3.4c 8.2c 3.6c -tags item]
-$c create text 7c 3.3c -text "Lane 9" -anchor n
-
-set ln_10 [$c create oval 8c 5.4c 8.2c 5.6c  -tags item]
-$c create text 7c 5.3c -text "Lane 10" -anchor n
-
-set ln_11 [$c create oval 8c 7.4c 8.2c 7.6c -tags item]
-$c create text 7c 7.3c -text "Lane 11" -anchor n
-
-set ln_12 [$c create oval 8c 9.4c 8.2c 9.6c  -tags item]
-$c create text 7c 9.3c -text "Lane 12" -anchor n
-
-set ln_13 [$c create oval 8c 11.4c 8.2c 11.6c -tags item]
-$c create text 7c 11.3c -text "Lane 13" -anchor n
-
-set ln_14 [$c create oval 8c 13.4c 8.2c 13.6c  -tags item]
-$c create text 7c 13.3c -text "Lane 14" -anchor n
-
-set ln_15 [$c create oval 8c 15.4c 8.2c 15.6c  -tags item]
-$c create text 7c 15.3c -text "Lane 15" -anchor n
-
-
+set ln_7 [$c create oval 3c 16.4c 3.2c 16.6c  -tags item]
+$c create text 2c 16.3c -text "Lane 7" -anchor n
 
 set fp [open "rxdet.dat" r]
 set count 0

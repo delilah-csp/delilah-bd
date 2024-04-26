@@ -119,27 +119,27 @@ module bd_45eb
   wire dlmb_port_EN;
   wire dlmb_port_RST;
   wire [0:3]dlmb_port_WE;
-  wire [0:31]dlmb_sl_0_ABUS;
-  wire dlmb_sl_0_ADDRSTROBE;
-  wire [0:3]dlmb_sl_0_BE;
   wire dlmb_sl_0_CE;
   wire [0:31]dlmb_sl_0_READDBUS;
-  wire dlmb_sl_0_READSTROBE;
   wire dlmb_sl_0_READY;
   wire dlmb_sl_0_UE;
   wire dlmb_sl_0_WAIT;
-  wire [0:31]dlmb_sl_0_WRITEDBUS;
-  wire dlmb_sl_0_WRITESTROBE;
   wire dlmb_sl_1_CE;
   wire [0:31]dlmb_sl_1_READDBUS;
   wire dlmb_sl_1_READY;
   wire dlmb_sl_1_UE;
   wire dlmb_sl_1_WAIT;
+  wire [0:31]dlmb_sl_2_ABUS;
+  wire dlmb_sl_2_ADDRSTROBE;
+  wire [0:3]dlmb_sl_2_BE;
   wire dlmb_sl_2_CE;
   wire [0:31]dlmb_sl_2_READDBUS;
+  wire dlmb_sl_2_READSTROBE;
   wire dlmb_sl_2_READY;
   wire dlmb_sl_2_UE;
   wire dlmb_sl_2_WAIT;
+  wire [0:31]dlmb_sl_2_WRITEDBUS;
+  wire dlmb_sl_2_WRITESTROBE;
   wire [0:31]ilmb_ABUS;
   wire ilmb_ADDRSTROBE;
   wire ilmb_CE;
@@ -162,22 +162,22 @@ module bd_45eb
   wire ilmb_port_EN;
   wire ilmb_port_RST;
   wire [0:3]ilmb_port_WE;
-  wire [0:31]ilmb_sl_0_ABUS;
-  wire ilmb_sl_0_ADDRSTROBE;
-  wire [0:3]ilmb_sl_0_BE;
   wire ilmb_sl_0_CE;
   wire [0:31]ilmb_sl_0_READDBUS;
-  wire ilmb_sl_0_READSTROBE;
   wire ilmb_sl_0_READY;
   wire ilmb_sl_0_UE;
   wire ilmb_sl_0_WAIT;
-  wire [0:31]ilmb_sl_0_WRITEDBUS;
-  wire ilmb_sl_0_WRITESTROBE;
+  wire [0:31]ilmb_sl_1_ABUS;
+  wire ilmb_sl_1_ADDRSTROBE;
+  wire [0:3]ilmb_sl_1_BE;
   wire ilmb_sl_1_CE;
   wire [0:31]ilmb_sl_1_READDBUS;
+  wire ilmb_sl_1_READSTROBE;
   wire ilmb_sl_1_READY;
   wire ilmb_sl_1_UE;
   wire ilmb_sl_1_WAIT;
+  wire [0:31]ilmb_sl_1_WRITEDBUS;
+  wire ilmb_sl_1_WRITESTROBE;
   wire [31:0]iomodule_0_IO_ADDRESS;
   wire iomodule_0_IO_ADDR_STROBE;
   wire [3:0]iomodule_0_IO_BYTE_ENABLE;
@@ -257,18 +257,18 @@ module bd_45eb
   assign iomodule_0_IO_READY = IO_ready;
   assign iomodule_0_IO_READ_DATA = IO_read_data[31:0];
   bd_45eb_dlmb_0 dlmb
-       (.LMB_ABus(dlmb_sl_0_ABUS),
-        .LMB_AddrStrobe(dlmb_sl_0_ADDRSTROBE),
-        .LMB_BE(dlmb_sl_0_BE),
+       (.LMB_ABus(dlmb_sl_2_ABUS),
+        .LMB_AddrStrobe(dlmb_sl_2_ADDRSTROBE),
+        .LMB_BE(dlmb_sl_2_BE),
         .LMB_CE(dlmb_CE),
         .LMB_Clk(Clk2),
         .LMB_ReadDBus(dlmb_READDBUS),
-        .LMB_ReadStrobe(dlmb_sl_0_READSTROBE),
+        .LMB_ReadStrobe(dlmb_sl_2_READSTROBE),
         .LMB_Ready(dlmb_READY),
         .LMB_UE(dlmb_UE),
         .LMB_Wait(dlmb_WAIT),
-        .LMB_WriteDBus(dlmb_sl_0_WRITEDBUS),
-        .LMB_WriteStrobe(dlmb_sl_0_WRITESTROBE),
+        .LMB_WriteDBus(dlmb_sl_2_WRITEDBUS),
+        .LMB_WriteStrobe(dlmb_sl_2_WRITESTROBE),
         .M_ABus(dlmb_ABUS),
         .M_AddrStrobe(dlmb_ADDRSTROBE),
         .M_BE(dlmb_BE),
@@ -291,32 +291,32 @@ module bd_45eb
         .BRAM_EN_A(dlmb_port_EN),
         .BRAM_Rst_A(dlmb_port_RST),
         .BRAM_WEN_A(dlmb_port_WE),
-        .LMB_ABus(dlmb_sl_0_ABUS),
-        .LMB_AddrStrobe(dlmb_sl_0_ADDRSTROBE),
-        .LMB_BE(dlmb_sl_0_BE),
+        .LMB_ABus(dlmb_sl_2_ABUS),
+        .LMB_AddrStrobe(dlmb_sl_2_ADDRSTROBE),
+        .LMB_BE(dlmb_sl_2_BE),
         .LMB_Clk(Clk2),
-        .LMB_ReadStrobe(dlmb_sl_0_READSTROBE),
+        .LMB_ReadStrobe(dlmb_sl_2_READSTROBE),
         .LMB_Rst(LMB_Rst2),
-        .LMB_WriteDBus(dlmb_sl_0_WRITEDBUS),
-        .LMB_WriteStrobe(dlmb_sl_0_WRITESTROBE),
+        .LMB_WriteDBus(dlmb_sl_2_WRITEDBUS),
+        .LMB_WriteStrobe(dlmb_sl_2_WRITESTROBE),
         .Sl_CE(dlmb_sl_0_CE),
         .Sl_DBus(dlmb_sl_0_READDBUS),
         .Sl_Ready(dlmb_sl_0_READY),
         .Sl_UE(dlmb_sl_0_UE),
         .Sl_Wait(dlmb_sl_0_WAIT));
   bd_45eb_ilmb_0 ilmb
-       (.LMB_ABus(ilmb_sl_0_ABUS),
-        .LMB_AddrStrobe(ilmb_sl_0_ADDRSTROBE),
-        .LMB_BE(ilmb_sl_0_BE),
+       (.LMB_ABus(ilmb_sl_1_ABUS),
+        .LMB_AddrStrobe(ilmb_sl_1_ADDRSTROBE),
+        .LMB_BE(ilmb_sl_1_BE),
         .LMB_CE(ilmb_CE),
         .LMB_Clk(Clk2),
         .LMB_ReadDBus(ilmb_READDBUS),
-        .LMB_ReadStrobe(ilmb_sl_0_READSTROBE),
+        .LMB_ReadStrobe(ilmb_sl_1_READSTROBE),
         .LMB_Ready(ilmb_READY),
         .LMB_UE(ilmb_UE),
         .LMB_Wait(ilmb_WAIT),
-        .LMB_WriteDBus(ilmb_sl_0_WRITEDBUS),
-        .LMB_WriteStrobe(ilmb_sl_0_WRITESTROBE),
+        .LMB_WriteDBus(ilmb_sl_1_WRITEDBUS),
+        .LMB_WriteStrobe(ilmb_sl_1_WRITESTROBE),
         .M_ABus(ilmb_ABUS),
         .M_AddrStrobe(ilmb_ADDRSTROBE),
         .M_BE({1'b0,1'b0,1'b0,1'b0}),
@@ -337,14 +337,14 @@ module bd_45eb
         .BRAM_EN_A(ilmb_port_EN),
         .BRAM_Rst_A(ilmb_port_RST),
         .BRAM_WEN_A(ilmb_port_WE),
-        .LMB_ABus(ilmb_sl_0_ABUS),
-        .LMB_AddrStrobe(ilmb_sl_0_ADDRSTROBE),
-        .LMB_BE(ilmb_sl_0_BE),
+        .LMB_ABus(ilmb_sl_1_ABUS),
+        .LMB_AddrStrobe(ilmb_sl_1_ADDRSTROBE),
+        .LMB_BE(ilmb_sl_1_BE),
         .LMB_Clk(Clk2),
-        .LMB_ReadStrobe(ilmb_sl_0_READSTROBE),
+        .LMB_ReadStrobe(ilmb_sl_1_READSTROBE),
         .LMB_Rst(LMB_Rst2),
-        .LMB_WriteDBus(ilmb_sl_0_WRITEDBUS),
-        .LMB_WriteStrobe(ilmb_sl_0_WRITESTROBE),
+        .LMB_WriteDBus(ilmb_sl_1_WRITEDBUS),
+        .LMB_WriteStrobe(ilmb_sl_1_WRITESTROBE),
         .Sl_CE(ilmb_sl_0_CE),
         .Sl_DBus(ilmb_sl_0_READDBUS),
         .Sl_Ready(ilmb_sl_0_READY),
@@ -360,12 +360,12 @@ module bd_45eb
         .IO_Ready(iomodule_0_IO_READY),
         .IO_Write_Data(iomodule_0_IO_WRITE_DATA),
         .IO_Write_Strobe(iomodule_0_IO_WRITE_STROBE),
-        .LMB_ABus(dlmb_sl_0_ABUS),
-        .LMB_AddrStrobe(dlmb_sl_0_ADDRSTROBE),
-        .LMB_BE(dlmb_sl_0_BE),
-        .LMB_ReadStrobe(dlmb_sl_0_READSTROBE),
-        .LMB_WriteDBus(dlmb_sl_0_WRITEDBUS),
-        .LMB_WriteStrobe(dlmb_sl_0_WRITESTROBE),
+        .LMB_ABus(dlmb_sl_2_ABUS),
+        .LMB_AddrStrobe(dlmb_sl_2_ADDRSTROBE),
+        .LMB_BE(dlmb_sl_2_BE),
+        .LMB_ReadStrobe(dlmb_sl_2_READSTROBE),
+        .LMB_WriteDBus(dlmb_sl_2_WRITEDBUS),
+        .LMB_WriteStrobe(dlmb_sl_2_WRITESTROBE),
         .Rst(IO_Rst),
         .Sl_CE(dlmb_sl_1_CE),
         .Sl_DBus(dlmb_sl_1_READDBUS),
@@ -461,14 +461,14 @@ module bd_45eb
         .BRAM_EN_A(dlmb_port_2_EN),
         .BRAM_Rst_A(dlmb_port_2_RST),
         .BRAM_WEN_A(dlmb_port_2_WE),
-        .LMB_ABus(dlmb_sl_0_ABUS),
-        .LMB_AddrStrobe(dlmb_sl_0_ADDRSTROBE),
-        .LMB_BE(dlmb_sl_0_BE),
+        .LMB_ABus(dlmb_sl_2_ABUS),
+        .LMB_AddrStrobe(dlmb_sl_2_ADDRSTROBE),
+        .LMB_BE(dlmb_sl_2_BE),
         .LMB_Clk(Clk2),
-        .LMB_ReadStrobe(dlmb_sl_0_READSTROBE),
+        .LMB_ReadStrobe(dlmb_sl_2_READSTROBE),
         .LMB_Rst(LMB_Rst2),
-        .LMB_WriteDBus(dlmb_sl_0_WRITEDBUS),
-        .LMB_WriteStrobe(dlmb_sl_0_WRITESTROBE),
+        .LMB_WriteDBus(dlmb_sl_2_WRITEDBUS),
+        .LMB_WriteStrobe(dlmb_sl_2_WRITESTROBE),
         .Sl_CE(dlmb_sl_2_CE),
         .Sl_DBus(dlmb_sl_2_READDBUS),
         .Sl_Ready(dlmb_sl_2_READY),
@@ -482,14 +482,14 @@ module bd_45eb
         .BRAM_EN_A(ilmb_port_2_EN),
         .BRAM_Rst_A(ilmb_port_2_RST),
         .BRAM_WEN_A(ilmb_port_2_WE),
-        .LMB_ABus(ilmb_sl_0_ABUS),
-        .LMB_AddrStrobe(ilmb_sl_0_ADDRSTROBE),
-        .LMB_BE(ilmb_sl_0_BE),
+        .LMB_ABus(ilmb_sl_1_ABUS),
+        .LMB_AddrStrobe(ilmb_sl_1_ADDRSTROBE),
+        .LMB_BE(ilmb_sl_1_BE),
         .LMB_Clk(Clk2),
-        .LMB_ReadStrobe(ilmb_sl_0_READSTROBE),
+        .LMB_ReadStrobe(ilmb_sl_1_READSTROBE),
         .LMB_Rst(LMB_Rst2),
-        .LMB_WriteDBus(ilmb_sl_0_WRITEDBUS),
-        .LMB_WriteStrobe(ilmb_sl_0_WRITESTROBE),
+        .LMB_WriteDBus(ilmb_sl_1_WRITEDBUS),
+        .LMB_WriteStrobe(ilmb_sl_1_WRITESTROBE),
         .Sl_CE(ilmb_sl_1_CE),
         .Sl_DBus(ilmb_sl_1_READDBUS),
         .Sl_Ready(ilmb_sl_1_READY),
