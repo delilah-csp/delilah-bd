@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
-//Date        : Sun Apr 11 13:20:26 2021
+//Date        : Fri May  3 12:41:01 2024
 //Host        : Daisy-Host running 64-bit Ubuntu 16.04.7 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -17818,7 +17818,7 @@ module s00_couplers_imp_37YZ6K
         .s_axi_wready(s00_couplers_to_auto_cc_WREADY),
         .s_axi_wstrb(s00_couplers_to_auto_cc_WSTRB),
         .s_axi_wvalid(s00_couplers_to_auto_cc_WVALID));
-  design_1_s00_data_fifo_27 s00_data_fifo
+  design_1_s00_data_fifo_30 s00_data_fifo
        (.aclk(M_ACLK_1),
         .aresetn(M_ARESETN_1),
         .m_axi_araddr(s00_data_fifo_to_s00_couplers_ARADDR),
@@ -20304,7 +20304,7 @@ module s01_couplers_imp_1RHHKL9
         .s_axi_wready(s01_couplers_to_auto_cc_WREADY),
         .s_axi_wstrb(s01_couplers_to_auto_cc_WSTRB),
         .s_axi_wvalid(s01_couplers_to_auto_cc_WVALID));
-  design_1_s01_data_fifo_18 s01_data_fifo
+  design_1_s01_data_fifo_20 s01_data_fifo
        (.aclk(M_ACLK_1),
         .aresetn(M_ARESETN_1),
         .m_axi_araddr(s01_data_fifo_to_s01_couplers_ARADDR),
